@@ -1,81 +1,74 @@
 # Suns Summer League Pulse
 
-Premium owner-facing Summer League briefing system for Accelerated Velocity Consulting.
+Suns Summer League Pulse is a premium mobile-first private owner briefing series produced by Accelerated Velocity Consulting / AVC.
 
-Product:
+Audience: Mat Ishbia, owner of the Phoenix Suns.
 
-- **Suns Summer League Pulse**
-- **Private Owner Briefing**
-- Positioning line: **Public information. Owner-level clarity.**
+Positioning: Public information. Owner-level clarity.
 
-Audience: Mat Ishbia / Phoenix Suns ownership.
+This is not a scouting report, coaching report, regular-season dashboard, or stats dump. Each issue turns verified public reporting into a lighter editorial briefing that can be sent as a GitHub Pages link and preview cleanly in iMessage.
 
-## What This Is
+## Live Site
 
-This is a concise public-information intelligence brief, not a scouting report, coaching report, GM memo, or insider document. Each issue should save ownership time by turning public reporting, schedule context, media framing, and public sentiment into a polished one-page read.
+Deployment URL:
 
-## Project Structure
+https://meltckr.github.io/suns-summer-league-pulse/
 
-- `data/issues/` contains one JSON file per issue.
-- `scripts/render.js` renders an issue JSON file into a static HTML page and text-message file.
-- `scripts/build_og_image.py` generates a dynamic editorial cover / OG image from each issue's `cover` metadata.
-- `styles.css` controls the premium AVC-branded briefing system.
-- `assets/brand/logos/` stores AVC logo assets reused from the existing Suns briefing repo.
-- `assets/teams/suns/` stores the Suns context logo.
-- `dist/` contains generated review-ready issue pages.
+Repository:
 
-## Current Prototype
+https://github.com/meltckr/suns-summer-league-pulse
 
-Issue 01:
+## Structure
 
-- Source data: `data/issues/issue-01-owner-preview.json`
-- Generated page: `dist/issue-01-owner-preview/index.html`
-- One-page PDF: `dist/issue-01-owner-preview/suns-summer-league-pulse-issue-01-one-page.pdf`
-- One-page preview image: `dist/issue-01-owner-preview/suns-summer-league-pulse-issue-01-one-page.png`
-- OG/iMessage preview image: `dist/issue-01-owner-preview/og-suns-summer-league-pulse-issue-01.png`
-- Text-message version: `dist/issue-01-owner-preview/text-message-version.txt`
-
-## Generate An Issue
-
-From this folder:
-
-```bash
-node scripts/render.js data/issues/issue-01-owner-preview.json
-node scripts/render_one_page.js data/issues/issue-01-owner-preview.json
-python3 scripts/build_og_image.py data/issues/issue-01-owner-preview.json
+```text
+suns-summer-league-pulse/
+  index.html
+  og-image.jpg
+  README.md
+  skill/
+    suns-summer-league-pulse-skill.md
+  issues/
+    issue-01-owner-preview.html
+  assets/
+    README.md
 ```
 
-## Dynamic Cover System
+## Update The Live Issue
 
-Each issue can define a `cover` block in its JSON:
+1. Edit `index.html`.
+2. Copy the final live issue to `issues/issue-XX-name.html`.
+3. Replace `og-image.jpg` with the matching 1200x630 preview image.
+4. Confirm these metadata values before publishing:
+   - `og:url` points to `https://meltckr.github.io/suns-summer-league-pulse/`
+   - `og:image` and `twitter:image` point to `https://meltckr.github.io/suns-summer-league-pulse/og-image.jpg`
+   - title and OG title match the issue title
+5. Commit and push to `main`.
 
-- `image`: the OG / iMessage preview image filename.
-- `kicker`: the edition label, such as `Vegas Issue`, `Game Day Pulse`, or `Postgame Pulse`.
-- `coverLine`: the sharp editorial line used in link previews and the generated cover.
-- `visualLabel`: the short label on the cover plate.
-- `subjects`: the names or themes stacked on the cover.
-- `updatedThrough`: the current-through timestamp or date.
+## Generate Future Issues
 
-The same cover metadata powers the report hero, Open Graph metadata, Twitter card metadata, and generated preview image.
+Use the issue skill in `skill/suns-summer-league-pulse-skill.md` as the editorial checklist.
 
-## PDF Export
+Recommended flow:
 
-The generated page is print-optimized. For the compact owner attachment, render the one-page HTML and export it to PDF:
+1. Gather public sources first.
+2. Verify schedule, roster, broadcast, transaction, injury, and quote claims before writing.
+3. Draft the briefing around owner-level signals, not volume.
+4. Cut any detail that is not verified.
+5. Create the new issue HTML from the existing accordion structure.
+6. Generate or update the OG image.
+7. Archive the issue under `issues/`.
 
-```bash
-node scripts/render_one_page.js data/issues/issue-01-owner-preview.json
-NODE_PATH=/Users/meltucker/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules /Users/meltucker/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node scripts/export_pdf.js issue-01-owner-preview one-page
-```
+## Accuracy Rule
 
-Use the full HTML page when more detail is useful; use the one-page PDF for quick iMessage or email delivery.
+Accuracy over volume. If a fact cannot be verified, omit it.
 
-## Editorial Guardrails
+Do not invent tip times, broadcast info, stats, quotes, public sentiment, roster details, or internal team opinions.
 
-- Use official language only when the source is official.
-- Use `reported`, `expected`, `scheduled`, or `pending confirmation` when appropriate.
-- Do not overstate access or imply private team information.
-- Maintain a humble, signal-oriented ownership tone: organize what may be useful to monitor or consider, without telling ownership what it should do.
-- Prefer `signals to monitor`, `may be useful`, `worth considering`, and `question to consider internally`.
-- Keep the AVC mark present but discreet.
-- Keep the brief scannable enough to read in under three minutes.
-- Make the text-message version useful on its own.
+## GitHub Pages Setup
+
+GitHub Pages should publish from:
+
+- Branch: `main`
+- Folder: `/` root
+
+No build step is required. The site is plain HTML/CSS/JS.
