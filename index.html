@@ -99,18 +99,11 @@
       gap: 16px;
     }
 
-    .avc-mark {
-      display: inline-grid;
-      place-items: center;
-      width: 42px;
-      height: 42px;
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: 8px;
-      background: linear-gradient(135deg, rgba(242, 106, 33, 0.32), rgba(109, 58, 168, 0.44));
-      color: #fff;
-      font-size: 13px;
-      font-weight: 900;
-      letter-spacing: 0.08em;
+    .avc-logo {
+      display: block;
+      width: min(42vw, 172px);
+      height: auto;
+      flex: 0 0 auto;
     }
 
     .brand-text {
@@ -426,6 +419,17 @@
       border-top: 4px solid var(--orange);
     }
 
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .footer-brand .avc-logo {
+      width: min(56vw, 210px);
+    }
+
     .footer span {
       color: rgba(255, 255, 255, 0.56);
     }
@@ -491,7 +495,7 @@
           <strong>Suns Summer League Pulse</strong>
           <span>Private Owner Briefing</span>
         </div>
-        <div class="avc-mark" aria-label="Accelerated Velocity Consulting">AVC</div>
+        <img class="avc-logo" src="https://meltckr.github.io/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="Accelerated Velocity Consulting">
       </div>
       <div class="prepared">
         <span>Prepared for Mat Ishbia</span>
@@ -711,7 +715,10 @@
     </section>
 
     <footer class="footer">
-      <span>Accelerated Velocity Consulting / AVC</span>
+      <div class="footer-brand">
+        <span>Produced by</span>
+        <img class="avc-logo" src="https://meltckr.github.io/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="Accelerated Velocity Consulting">
+      </div>
       <strong>Suns Summer League Pulse | Private Owner Briefing</strong>
       <p>Prepared for Mat Ishbia. Public information. Owner-level clarity.</p>
       <p>Accuracy over volume: if a fact cannot be verified, omit it.</p>
