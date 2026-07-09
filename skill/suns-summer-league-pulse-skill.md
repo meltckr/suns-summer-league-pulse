@@ -59,19 +59,115 @@ Use owner-level language such as:
 
 Avoid regular-season dashboard language, coaching directives, scouting grades, and dense stats blocks.
 
-## Issue Structure
+## Publishing Cadence
 
-Recommended sections:
+Create two distinct briefing modes around each Summer League game:
 
-1. The 5-Second Read
-2. Suns Snapshot
-3. Development Signals
-4. Roster Context
-5. Around The League
-6. Owner Radar
-7. Sources Reviewed
+### Pregame
 
-The first accordion section should open by default.
+Publish after the same-day schedule, broadcast, venue, and roster check. Use language such as `listed on the roster`; do not state or imply that a player will appear unless participation is officially confirmed.
+
+Recommended structure:
+
+1. Cover thesis: a short framing line, not a second summary.
+2. The 5-Second Read: the single owner-level conclusion.
+3. Game Facts: opponent, date, Phoenix time, venue, and broadcast.
+4. Context: only transaction, development, or opponent context needed to understand the thesis.
+5. Three Signals: team-level patterns to monitor.
+6. Viewing Lens: concise player-specific evaluation criteria.
+7. Owner Radar: forward-looking questions or decisions, not a recap.
+8. Source Ledger: primary sources and verification date.
+
+### Postgame
+
+Publish only after the official box score is available. Do not rush to fill sections before facts are stable.
+
+Recommended structure:
+
+1. Cover conclusion: the result of the evaluation, not merely the game result.
+2. The 5-Second Read: what changed in the owner view.
+3. Verified Result: final score and only the statistics needed to support the conclusion.
+4. What Translated: two or three repeatable signals.
+5. What Remains Unresolved: questions the game could not answer.
+6. Context vs. Noise: distinguish structure from one-game shooting, highlights, opponent quality, and lineup effects.
+7. Next-Game Implication: what deserves deliberate follow-up.
+8. Owner Checkpoint: one or two questions with decision relevance.
+9. Source Ledger: official box score, official game material, direct public statements, and verification date.
+
+The first accordion section should open by default. Keep one live issue at `index.html` and archive each edition under `issues/` using descriptive names such as `issue-02-game-01-pregame.html` and `issue-03-game-01-postgame.html`.
+
+## Redundancy Gate
+
+Every issue must pass a redundancy review before publication.
+
+### One Claim, One Home
+
+- The cover previews the thesis in one short line; it does not explain it.
+- The 5-Second Read owns the conclusion.
+- Game Facts or Verified Result owns schedule, score, venue, broadcast, and statistical facts.
+- Context owns transaction lineage or opponent background.
+- Three Signals owns team-level evaluation patterns.
+- Viewing Lens owns player names and player-specific criteria.
+- Owner Radar owns decisions, implications, and next questions.
+- The closing line must add a new caution or implication; remove it if it only restates the thesis.
+- The source ledger cites evidence without repeating the narrative.
+
+### Required Review
+
+1. Create a short claim inventory before drafting: `claim`, `section owner`, and `source`.
+2. After drafting, identify every idea or player name that appears in three or more body sections.
+3. Consolidate repeated ideas into their section owner unless each appearance adds a clearly different angle.
+4. Search for repeated phrases of six or more words and rewrite or remove accidental duplication.
+5. Ask of every section: `What new information or decision does this add?` Delete the section if the answer is unclear.
+6. Remove delivery copy, update-process notes, and summaries that explain material already visible on the page.
+
+Repetition is acceptable only for navigation, accessibility, metadata, or a deliberate short callback. Repetition is not acceptable as a substitute for new evidence.
+
+## Mobile-First Gate
+
+Before publishing, test at 320px, 393px, 430px, and a desktop viewport.
+
+- Require `document.documentElement.scrollWidth === document.documentElement.clientWidth`.
+- Allow horizontal scrolling only inside the section navigation.
+- Keep primary touch targets at least 44px high.
+- Confirm headline, metadata, and game facts do not clip or overlap.
+- Confirm the first accordion opens by default and single-open behavior works.
+- Confirm closed panels are inert and their links cannot receive keyboard focus.
+- Confirm visible keyboard focus and reduced-motion behavior.
+- Confirm the hero and AVC assets load without layout shift.
+- Keep the pregame issue concise enough to scan in roughly one minute; add depth only where it changes the owner read.
+
+## Pregame-to-Postgame Continuity
+
+The postgame issue should answer the pregame issue, not repeat it.
+
+- Carry forward the three pregame signals as questions.
+- Convert each into `confirmed`, `not confirmed`, or `unresolved` only when public evidence supports that label.
+- Do not repeat the pregame background unless it is necessary to explain the postgame conclusion.
+- Record what changed from the pregame owner view.
+- Preserve unresolved questions for the next game's pregame issue.
+
+This creates a continuous intelligence record across the Summer League schedule without turning each issue into a standalone recap.
+
+## Build Workflow
+
+1. Choose `pregame` or `postgame` mode and identify the game number.
+2. For a postgame issue, import the unresolved questions and three signals from the prior pregame issue.
+3. Gather primary sources and record the verification time.
+4. Create the claim inventory with one section owner and one source per factual claim.
+5. Draft the 5-Second Read before drafting supporting sections.
+6. Add only the facts and evidence needed to support that read.
+7. Run the redundancy gate, accuracy review, and mobile-first gate.
+8. Update `index.html`, archive the issue under `issues/`, and synchronize any supported compatibility path.
+9. Update `og-preview.html` and regenerate the 1200x630 `og-image.jpg`.
+10. Confirm live HTML, image assets, metadata, and accordion behavior after deployment.
+
+Use these title patterns:
+
+- Pregame: `Suns Summer League Pulse | Game 01 Pregame`
+- Postgame: `Suns Summer League Pulse | Game 01 Postgame`
+
+The page title, OG title, archive filename, and iMessage description should identify the same game and mode.
 
 ## Verification Checklist
 
@@ -87,6 +183,11 @@ Before publishing:
 - Confirm all factual claims map to public sources.
 - Confirm primary sources support schedule, roster, player, and transaction facts whenever available.
 - Confirm editorial inference is clearly identified as AVC interpretation.
+- Confirm the issue uses the correct pregame or postgame structure.
+- Confirm the postgame issue directly answers the prior pregame signals.
+- Complete the redundancy gate and remove claims that do not have a single section owner.
+- Confirm no player or idea appears in three or more body sections without a distinct purpose.
+- Confirm the issue passes the mobile-first gate at 320px, 393px, 430px, and desktop.
 - Remove anything uncertain.
 
 ## Delivery

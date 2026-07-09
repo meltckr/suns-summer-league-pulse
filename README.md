@@ -57,11 +57,15 @@ Recommended flow:
 
 1. Gather official NBA and team sources first.
 2. Verify schedule, roster, broadcast, transaction, injury, and quote claims before writing.
-3. Draft the briefing around owner-level signals, not volume.
-4. Cut any detail that is not verified.
-5. Create the new issue HTML from the existing accordion structure.
-6. Generate or update the OG image.
-7. Archive the issue under `issues/`.
+3. Choose the pregame or postgame structure in the skill.
+4. Draft a claim inventory so every idea has one section owner and one source.
+5. Draft the briefing around owner-level signals, not volume.
+6. Run the redundancy gate and cut repeated or unverified material.
+7. Create the new issue HTML from the existing accordion structure.
+8. Generate or update the OG image.
+9. Test the mobile-first gate and archive the issue under `issues/`.
+
+For each game, the postgame issue should answer the prior pregame signals and carry unresolved questions into the next pregame brief.
 
 ## Accuracy Rule
 
