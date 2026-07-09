@@ -24,6 +24,7 @@ https://github.com/meltckr/suns-summer-league-pulse
 suns-summer-league-pulse/
   index.html
   og-image.jpg
+  og-preview.html
   README.md
   skill/
     suns-summer-league-pulse-skill.md
@@ -31,6 +32,9 @@ suns-summer-league-pulse/
     issue-01-owner-preview.html
   assets/
     README.md
+    avc-logo-full-dark.svg
+    phoenix-suns-logo.png
+    vegas-courtside-v2.jpg
 ```
 
 ## Update The Live Issue
@@ -38,6 +42,7 @@ suns-summer-league-pulse/
 1. Edit `index.html`.
 2. Copy the final live issue to `issues/issue-XX-name.html`.
 3. Replace `og-image.jpg` with the matching 1200x630 preview image.
+   - `og-preview.html` is the editable source layout for the current preview.
 4. Confirm these metadata values before publishing:
    - `og:url` points to `https://meltckr.github.io/suns-summer-league-pulse/`
    - `og:image` and `twitter:image` point to `https://meltckr.github.io/suns-summer-league-pulse/og-image.jpg`
@@ -50,7 +55,7 @@ Use the issue skill in `skill/suns-summer-league-pulse-skill.md` as the editoria
 
 Recommended flow:
 
-1. Gather public sources first.
+1. Gather official NBA and team sources first.
 2. Verify schedule, roster, broadcast, transaction, injury, and quote claims before writing.
 3. Draft the briefing around owner-level signals, not volume.
 4. Cut any detail that is not verified.

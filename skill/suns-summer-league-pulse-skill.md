@@ -26,6 +26,18 @@ Do not invent:
 
 Anything uncertain should be cut, not hedged.
 
+## Source Hierarchy
+
+Use sources in this order:
+
+1. Official NBA and team schedule, roster, game, transaction, and news pages.
+2. Official league or team documents and direct public statements.
+3. Reputable secondary reporting only when it adds a necessary fact that cannot be established through a primary source.
+
+Every issue should include a verification date. Separate verified facts from AVC interpretation through clear labels such as `Game Facts`, `Source Ledger`, and `AVC Interpretation`.
+
+Do not use uncertain language such as `if reporting holds`. Verify the claim or remove it.
+
 ## Tone
 
 Write like a concise owner intelligence product:
@@ -73,6 +85,8 @@ Before publishing:
 - Confirm the accordion works on mobile.
 - Confirm the first section opens by default.
 - Confirm all factual claims map to public sources.
+- Confirm primary sources support schedule, roster, player, and transaction facts whenever available.
+- Confirm editorial inference is clearly identified as AVC interpretation.
 - Remove anything uncertain.
 
 ## Delivery

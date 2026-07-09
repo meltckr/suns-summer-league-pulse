@@ -2,42 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#09090c">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <title>Suns Summer League Pulse | Issue 01 Owner Preview</title>
-  <meta name="description" content="A private owner briefing from AVC on the public signals to monitor as Phoenix opens Summer League in Las Vegas.">
+  <meta name="description" content="A private AVC owner briefing on the signals that matter as Phoenix opens Summer League in Las Vegas.">
   <link rel="canonical" href="https://meltckr.github.io/suns-summer-league-pulse/">
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Suns Summer League Pulse">
   <meta property="og:title" content="Suns Summer League Pulse | Issue 01 Owner Preview">
-  <meta property="og:description" content="Private Owner Briefing. Public information. Owner-level clarity.">
+  <meta property="og:description" content="The test is continuity. Phoenix opens against Portland Friday night in Las Vegas.">
   <meta property="og:url" content="https://meltckr.github.io/suns-summer-league-pulse/">
   <meta property="og:image" content="https://meltckr.github.io/suns-summer-league-pulse/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Suns Summer League Pulse Issue 01 Owner Preview">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Suns Summer League Pulse | Issue 01 Owner Preview">
-  <meta name="twitter:description" content="Private Owner Briefing. Public information. Owner-level clarity.">
+  <meta name="twitter:description" content="The test is continuity. Phoenix opens against Portland Friday night in Las Vegas.">
   <meta name="twitter:image" content="https://meltckr.github.io/suns-summer-league-pulse/og-image.jpg">
+  <meta name="twitter:image:alt" content="Suns Summer League Pulse Issue 01 Owner Preview">
 
   <style>
     :root {
-      color-scheme: light;
-      --ink: #17131f;
-      --muted: #68606f;
-      --paper: #fffaf1;
-      --surface: #ffffff;
-      --night: #17111d;
-      --plum: #4b2472;
-      --purple: #6d3aa8;
-      --orange: #f26a21;
-      --gold: #f4bf45;
-      --line: rgba(23, 19, 31, 0.13);
-      --shadow: 0 22px 70px rgba(35, 22, 58, 0.16);
-      --radius: 8px;
-      --sans: Avenir, "Avenir Next", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      --display: Didot, "Bodoni 72", Georgia, "Times New Roman", serif;
+      color-scheme: dark;
+      --black: #09090c;
+      --black-soft: #111116;
+      --ink: #17171d;
+      --paper: #f5f5f2;
+      --white: #ffffff;
+      --smoke: #b9b8bf;
+      --orange: #ff5a1f;
+      --violet: #7d3cff;
+      --cyan: #57d3ff;
+      --line-dark: rgba(255, 255, 255, 0.16);
+      --line-light: rgba(23, 23, 29, 0.15);
+      --sans: "Avenir Next", Avenir, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --serif: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+      --page: 900px;
     }
 
     * {
@@ -46,695 +49,1185 @@
 
     html {
       scroll-behavior: smooth;
+      background: var(--black);
     }
 
     body {
       margin: 0;
-      color: var(--ink);
-      background:
-        linear-gradient(180deg, rgba(75, 36, 114, 0.1), rgba(255, 250, 241, 0) 360px),
-        var(--paper);
+      background: var(--black);
+      color: var(--white);
       font-family: var(--sans);
       letter-spacing: 0;
       -webkit-font-smoothing: antialiased;
-      text-rendering: geometricPrecision;
+      text-rendering: optimizeLegibility;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 200;
+      top: 10px;
+      left: 10px;
+      padding: 10px 12px;
+      background: var(--white);
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      transform: translateY(-160%);
+      transition: transform 160ms ease;
+    }
+
+    .skip-link:focus {
+      transform: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
     }
 
     a {
       color: inherit;
-      text-underline-offset: 0.18em;
+      text-underline-offset: 0.2em;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
     }
 
     h1,
     h2,
     h3,
-    p {
+    p,
+    ul {
       margin-top: 0;
     }
 
+    .progress {
+      position: fixed;
+      z-index: 100;
+      inset: 0 0 auto;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .progress span {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: var(--orange);
+      transform-origin: left;
+    }
+
     .page {
-      width: min(100%, 780px);
+      width: min(100%, var(--page));
       margin: 0 auto;
-      background: var(--surface);
-      box-shadow: var(--shadow);
+      overflow: hidden;
+      background: var(--paper);
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.42);
     }
 
-    .topbar,
-    .footer {
-      background: var(--night);
-      color: #fff;
+    .cover {
+      position: relative;
+      min-height: min(840px, 91svh);
+      overflow: hidden;
+      background: #08080a;
+      isolation: isolate;
     }
 
-    .topbar {
-      display: grid;
-      gap: 14px;
-      padding: 18px;
-      border-bottom: 4px solid var(--orange);
+    .cover-media,
+    .cover-shade {
+      position: absolute;
+      inset: 0;
     }
 
-    .brand-row {
+    .cover-media {
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 58% 72%;
+      filter: saturate(0.94) contrast(1.05);
+      transform: scale(1.015);
+      animation: settle 1400ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+
+    .cover-shade {
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(4, 4, 7, 0.76) 0%, rgba(4, 4, 7, 0.08) 35%, rgba(4, 4, 7, 0.38) 69%, rgba(4, 4, 7, 0.98) 100%),
+        linear-gradient(90deg, rgba(4, 4, 7, 0.72), transparent 72%);
+    }
+
+    .masthead {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 18px;
+      padding: max(22px, env(safe-area-inset-top)) 20px 18px;
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .masthead-copy {
+      min-width: 0;
+    }
+
+    .eyebrow,
+    .meta,
+    .section-label,
+    .game-label,
+    .signal-number,
+    .footer-label {
+      margin-bottom: 0;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.25;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .masthead .eyebrow {
+      color: var(--white);
+    }
+
+    .masthead .meta {
+      margin-top: 5px;
+      color: rgba(255, 255, 255, 0.56);
     }
 
     .avc-logo {
-      display: block;
-      width: min(42vw, 172px);
+      width: 154px;
       height: auto;
       flex: 0 0 auto;
     }
 
-    .brand-text {
-      min-width: 0;
+    .cover-copy {
+      display: flex;
+      min-height: calc(min(840px, 91svh) - 154px);
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 42px 20px 30px;
     }
 
-    .brand-text strong,
-    .prepared strong,
-    .kicker,
-    .label,
-    .footer span,
-    .footer strong {
-      display: block;
+    .issue-stamp {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      color: var(--cyan);
       font-size: 11px;
-      font-weight: 850;
-      line-height: 1.25;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.11em;
+      letter-spacing: 0.13em;
     }
 
-    .brand-text span,
-    .prepared span {
+    .issue-stamp::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--cyan);
+    }
+
+    h1 {
+      max-width: 690px;
+      margin-bottom: 22px;
+      font-family: var(--serif);
+      font-size: clamp(50px, 14vw, 96px);
+      font-weight: 600;
+      line-height: 0.88;
+    }
+
+    .cover-dek {
+      max-width: 540px;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .cover-dek strong {
+      color: var(--white);
+      font-weight: 760;
+    }
+
+    .game-ledger {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+      background: rgba(9, 9, 12, 0.58);
+      backdrop-filter: blur(14px);
+    }
+
+    .team {
+      min-width: 0;
+      padding: 15px 12px;
+    }
+
+    .team:last-child {
+      text-align: right;
+    }
+
+    .team strong {
       display: block;
-      margin-top: 4px;
-      color: rgba(255, 255, 255, 0.66);
-      font-size: 10px;
-      font-weight: 700;
-      line-height: 1.35;
+      overflow: hidden;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .team span {
+      display: block;
+      margin-top: 6px;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 9px;
+      font-weight: 750;
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
 
-    .prepared {
-      padding-top: 12px;
-      border-top: 1px solid rgba(255, 255, 255, 0.14);
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      padding: 28px 18px 24px;
-      color: #fff;
-      background:
-        linear-gradient(135deg, rgba(23, 17, 29, 0.98), rgba(75, 36, 114, 0.92) 68%, rgba(242, 106, 33, 0.74)),
-        var(--plum);
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 5px;
-      background: linear-gradient(90deg, var(--orange), var(--gold), var(--orange));
-    }
-
-    .kicker {
-      margin-bottom: 13px;
-      color: var(--gold);
-    }
-
-    h1 {
-      max-width: 10ch;
-      margin-bottom: 14px;
-      font-family: var(--display);
-      font-size: clamp(56px, 16vw, 86px);
-      font-weight: 700;
-      line-height: 0.88;
-    }
-
-    .dek {
-      max-width: 38rem;
-      margin-bottom: 22px;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 16px;
-      line-height: 1.46;
-    }
-
-    .cover-note {
+    .versus {
       display: grid;
-      gap: 10px;
-      padding: 14px;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: var(--radius);
-      background: rgba(255, 255, 255, 0.08);
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 50%;
+      color: var(--orange);
+      font-size: 9px;
+      font-weight: 900;
     }
 
-    .cover-note strong {
-      font-family: var(--display);
-      font-size: 26px;
-      line-height: 0.98;
-    }
-
-    .cover-note ul {
+    .brief-nav {
+      position: sticky;
+      z-index: 20;
+      top: 3px;
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 0;
-      padding: 0;
-      list-style: none;
+      gap: 22px;
+      overflow-x: auto;
+      padding: 0 20px;
+      border-bottom: 1px solid var(--line-light);
+      background: rgba(245, 245, 242, 0.94);
+      scrollbar-width: none;
+      backdrop-filter: blur(16px);
     }
 
-    .cover-note li {
-      padding: 6px 8px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 999px;
-      color: rgba(255, 255, 255, 0.86);
-      font-size: 11px;
-      font-weight: 850;
+    .brief-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .brief-nav button {
+      min-height: 50px;
+      padding: 2px 0 0;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: #75747a;
+      font: 800 10px/1 var(--sans);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      white-space: nowrap;
+      letter-spacing: 0.11em;
+      cursor: pointer;
     }
 
-    .brief-body {
-      padding: 18px;
+    .brief-nav button[aria-current="true"] {
+      border-bottom-color: var(--orange);
+      color: var(--ink);
     }
 
-    .lead-card {
-      padding: 18px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: #fff8ec;
-    }
-
-    .lead-card p {
-      margin-bottom: 0;
-      font-family: var(--display);
-      font-size: 29px;
-      font-weight: 700;
-      line-height: 1.02;
-    }
-
-    .accordion {
+    .thesis {
+      position: relative;
       display: grid;
-      gap: 10px;
-      margin-top: 14px;
+      gap: 24px;
+      padding: 48px 20px 50px;
+      overflow: hidden;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .thesis::after {
+      content: "01";
+      position: absolute;
+      right: -12px;
+      bottom: -30px;
+      color: rgba(23, 23, 29, 0.045);
+      font-family: var(--serif);
+      font-size: 210px;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .thesis .section-label {
+      color: var(--orange);
+    }
+
+    .thesis h2 {
+      position: relative;
+      z-index: 1;
+      max-width: 12ch;
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: clamp(42px, 11vw, 70px);
+      font-weight: 600;
+      line-height: 0.96;
+    }
+
+    .thesis-copy {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+      margin-bottom: 0;
+      color: #54535a;
+      font-size: 17px;
+      line-height: 1.62;
+    }
+
+    .thesis-copy strong {
+      color: var(--ink);
+    }
+
+    .briefing {
+      background: var(--paper);
+      color: var(--ink);
     }
 
     .brief-section {
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: var(--surface);
+      border-top: 1px solid var(--line-light);
     }
 
-    .accordion-trigger {
+    .brief-section:last-child {
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .section-trigger {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 28px;
-      gap: 12px;
-      align-items: center;
+      grid-template-columns: 42px minmax(0, 1fr) 34px;
+      gap: 10px;
+      align-items: start;
       width: 100%;
-      padding: 16px;
+      padding: 25px 20px 23px;
       border: 0;
       background: transparent;
-      color: inherit;
+      color: var(--ink);
       font: inherit;
       text-align: left;
       cursor: pointer;
     }
 
-    .accordion-trigger h2 {
-      margin-bottom: 2px;
-      font-family: var(--display);
-      font-size: 28px;
-      font-weight: 700;
+    .trigger-heading {
+      margin: 0;
+    }
+
+    .section-index {
+      padding-top: 4px;
+      color: var(--orange);
+      font: 800 11px/1 var(--sans);
+      letter-spacing: 0.12em;
+    }
+
+    .section-heading .section-label {
+      margin-bottom: 8px;
+      color: #77767c;
+    }
+
+    .section-heading .section-title {
+      display: block;
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: clamp(29px, 7.5vw, 42px);
+      font-weight: 600;
       line-height: 1;
     }
 
-    .accordion-trigger .label {
-      margin-bottom: 8px;
-      color: var(--purple);
-    }
-
-    .plus {
+    .toggle {
       position: relative;
-      width: 28px;
-      height: 28px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line-light);
       border-radius: 50%;
-      background: #fff2df;
-      border: 1px solid rgba(242, 106, 33, 0.24);
+      transition: border-color 180ms ease, background 180ms ease;
     }
 
-    .plus::before,
-    .plus::after {
+    .toggle::before,
+    .toggle::after {
       content: "";
       position: absolute;
-      inset: 13px 8px auto;
+      top: 15px;
+      left: 9px;
+      width: 14px;
       height: 2px;
-      background: var(--orange);
-      transition: transform 180ms ease;
+      background: currentColor;
+      transition: transform 220ms ease;
     }
 
-    .plus::after {
+    .toggle::after {
       transform: rotate(90deg);
     }
 
-    .accordion-trigger[aria-expanded="true"] .plus::after {
+    .section-trigger[aria-expanded="true"] .toggle {
+      border-color: var(--orange);
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .section-trigger[aria-expanded="true"] .toggle::after {
       transform: rotate(0deg);
     }
 
     .panel {
-      display: grid;
-      grid-template-rows: 0fr;
-      transition: grid-template-rows 240ms ease;
-    }
-
-    .accordion-trigger[aria-expanded="true"] + .panel {
-      grid-template-rows: 1fr;
+      height: 0;
+      overflow: hidden;
+      transition: height 360ms cubic-bezier(0.2, 0.7, 0.2, 1);
     }
 
     .panel-inner {
-      min-height: 0;
-      overflow: hidden;
+      padding: 0 20px 40px 72px;
     }
 
-    .panel-content {
+    .opening-grid {
       display: grid;
-      gap: 14px;
-      padding: 0 16px 18px;
-      color: #393241;
-      font-size: 15px;
-      line-height: 1.5;
+      border-top: 1px solid var(--line-light);
+      border-left: 1px solid var(--line-light);
     }
 
-    .panel-content p,
-    .panel-content ul {
-      margin: 0;
+    .game-cell {
+      min-width: 0;
+      padding: 18px;
+      border-right: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+      background: rgba(255, 255, 255, 0.45);
     }
 
-    .mini-grid {
-      display: grid;
-      gap: 10px;
-    }
-
-    .mini-card,
-    .watch-row,
-    .source-list {
-      padding: 14px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      background: #fffdf9;
-    }
-
-    .mini-card h3,
-    .watch-row h3 {
-      margin-bottom: 8px;
-      color: var(--ink);
-      font-size: 17px;
-      line-height: 1.18;
-    }
-
-    .mini-card span,
-    .watch-row span {
-      display: block;
+    .game-label {
       margin-bottom: 7px;
-      color: var(--orange);
-      font-size: 10px;
+      color: #77767c;
+    }
+
+    .game-cell strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 23px;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .opening-note {
+      margin: 22px 0 0;
+      color: #55545a;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .capital-lineage {
+      margin-top: 22px;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .lineage-row {
+      display: grid;
+      grid-template-columns: 86px minmax(0, 1fr);
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .lineage-row span {
+      color: var(--violet);
+      font-size: 9px;
       font-weight: 850;
+      line-height: 1.4;
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
 
-    .radar {
-      padding-left: 18px;
-    }
-
-    .radar li {
-      margin-bottom: 10px;
-    }
-
-    .question {
-      padding: 16px;
-      border-left: 4px solid var(--orange);
-      border-radius: var(--radius);
-      background: #fff4e4;
-      color: var(--ink);
-      font-family: var(--display);
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 1.05;
-    }
-
-    .source-list {
-      padding-left: 30px;
-    }
-
-    .source-list li {
-      margin-bottom: 9px;
-    }
-
-    .text-message {
-      margin-top: 14px;
-      padding: 16px;
-      border-radius: var(--radius);
-      background: var(--night);
-      color: rgba(255, 255, 255, 0.82);
+    .lineage-row p {
+      margin-bottom: 0;
+      color: #57565c;
       font-size: 14px;
       line-height: 1.5;
     }
 
-    .text-message strong {
+    .lineage-row strong {
+      color: var(--ink);
+    }
+
+    .opening-note strong {
+      color: var(--ink);
+    }
+
+    .signal-stack {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .signal {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 14px;
+      padding: 22px 0 24px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .signal-number {
+      padding-top: 4px;
+      color: var(--violet);
+    }
+
+    .signal h3 {
+      margin-bottom: 9px;
+      font-family: var(--serif);
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .signal p {
+      margin-bottom: 0;
+      color: #56555b;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .signal strong {
+      color: var(--ink);
+    }
+
+    .roster-lens {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .player-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .player-row strong {
       display: block;
-      margin-bottom: 7px;
-      color: var(--gold);
-      font-size: 11px;
+      margin-bottom: 3px;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .player-row span {
+      color: #6d6c72;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .player-row em {
+      color: var(--orange);
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 850;
+      text-align: right;
       text-transform: uppercase;
-      letter-spacing: 0.11em;
+      letter-spacing: 0.1em;
+    }
+
+    .owner-radar {
+      display: grid;
+      gap: 18px;
+    }
+
+    .owner-question {
+      padding-left: 18px;
+      border-left: 3px solid var(--orange);
+    }
+
+    .owner-question span {
+      display: block;
+      margin-bottom: 8px;
+      color: #77767c;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .owner-question p {
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .context-note {
+      display: grid;
+      grid-template-columns: 10px minmax(0, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+      padding: 20px 0;
+      border-top: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      margin-top: 6px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 0 5px rgba(87, 211, 255, 0.12);
+    }
+
+    .context-note strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 12px;
+    }
+
+    .context-note p {
+      margin-bottom: 0;
+      color: #626167;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .source-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .source-list li {
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .source-list a {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      padding: 16px 0;
+      text-decoration: none;
+    }
+
+    .source-list span {
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .source-list b {
+      color: var(--orange);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .source-rule {
+      margin: 20px 0 0;
+      color: #65646a;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .closing-band {
+      padding: 54px 20px 58px;
+      background: var(--black-soft);
+      color: var(--white);
+    }
+
+    .closing-band .section-label {
+      margin-bottom: 15px;
+      color: var(--cyan);
+    }
+
+    .closing-band blockquote {
+      max-width: 690px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(34px, 9vw, 56px);
+      font-weight: 600;
+      line-height: 1.02;
     }
 
     .footer {
       display: grid;
-      gap: 10px;
-      padding: 18px;
-      border-top: 4px solid var(--orange);
+      gap: 25px;
+      padding: 28px 20px max(34px, env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line-dark);
+      background: var(--black);
+      color: var(--white);
     }
 
-    .footer-brand {
+    .footer-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 18px;
     }
 
-    .footer-brand .avc-logo {
-      width: min(56vw, 210px);
+    .footer-top .avc-logo {
+      width: 180px;
     }
 
-    .footer span {
-      color: rgba(255, 255, 255, 0.56);
+    .footer-label {
+      color: rgba(255, 255, 255, 0.48);
     }
 
-    .footer strong {
-      color: rgba(255, 255, 255, 0.78);
+    .footer-copy {
+      display: grid;
+      gap: 8px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line-dark);
     }
 
-    .footer p {
+    .footer-copy p {
       margin: 0;
-      color: rgba(255, 255, 255, 0.72);
-      font-size: 12px;
-      line-height: 1.45;
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 11px;
+      line-height: 1.5;
     }
 
-    @media (min-width: 720px) {
+    .footer-copy strong {
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 650ms ease, transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 4px;
+    }
+
+    @keyframes settle {
+      from { opacity: 0; transform: scale(1.06); }
+      to { opacity: 1; transform: scale(1.015); }
+    }
+
+    @media (min-width: 580px) {
+      .masthead,
+      .cover-copy,
+      .brief-nav,
+      .thesis,
+      .section-trigger,
+      .closing-band,
+      .footer {
+        padding-left: 34px;
+        padding-right: 34px;
+      }
+
+      .panel-inner {
+        padding-right: 34px;
+        padding-left: 86px;
+      }
+
+      .opening-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .cover-media {
+        object-position: center 64%;
+      }
+    }
+
+    @media (min-width: 920px) {
       .page {
-        margin: 28px auto;
-        border: 1px solid var(--line);
-        border-radius: 12px;
-        overflow: hidden;
+        margin: 26px auto;
       }
 
-      .topbar {
-        grid-template-columns: 1fr auto;
-        align-items: center;
-        padding: 22px 26px;
+      .cover {
+        min-height: 820px;
       }
 
-      .prepared {
-        padding-top: 0;
-        border-top: 0;
-        text-align: right;
+      .cover-copy {
+        min-height: 666px;
       }
 
-      .hero {
-        padding: 40px 34px 34px;
+      .thesis {
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.65fr);
+        align-items: end;
+        padding-top: 68px;
+        padding-bottom: 72px;
       }
 
-      .cover-note {
-        max-width: 390px;
+      .thesis .section-label {
+        grid-column: 1 / -1;
       }
 
-      .brief-body {
-        padding: 24px 26px;
+      .thesis-copy {
+        margin-bottom: 4px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
       }
 
-      .lead-card p {
-        font-size: 34px;
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
       }
 
-      .mini-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .reveal {
+        opacity: 1;
+        transform: none;
       }
     }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#thesis">Skip to briefing</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
   <main class="page">
-    <header class="topbar">
-      <div class="brand-row">
-        <div class="brand-text">
-          <strong>Suns Summer League Pulse</strong>
-          <span>Private Owner Briefing</span>
+    <header class="cover" id="top">
+      <img class="cover-media" src="/suns-summer-league-pulse/assets/vegas-courtside-v2.jpg" alt="Empty basketball court under arena lights">
+      <div class="cover-shade" aria-hidden="true"></div>
+
+      <div class="masthead">
+        <div class="masthead-copy">
+          <p class="eyebrow">Private Owner Briefing</p>
+          <p class="meta">Prepared for Mat Ishbia</p>
         </div>
-        <img class="avc-logo" src="https://meltckr.github.io/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="Accelerated Velocity Consulting">
+        <img class="avc-logo" src="/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="Accelerated Velocity Consulting">
       </div>
-      <div class="prepared">
-        <span>Prepared for Mat Ishbia</span>
-        <strong>Issue 01 | Owner Preview</strong>
+
+      <div class="cover-copy">
+        <div class="issue-stamp">Issue 01 / July 10, 2026</div>
+        <h1>Suns Summer League Pulse</h1>
+        <p class="cover-dek"><strong>The test is continuity.</strong> Phoenix enters Vegas with four second-year Suns and one hometown first-round rookie at the center of the owner read.</p>
+
+        <div class="game-ledger" aria-label="Opening game details">
+          <div class="team">
+            <strong>Portland</strong>
+            <span>Trail Blazers</span>
+          </div>
+          <div class="versus" aria-hidden="true">VS</div>
+          <div class="team">
+            <strong>Phoenix</strong>
+            <span>Suns</span>
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="hero">
-      <p class="kicker">Vegas Issue | Public information. Owner-level clarity.</p>
-      <h1>Signals to Monitor in Vegas</h1>
-      <p class="dek">A concise owner-level preview of Phoenix's Summer League window: the young-player signals, roster context, and public narratives that may matter before the Suns open in Las Vegas.</p>
-      <div class="cover-note">
-        <span class="label">Development Layer</span>
-        <strong>Three young rotation signals before the public story hardens.</strong>
-        <ul>
-          <li>Maluach</li>
-          <li>Fleming</li>
-          <li>Peat</li>
-        </ul>
-      </div>
+    <nav class="brief-nav" aria-label="Briefing sections">
+      <button type="button" data-scroll="thesis" aria-current="true">Read</button>
+      <button type="button" data-scroll="opening">Game</button>
+      <button type="button" data-scroll="signals">Signals</button>
+      <button type="button" data-scroll="roster">Lens</button>
+      <button type="button" data-scroll="owner">Owner Radar</button>
+      <button type="button" data-scroll="sources">Sources</button>
+    </nav>
+
+    <section class="thesis" id="thesis" data-nav-section>
+      <p class="section-label reveal">The 5-Second Read / AVC Interpretation</p>
+      <h2 class="reveal">The value is in conversion, not the scoreboard.</h2>
+      <p class="thesis-copy reveal">The score will travel fastest. The more useful signal is whether <strong>Maluach, Fleming, Brea, and Huntley look like second-year players</strong> in their command of role, pace, and communication, while Koa Peat shows how quickly his physical game translates.</p>
     </section>
 
-    <section class="brief-body">
-      <article class="lead-card">
-        <span class="label">The 5-Second Read</span>
-        <p>Phoenix's first Vegas signal is not the scoreboard; it is whether the Maluach-Fleming-Peat layer looks organized, physical, and connected enough to make the development story feel tangible.</p>
-      </article>
-
-      <div class="accordion" data-accordion>
-        <section class="brief-section">
-          <button class="accordion-trigger" type="button" aria-expanded="true" aria-controls="panel-snapshot" id="trigger-snapshot">
-            <span>
-              <span class="label">Suns Snapshot</span>
-              <h2>Pre-Vegas owner preview.</h2>
+    <section class="briefing" aria-label="Issue 01 briefing">
+      <section class="brief-section" id="opening" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="true" aria-controls="panel-opening" id="trigger-opening">
+            <span class="section-index">01</span>
+            <span class="section-heading">
+              <span class="section-label">Opening Frame</span>
+              <span class="section-title">Friday night in Vegas.</span>
             </span>
-            <span class="plus" aria-hidden="true"></span>
+            <span class="toggle" aria-hidden="true"></span>
           </button>
-          <div class="panel" id="panel-snapshot" role="region" aria-labelledby="trigger-snapshot">
-            <div class="panel-inner">
-              <div class="panel-content">
-                <div class="mini-grid">
-                  <article class="mini-card">
-                    <span>Opening Game</span>
-                    <h3>Phoenix opens against Portland.</h3>
-                    <p>Public schedule reporting lists Phoenix against Portland on Friday, July 10 at 8:00 p.m. Arizona/Pacific on ESPNU.</p>
-                  </article>
-                  <article class="mini-card">
-                    <span>Roster Headliners</span>
-                    <h3>Maluach, Fleming, and Peat frame the early read.</h3>
-                    <p>Khaman Maluach, Rasheer Fleming, and Koa Peat headline the development lens, with Koby Brea and CJ Huntley adding useful Valley continuity.</p>
-                  </article>
+        </h2>
+        <div class="panel" id="panel-opening" role="region" aria-labelledby="trigger-opening">
+          <div class="panel-inner">
+            <div class="opening-grid">
+              <div class="game-cell">
+                <p class="game-label">Date</p>
+                <strong>Fri. July 10</strong>
+              </div>
+              <div class="game-cell">
+                <p class="game-label">Tip</p>
+                <strong>8:00 PM</strong>
+              </div>
+              <div class="game-cell">
+                <p class="game-label">Venue</p>
+                <strong>Pavilion</strong>
+              </div>
+              <div class="game-cell">
+                <p class="game-label">Watch</p>
+                <strong>ESPNU</strong>
+              </div>
+            </div>
+            <div class="capital-lineage" aria-label="Development lineage">
+              <div class="lineage-row">
+                <span>2025 Cohort</span>
+                <p><strong>Maluach, Fleming, and Brea</strong> arrived together through Phoenix's seven-team Durant trade.</p>
+              </div>
+              <div class="lineage-row">
+                <span>2026 Addition</span>
+                <p><strong>Peat, the No. 30 pick,</strong> joins that development layer after Phoenix acquired his draft rights in June.</p>
+              </div>
+            </div>
+            <p class="opening-note"><strong>Phoenix time.</strong> The official NBA schedule lists Portland at Phoenix at the Pavilion in Las Vegas. Both clubs bring a 7-foot-2 second-year center, creating an immediate frontcourt development comparison.</p>
+            <div class="context-note">
+              <span class="status-dot" aria-hidden="true"></span>
+              <div>
+                <strong>Friday morning context window</strong>
+                <p>Opening-night results will be added only if they materially sharpen the Phoenix lens. No filler, no forced league-wide roundup.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="signals" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-signals" id="trigger-signals">
+            <span class="section-index">02</span>
+            <span class="section-heading">
+              <span class="section-label">Three Tells</span>
+              <span class="section-title">What is worth carrying forward.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-signals" role="region" aria-labelledby="trigger-signals">
+          <div class="panel-inner">
+            <div class="signal-stack">
+              <article class="signal">
+                <span class="signal-number">A</span>
+                <div>
+                  <h3>Does continuity show up?</h3>
+                  <p>Four players on the Vegas roster already sit in Phoenix's second-year development layer. <strong>Role clarity, early communication, and organized possessions</strong> would say more than any one scoring line.</p>
                 </div>
-                <p>The cleanest evaluation lane is development alignment: role clarity, physical readiness, guard organization, and whether Phoenix's young layer looks ready to support the larger roster plan.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="brief-section">
-          <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="panel-development" id="trigger-development">
-            <span>
-              <span class="label">Development Signals</span>
-              <h2>What to watch inside Phoenix's group.</h2>
-            </span>
-            <span class="plus" aria-hidden="true"></span>
-          </button>
-          <div class="panel" id="panel-development" role="region" aria-labelledby="trigger-development">
-            <div class="panel-inner">
-              <div class="panel-content">
-                <div class="mini-grid">
-                  <article class="watch-row">
-                    <span>Center Development</span>
-                    <h3>Khaman Maluach</h3>
-                    <p>Monitor defensive positioning, screening physicality, rebounding presence, and whether his size translates into organized half-court impact without needing touches.</p>
-                  </article>
-                  <article class="watch-row">
-                    <span>Forward Continuity</span>
-                    <h3>Rasheer Fleming</h3>
-                    <p>Monitor strength gains, defensive versatility, corner shooting comfort, and whether he looks closer to a rotation forward than a developmental athlete.</p>
-                  </article>
-                  <article class="watch-row">
-                    <span>Local Rookie Story</span>
-                    <h3>Koa Peat</h3>
-                    <p>Monitor physicality, decision-making, defensive matchups, and how quickly the local Arizona connection becomes part of the public Suns narrative.</p>
-                  </article>
-                  <article class="watch-row">
-                    <span>Spacing / Two-Way</span>
-                    <h3>Koby Brea and CJ Huntley</h3>
-                    <p>Monitor whether Brea's shooting travels under NBA length and whether Huntley's Valley production shows up against Summer League size.</p>
-                  </article>
+              </article>
+              <article class="signal">
+                <span class="signal-number">B</span>
+                <div>
+                  <h3>How quickly does Peat translate?</h3>
+                  <p>The hometown story is already established. The basketball read begins with <strong>decisions at NBA pace, physicality without wasted motion, and defensive adaptability</strong> against unfamiliar personnel.</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="brief-section">
-          <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="panel-context" id="trigger-context">
-            <span>
-              <span class="label">Roster Context</span>
-              <h2>Public notes around the Vegas read.</h2>
-            </span>
-            <span class="plus" aria-hidden="true"></span>
-          </button>
-          <div class="panel" id="panel-context" role="region" aria-labelledby="trigger-context">
-            <div class="panel-inner">
-              <div class="panel-content">
-                <div class="mini-grid">
-                  <article class="mini-card">
-                    <span>Rotation Shooting</span>
-                    <h3>Luke Kennard has been framed as a reported shooting add.</h3>
-                    <p>Local coverage described the reported agreement as a targeted shooting response. For this brief, the useful connection is spacing around young downhill and frontcourt pieces.</p>
-                  </article>
-                  <article class="mini-card">
-                    <span>Two-Way Guard Depth</span>
-                    <h3>Pat Spencer adds a mature guard story if reporting holds.</h3>
-                    <p>The lens is not star upside; it is whether Phoenix is adding enough guard organization around its young evaluation group.</p>
-                  </article>
-                  <article class="mini-card">
-                    <span>Extension Calendar</span>
-                    <h3>Miles Bridges context sits outside Vegas.</h3>
-                    <p>The extension discussion is separate from Summer League, but it lives in the same roster-planning frame around forward money, role allocation, and Fleming's longer-term relevance.</p>
-                  </article>
-                  <article class="mini-card">
-                    <span>Valley Continuity</span>
-                    <h3>Brea and Huntley make this more than a rookie showcase.</h3>
-                    <p>Their Vegas minutes can offer a cleaner read on whether Phoenix is building usable lower-cost depth, not just trying out unfamiliar names.</p>
-                  </article>
+              </article>
+              <article class="signal">
+                <span class="signal-number">C</span>
+                <div>
+                  <h3>Which big controls the environment?</h3>
+                  <p>Phoenix lists Khaman Maluach at 7-foot-2, 250 pounds; Portland lists Yang Hansen at 7-foot-2, 270. The useful comparison is not touches. It is <strong>screening, positioning, rim presence, and possession discipline.</strong></p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="brief-section">
-          <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="panel-league" id="trigger-league">
-            <span>
-              <span class="label">Around The League</span>
-              <h2>Signals worth tracking beyond Phoenix.</h2>
+      <section class="brief-section" id="roster" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-roster" id="trigger-roster">
+            <span class="section-index">03</span>
+            <span class="section-heading">
+              <span class="section-label">Viewing Lens</span>
+              <span class="section-title">Five names. Five clean reads.</span>
             </span>
-            <span class="plus" aria-hidden="true"></span>
+            <span class="toggle" aria-hidden="true"></span>
           </button>
-          <div class="panel" id="panel-league" role="region" aria-labelledby="trigger-league">
-            <div class="panel-inner">
-              <div class="panel-content">
-                <div class="mini-grid">
-                  <article class="mini-card">
-                    <span>Vegas Calendar</span>
-                    <h3>Las Vegas opens with the full league field.</h3>
-                    <p>For Phoenix, the value is staying aware of which development stories become league-wide narratives before and after the Suns play.</p>
-                  </article>
-                  <article class="mini-card">
-                    <span>Opening Opponent</span>
-                    <h3>Portland brings a size-and-development comparison point.</h3>
-                    <p>Public Portland coverage has centered Yang Hansen as a headliner, giving the Suns' bigs and forwards an immediate comparison point against another young frontcourt ecosystem.</p>
-                  </article>
-                </div>
-                <p>Summer League can reveal competitiveness and comfort, but single-game efficiency can swing quickly. The owner lens should separate meaningful structure from July volatility.</p>
+        </h2>
+        <div class="panel" id="panel-roster" role="region" aria-labelledby="trigger-roster">
+          <div class="panel-inner">
+            <div class="roster-lens">
+              <div class="player-row">
+                <div><strong>Khaman Maluach</strong><span>Positioning / screening / rim presence</span></div>
+                <em>Year 2</em>
+              </div>
+              <div class="player-row">
+                <div><strong>Rasheer Fleming</strong><span>Defensive versatility / spacing / physical readiness</span></div>
+                <em>Year 2</em>
+              </div>
+              <div class="player-row">
+                <div><strong>Koa Peat</strong><span>Force / processing speed / matchup adaptability</span></div>
+                <em>Rookie</em>
+              </div>
+              <div class="player-row">
+                <div><strong>Koby Brea</strong><span>Shot readiness / movement / decision speed</span></div>
+                <em>Year 2</em>
+              </div>
+              <div class="player-row">
+                <div><strong>CJ Huntley</strong><span>Size / activity / functional role discipline</span></div>
+                <em>Year 2</em>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="brief-section">
-          <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="panel-owner" id="trigger-owner">
-            <span>
-              <span class="label">Owner Radar</span>
-              <h2>The questions that matter.</h2>
+      <section class="brief-section" id="owner" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-owner" id="trigger-owner">
+            <span class="section-index">04</span>
+            <span class="section-heading">
+              <span class="section-label">Owner Radar</span>
+              <span class="section-title">Separate structure from July noise.</span>
             </span>
-            <span class="plus" aria-hidden="true"></span>
+            <span class="toggle" aria-hidden="true"></span>
           </button>
-          <div class="panel" id="panel-owner" role="region" aria-labelledby="trigger-owner">
-            <div class="panel-inner">
-              <div class="panel-content">
-                <ul class="radar">
-                  <li>The first public read on the Suns' development layer will likely form before training camp, even if internal evaluation is more patient.</li>
-                  <li>Maluach, Fleming, and Peat give Phoenix three different development signals: size/rim presence, forward strength/spacing, and local two-way competitiveness.</li>
-                  <li>The Spencer, Brea, Huntley, Hoiberg, and Camper group can help clarify whether Phoenix is building functional lower-cost depth around the primary roster.</li>
-                  <li>The public narrative can move quickly if Peat has an early moment, because the Arizona/Phoenix connection is easy for fans and local media to understand.</li>
-                </ul>
-                <p class="question">Which Vegas signals are meaningful enough to compare with internal evaluations before training camp, and which are simply July variance?</p>
-              </div>
+        </h2>
+        <div class="panel" id="panel-owner" role="region" aria-labelledby="trigger-owner">
+          <div class="panel-inner">
+            <div class="owner-radar">
+              <article class="owner-question">
+                <span>Continuity</span>
+                <p>Is the returning layer creating better possessions, or merely producing individual moments?</p>
+              </article>
+              <article class="owner-question">
+                <span>Translation</span>
+                <p>Which Peat strengths are immediately functional against NBA length and pace?</p>
+              </article>
+              <article class="owner-question">
+                <span>Development</span>
+                <p>Does the frontcourt look more connected before the box score becomes the public story?</p>
+              </article>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="brief-section">
-          <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="panel-sources" id="trigger-sources">
-            <span>
-              <span class="label">Sources Reviewed</span>
-              <h2>Public reporting only.</h2>
+      <section class="brief-section" id="sources" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-sources" id="trigger-sources">
+            <span class="section-index">05</span>
+            <span class="section-heading">
+              <span class="section-label">Source Ledger</span>
+              <span class="section-title">Primary sources first.</span>
             </span>
-            <span class="plus" aria-hidden="true"></span>
+            <span class="toggle" aria-hidden="true"></span>
           </button>
-          <div class="panel" id="panel-sources" role="region" aria-labelledby="trigger-sources">
-            <div class="panel-inner">
-              <div class="panel-content">
-                <ul class="source-list">
-                  <li><a href="https://www.brightsideofthesun.com/suns-summer-league/24446463/summer-league-roster-khaman-maluach-koa-peat-rasheer-fleming-koby-brea">Bright Side of the Sun: Suns Summer League roster</a></li>
-                  <li><a href="https://www.brightsideofthesun.com/suns-schedule/106792/suns-summer-league-schedule-released">Bright Side of the Sun: Suns Summer League schedule</a></li>
-                  <li><a href="https://www.blazersedge.com/trail-blazers-news/113668/portland-trail-blazers-2026-summer-league-schedule-release-dates-times-las-vegas-suns-nuggets-magic">Blazer's Edge: Portland Summer League schedule</a></li>
-                  <li><a href="https://www.goldenstateofmind.com/nba-rumors-news/111587/nba-offseason-pat-spencer-suns-warriors">Golden State of Mind: Pat Spencer reporting</a></li>
-                  <li><a href="https://www.brightsideofthesun.com/suns-free-agency-rumors-news/107069/grading-the-suns-signing-of-luke-kennard">Bright Side of the Sun: Luke Kennard reporting</a></li>
-                  <li><a href="https://www.brightsideofthesun.com/suns-roster/24449188/miles-bridges-extension-contract-breakdown-2033-pick-rasheer-fleming">Bright Side of the Sun: Miles Bridges context</a></li>
-                </ul>
-                <p>Accuracy rule: accuracy over volume. If a fact cannot be verified, omit it.</p>
-              </div>
-            </div>
+        </h2>
+        <div class="panel" id="panel-sources" role="region" aria-labelledby="trigger-sources">
+          <div class="panel-inner">
+            <ul class="source-list">
+              <li><a href="https://www.nba.com/game/por-vs-phx-1522600015"><span>NBA game page: Portland at Phoenix</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/summer-league/2026/las-vegas/team/1610612756/suns"><span>NBA: Phoenix 2026 Summer League roster</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/summer-league/2026/las-vegas/team/1610612757/blazers"><span>NBA: Portland 2026 Summer League roster</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/suns/news/phoenix-suns-acquire-dillon-brooks-jalen-green-and-draft-rights-to-khaman-maluach-rasheer-fleming-and-koby-brea-in-seven-team-trade"><span>Phoenix Suns: 2025 seven-team trade announcement</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/suns/news/phoenix-suns-add-arizona-forward-koa-peat-in-2026-nba-draft"><span>Phoenix Suns: Koa Peat draft announcement</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-schedule"><span>NBA: 2026 Summer League schedule and format</span><b aria-hidden="true">↗</b></a></li>
+            </ul>
+            <p class="source-rule">Verified July 9, 2026. Public information only. Accuracy over volume: if a fact cannot be verified, omit it.</p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+    </section>
 
-      <aside class="text-message">
-        <strong>Sendable Summary</strong>
-        Mat - sending the first Suns Summer League Pulse as an owner preview before Vegas. It frames the week around three public signals: Maluach's defensive positioning and screening, Fleming's strength/spacing, and Peat's local two-way narrative. I also included Brea/Huntley as Valley continuity, recent roster context, and a light Around The League scan before Phoenix opens against Portland.
-      </aside>
+    <section class="closing-band">
+      <p class="section-label">The Owner Read</p>
+      <blockquote>Watch the quality of the possessions before the result of the game.</blockquote>
     </section>
 
     <footer class="footer">
-      <div class="footer-brand">
-        <span>Produced by</span>
-        <img class="avc-logo" src="https://meltckr.github.io/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="Accelerated Velocity Consulting">
+      <div class="footer-top">
+        <span class="footer-label">Produced by</span>
+        <img class="avc-logo" src="/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="Accelerated Velocity Consulting">
       </div>
-      <strong>Suns Summer League Pulse | Private Owner Briefing</strong>
-      <p>Prepared for Mat Ishbia. Public information. Owner-level clarity.</p>
-      <p>Accuracy over volume: if a fact cannot be verified, omit it.</p>
+      <div class="footer-copy">
+        <p><strong>Suns Summer League Pulse</strong> / Private Owner Briefing</p>
+        <p>Prepared exclusively for Mat Ishbia. Public information. Owner-level clarity.</p>
+        <p>Accuracy over volume. If a fact cannot be verified, omit it.</p>
+      </div>
     </footer>
   </main>
 
   <script>
     (() => {
-      const triggers = document.querySelectorAll(".accordion-trigger");
+      const triggers = [...document.querySelectorAll(".section-trigger")];
+      const panels = [...document.querySelectorAll(".panel")];
+      const navButtons = [...document.querySelectorAll("[data-scroll]")];
+      const navSections = [...document.querySelectorAll("[data-nav-section]")];
+      const progress = document.querySelector(".progress span");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const setPanel = (trigger, open, animate = true) => {
+        const panel = document.getElementById(trigger.getAttribute("aria-controls"));
+        trigger.setAttribute("aria-expanded", String(open));
+        panel.toggleAttribute("inert", !open);
+
+        if (!animate || reducedMotion) {
+          panel.style.height = open ? "auto" : "0px";
+          return;
+        }
+
+        const start = panel.getBoundingClientRect().height;
+        panel.style.height = "auto";
+        const end = panel.getBoundingClientRect().height;
+        panel.style.height = `${start}px`;
+        panel.offsetHeight;
+        panel.style.height = `${open ? end : 0}px`;
+
+        panel.addEventListener("transitionend", () => {
+          if (trigger.getAttribute("aria-expanded") === "true") panel.style.height = "auto";
+        }, { once: true });
+      };
 
       triggers.forEach((trigger) => {
+        setPanel(trigger, trigger.getAttribute("aria-expanded") === "true", false);
         trigger.addEventListener("click", () => {
-          const isOpen = trigger.getAttribute("aria-expanded") === "true";
-          trigger.setAttribute("aria-expanded", String(!isOpen));
+          const willOpen = trigger.getAttribute("aria-expanded") !== "true";
+          triggers.forEach((item) => {
+            if (item !== trigger && item.getAttribute("aria-expanded") === "true") setPanel(item, false);
+          });
+          setPanel(trigger, willOpen);
         });
       });
+
+      navButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          document.getElementById(button.dataset.scroll)?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+        });
+      });
+
+      const updateScrollState = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = `${max > 0 ? (window.scrollY / max) * 100 : 0}%`;
+
+        let current = navSections[0]?.id;
+        navSections.forEach((section) => {
+          if (section.getBoundingClientRect().top <= 130) current = section.id;
+        });
+        navButtons.forEach((button) => button.setAttribute("aria-current", String(button.dataset.scroll === current)));
+      };
+
+      if (reducedMotion) {
+        document.querySelectorAll(".reveal").forEach((item) => item.classList.add("is-visible"));
+      } else {
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+        document.querySelectorAll(".reveal").forEach((item) => revealObserver.observe(item));
+      }
+
+      window.addEventListener("scroll", updateScrollState, { passive: true });
+      window.addEventListener("resize", () => {
+        panels.forEach((panel) => {
+          const trigger = document.querySelector(`[aria-controls="${panel.id}"]`);
+          if (trigger?.getAttribute("aria-expanded") === "true") panel.style.height = "auto";
+        });
+        updateScrollState();
+      });
+      updateScrollState();
     })();
   </script>
 </body>
