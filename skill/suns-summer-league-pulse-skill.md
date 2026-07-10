@@ -2,6 +2,8 @@
 
 Use this skill to create future issues of Suns Summer League Pulse.
 
+Last updated: July 10, 2026
+
 ## Product Identity
 
 - Name: Suns Summer League Pulse
@@ -37,6 +39,28 @@ Use sources in this order:
 Every issue should include a verification date. Separate verified facts from AVC interpretation through clear labels such as `Game Facts`, `Source Ledger`, and `AVC Interpretation`.
 
 Do not use uncertain language such as `if reporting holds`. Verify the claim or remove it.
+
+## Same-Day Update Scan
+
+Run a focused update scan before every publication and again immediately before delivery when meaningful time has passed.
+
+Check only the surfaces that can materially change the briefing:
+
+1. Official NBA schedule, game, venue, tip-time, and broadcast listings.
+2. Official Suns and opponent roster pages.
+3. Official team news, transactions, and direct public availability statements.
+4. The latest completed Summer League finals for the Vegas Scoreboard.
+5. The prior Pulse issue for unresolved questions and promised follow-up.
+
+Record the verification date and cutoff. If no verified change is found, preserve the existing briefing and report `No verified material update`; do not manufacture freshness by adding weaker facts or more commentary.
+
+When a verified update is found:
+
+- Change Game Facts first.
+- Change the 5-Second Read only when the update alters the owner-level conclusion.
+- Update Signals, Viewing Lens, or Owner Radar only when their evaluation logic changes.
+- Add the source to Source Ledger and remove any superseded claim.
+- Run the redundancy gate again after the update.
 
 ## Tone
 
@@ -98,6 +122,15 @@ Recommended structure:
 
 The first accordion section should open by default. Keep one live issue at `index.html` and archive each edition under `issues/` using descriptive names such as `issue-02-game-01-pregame.html` and `issue-03-game-01-postgame.html`.
 
+## Issue Integrity
+
+- Treat `index.html` as the current live edition.
+- Archive the exact published edition before replacing it with the next issue.
+- Do not silently rewrite an archived issue after it has been delivered.
+- Correct a material factual error when necessary and add a short correction note with the date and source.
+- Keep the supported compatibility path synchronized with the current live edition.
+- Make the issue number, game number, mode, verification date, and scoreboard cutoff internally consistent.
+
 ## Redundancy Gate
 
 Every issue must pass a redundancy review before publication.
@@ -138,6 +171,8 @@ The scoreboard is a convenience layer, not the editorial center of the briefing.
 - Use one stable row per game: winner, score, loser, and one factual sentence.
 - Keep each sentence to roughly 16 words or fewer.
 - Derive the sentence from verified score or box-score data; do not add sentiment, scouting conclusions, or narrative prediction.
+- Prefer neutral comparisons such as closest margin, widest margin, highest total, lowest total, or number of 100-point teams.
+- Avoid labels such as `marquee`, `statement win`, `surprise`, `dominant`, or `impressive` unless directly attributed to a cited source and editorially necessary.
 - Link each row to the official NBA game page.
 - Use a reputable scoreboard only as a cross-check when official live data is unavailable, and disclose it in Source Ledger.
 - Do not repeat scoreboard facts in The 5-Second Read, Three Signals, Owner Radar, or the closing line unless a result directly changes the Phoenix thesis.
@@ -172,14 +207,16 @@ This creates a continuous intelligence record across the Summer League schedule 
 
 1. Choose `pregame` or `postgame` mode and identify the game number.
 2. For a postgame issue, import the unresolved questions and three signals from the prior pregame issue.
-3. Gather primary sources, verify the scoreboard cutoff, and record the verification time.
-4. Create the claim inventory with one section owner and one source per factual claim.
-5. Draft the 5-Second Read before drafting supporting sections.
-6. Add only the facts and evidence needed to support that read.
-7. Run the redundancy gate, accuracy review, and mobile-first gate.
-8. Update `index.html`, archive the issue under `issues/`, and synchronize any supported compatibility path.
-9. Update `og-preview.html` and regenerate the 1200x630 `og-image.jpg`.
-10. Confirm live HTML, image assets, metadata, and accordion behavior after deployment.
+3. Run the same-day update scan.
+4. Gather primary sources, verify the scoreboard cutoff, and record the verification time.
+5. Create the claim inventory with one section owner and one source per factual claim.
+6. Draft the 5-Second Read before drafting supporting sections.
+7. Add only the facts and evidence needed to support that read.
+8. Run the redundancy gate, accuracy review, and mobile-first gate.
+9. Archive the outgoing issue, update `index.html`, and synchronize any supported compatibility path.
+10. Update `og-preview.html` and regenerate the 1200x630 `og-image.jpg`.
+11. Confirm live HTML, image assets, metadata, and accordion behavior after deployment.
+12. Run a final pre-send update scan if the issue was prepared materially earlier than delivery.
 
 Use these title patterns:
 
@@ -204,7 +241,9 @@ Before publishing:
 - Confirm editorial inference is clearly identified as AVC interpretation.
 - Confirm the issue uses the correct pregame or postgame structure.
 - Confirm the postgame issue directly answers the prior pregame signals.
+- Confirm the same-day update scan was completed and its cutoff is visible.
 - Confirm the Vegas Scoreboard contains only new finals, excludes duplicated Phoenix results, and links to official game pages.
+- Confirm scoreboard one-liners are score- or box-score-derived and contain no unsupported narrative labels.
 - Complete the redundancy gate and remove claims that do not have a single section owner.
 - Confirm no player or idea appears in three or more body sections without a distinct purpose.
 - Confirm the issue passes the mobile-first gate at 320px, 393px, 430px, and desktop.
@@ -212,4 +251,4 @@ Before publishing:
 
 ## Delivery
 
-The final iMessage should be short, direct, and include the live GitHub Pages link.
+Run the final pre-send update scan before composing the message. The final iMessage should be short, direct, and include the live GitHub Pages link.
