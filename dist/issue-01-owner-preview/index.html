@@ -659,6 +659,69 @@
       line-height: 1.15;
     }
 
+    .scoreboard-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 0 0 14px;
+      color: #747379;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+
+    .scoreboard-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .scoreboard-list li {
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .scoreboard-list a {
+      display: block;
+      padding: 15px 0 16px;
+      text-decoration: none;
+    }
+
+    .scoreline {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .scoreline strong {
+      min-width: 0;
+      overflow: hidden;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .scoreline b {
+      color: var(--orange);
+      font-family: var(--sans);
+      font-size: 18px;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.04em;
+    }
+
+    .scoreboard-list p {
+      margin: 7px 0 0;
+      color: #646369;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
     .source-list {
       margin: 0;
       padding: 0;
@@ -896,6 +959,7 @@
       <button type="button" data-scroll="signals">Signals</button>
       <button type="button" data-scroll="roster">Lens</button>
       <button type="button" data-scroll="owner">Owner Radar</button>
+      <button type="button" data-scroll="scoreboard">Scores</button>
       <button type="button" data-scroll="sources">Sources</button>
     </nav>
 
@@ -1062,10 +1126,75 @@
         </div>
       </section>
 
+      <section class="brief-section" id="scoreboard" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-scoreboard" id="trigger-scoreboard">
+            <span class="section-index">05</span>
+            <span class="section-heading">
+              <span class="section-label">Vegas Scoreboard</span>
+              <span class="section-title">Opening-night finals.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-scoreboard" role="region" aria-labelledby="trigger-scoreboard">
+          <div class="panel-inner">
+            <div class="scoreboard-meta">
+              <span>Finals through July 9</span>
+              <span>7 games</span>
+            </div>
+            <ul class="scoreboard-list">
+              <li>
+                <a href="https://www.nba.com/game/min-vs-nop-1522600001" aria-label="Minnesota 105, New Orleans 92. Official NBA game page.">
+                  <div class="scoreline"><strong>MIN 105 — NOP 92</strong><b aria-hidden="true">↗</b></div>
+                  <p>Minnesota posted opening night's highest team total.</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nba.com/game/sas-vs-atl-1522600002" aria-label="Atlanta 93, San Antonio 66. Official NBA game page.">
+                  <div class="scoreline"><strong>ATL 93 — SAS 66</strong><b aria-hidden="true">↗</b></div>
+                  <p>Atlanta produced the widest margin of the seven-game slate.</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nba.com/game/det-vs-phi-1522600003" aria-label="Philadelphia 101, Detroit 93. Official NBA game page.">
+                  <div class="scoreline"><strong>PHI 101 — DET 93</strong><b aria-hidden="true">↗</b></div>
+                  <p>Philadelphia was one of three teams to reach 100 points.</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nba.com/game/gsw-vs-dal-1522600004" aria-label="Golden State 101, Dallas 90. Official NBA game page.">
+                  <div class="scoreline"><strong>GSW 101 — DAL 90</strong><b aria-hidden="true">↗</b></div>
+                  <p>Golden State joined Minnesota and Philadelphia above the century mark.</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nba.com/game/cha-vs-orl-1522600005" aria-label="Charlotte 86, Orlando 74. Official NBA game page.">
+                  <div class="scoreline"><strong>CHA 86 — ORL 74</strong><b aria-hidden="true">↗</b></div>
+                  <p>Charlotte held Orlando to the night's second-lowest total.</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nba.com/game/uta-vs-was-1522600006" aria-label="Washington 92, Utah 88. Official NBA game page.">
+                  <div class="scoreline"><strong>WAS 92 — UTA 88</strong><b aria-hidden="true">↗</b></div>
+                  <p>Washington-Utah finished as opening night's closest game at four points.</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.nba.com/game/sac-vs-lac-1522600007" aria-label="Sacramento 91, LA Clippers 85. Official NBA game page.">
+                  <div class="scoreline"><strong>SAC 91 — LAC 85</strong><b aria-hidden="true">↗</b></div>
+                  <p>Sacramento closed the slate with a six-point win.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="brief-section" id="sources" data-nav-section>
         <h2 class="trigger-heading">
           <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-sources" id="trigger-sources">
-            <span class="section-index">05</span>
+            <span class="section-index">06</span>
             <span class="section-heading">
               <span class="section-label">Source Ledger</span>
               <span class="section-title">Primary sources first.</span>
@@ -1082,8 +1211,9 @@
               <li><a href="https://www.nba.com/suns/news/phoenix-suns-acquire-dillon-brooks-jalen-green-and-draft-rights-to-khaman-maluach-rasheer-fleming-and-koby-brea-in-seven-team-trade"><span>Phoenix Suns: 2025 seven-team trade announcement</span><b aria-hidden="true">↗</b></a></li>
               <li><a href="https://www.nba.com/suns/news/phoenix-suns-add-arizona-forward-koa-peat-in-2026-nba-draft"><span>Phoenix Suns: Koa Peat draft announcement</span><b aria-hidden="true">↗</b></a></li>
               <li><a href="https://www.nba.com/news/2026-nba-summer-league-schedule"><span>NBA: 2026 Summer League schedule and format</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://basketball.realgm.com/nba/scores/2026-07-09"><span>RealGM: July 9 final scores cross-check</span><b aria-hidden="true">↗</b></a></li>
             </ul>
-            <p class="source-rule">Verified July 9, 2026. Public information only. Uncertain claims were removed rather than qualified.</p>
+            <p class="source-rule">Verified July 10, 2026. Public information only. Uncertain claims were removed rather than qualified.</p>
           </div>
         </div>
       </section>

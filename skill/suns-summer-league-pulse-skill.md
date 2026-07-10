@@ -76,7 +76,8 @@ Recommended structure:
 5. Three Signals: team-level patterns to monitor.
 6. Viewing Lens: concise player-specific evaluation criteria.
 7. Owner Radar: forward-looking questions or decisions, not a recap.
-8. Source Ledger: primary sources and verification date.
+8. Vegas Scoreboard: recently completed league results, secondary and collapsed.
+9. Source Ledger: primary sources and verification date.
 
 ### Postgame
 
@@ -92,7 +93,8 @@ Recommended structure:
 6. Context vs. Noise: distinguish structure from one-game shooting, highlights, opponent quality, and lineup effects.
 7. Next-Game Implication: what deserves deliberate follow-up.
 8. Owner Checkpoint: one or two questions with decision relevance.
-9. Source Ledger: official box score, official game material, direct public statements, and verification date.
+9. Vegas Scoreboard: non-Phoenix finals completed since the pregame issue.
+10. Source Ledger: official box score, official game material, direct public statements, and verification date.
 
 The first accordion section should open by default. Keep one live issue at `index.html` and archive each edition under `issues/` using descriptive names such as `issue-02-game-01-pregame.html` and `issue-03-game-01-postgame.html`.
 
@@ -109,6 +111,7 @@ Every issue must pass a redundancy review before publication.
 - Three Signals owns team-level evaluation patterns.
 - Viewing Lens owns player names and player-specific criteria.
 - Owner Radar owns decisions, implications, and next questions.
+- Vegas Scoreboard owns non-Phoenix results and does not interpret the Suns.
 - The closing line must add a new caution or implication; remove it if it only restates the thesis.
 - The source ledger cites evidence without repeating the narrative.
 
@@ -122,6 +125,22 @@ Every issue must pass a redundancy review before publication.
 6. Remove delivery copy, update-process notes, and summaries that explain material already visible on the page.
 
 Repetition is acceptable only for navigation, accessibility, metadata, or a deliberate short callback. Repetition is not acceptable as a substitute for new evidence.
+
+## Vegas Scoreboard Rules
+
+The scoreboard is a convenience layer, not the editorial center of the briefing.
+
+- Place it after Owner Radar and before Source Ledger.
+- Keep it collapsed by default.
+- Include only finals completed since the prior issue; never publish a cumulative tournament dump.
+- For postgame issues, exclude the Phoenix result because Verified Result already owns it.
+- Label the exact cutoff date and number of games.
+- Use one stable row per game: winner, score, loser, and one factual sentence.
+- Keep each sentence to roughly 16 words or fewer.
+- Derive the sentence from verified score or box-score data; do not add sentiment, scouting conclusions, or narrative prediction.
+- Link each row to the official NBA game page.
+- Use a reputable scoreboard only as a cross-check when official live data is unavailable, and disclose it in Source Ledger.
+- Do not repeat scoreboard facts in The 5-Second Read, Three Signals, Owner Radar, or the closing line unless a result directly changes the Phoenix thesis.
 
 ## Mobile-First Gate
 
@@ -153,7 +172,7 @@ This creates a continuous intelligence record across the Summer League schedule 
 
 1. Choose `pregame` or `postgame` mode and identify the game number.
 2. For a postgame issue, import the unresolved questions and three signals from the prior pregame issue.
-3. Gather primary sources and record the verification time.
+3. Gather primary sources, verify the scoreboard cutoff, and record the verification time.
 4. Create the claim inventory with one section owner and one source per factual claim.
 5. Draft the 5-Second Read before drafting supporting sections.
 6. Add only the facts and evidence needed to support that read.
@@ -185,6 +204,7 @@ Before publishing:
 - Confirm editorial inference is clearly identified as AVC interpretation.
 - Confirm the issue uses the correct pregame or postgame structure.
 - Confirm the postgame issue directly answers the prior pregame signals.
+- Confirm the Vegas Scoreboard contains only new finals, excludes duplicated Phoenix results, and links to official game pages.
 - Complete the redundancy gate and remove claims that do not have a single section owner.
 - Confirm no player or idea appears in three or more body sections without a distinct purpose.
 - Confirm the issue passes the mobile-first gate at 320px, 393px, 430px, and desktop.
