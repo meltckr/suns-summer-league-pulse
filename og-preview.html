@@ -6,21 +6,28 @@
   <style>
     * { box-sizing: border-box; }
     html, body { width: 1200px; height: 630px; margin: 0; overflow: hidden; }
-    body { background: #09090c; color: white; font-family: "Avenir Next", Avenir, Arial, sans-serif; }
+    body { background: #09090c; color: #fff; font-family: "Avenir Next", Avenir, Arial, sans-serif; }
     .canvas { position: relative; width: 1200px; height: 630px; overflow: hidden; isolation: isolate; }
-    .arena { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 62%; }
-    .shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(5,5,8,.98) 0%, rgba(5,5,8,.88) 43%, rgba(5,5,8,.26) 75%, rgba(5,5,8,.48) 100%), linear-gradient(0deg, rgba(5,5,8,.92), transparent 45%); }
+    .arena { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 52%; filter: saturate(.75) contrast(1.12); }
+    .shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(5,5,8,.98) 0%, rgba(5,5,8,.92) 48%, rgba(5,5,8,.32) 79%, rgba(5,5,8,.52) 100%), linear-gradient(0deg, rgba(5,5,8,.96), transparent 55%); }
     .rail { position: absolute; inset: 0 auto 0 0; width: 10px; background: #ff5a1f; }
-    .content { display: flex; height: 100%; flex-direction: column; justify-content: space-between; padding: 58px 64px 52px 74px; }
-    .top { display: flex; align-items: flex-start; justify-content: space-between; }
-    .issue { color: #57d3ff; font-size: 17px; font-weight: 800; line-height: 1.2; text-transform: uppercase; letter-spacing: .14em; }
+    .content { display: grid; height: 100%; grid-template-rows: auto 1fr auto; padding: 52px 62px 48px 74px; }
+    .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 40px; }
+    .issue { color: #57d3ff; font-size: 16px; font-weight: 850; line-height: 1.2; text-transform: uppercase; letter-spacing: .14em; }
     .issue::before { content: ""; display: inline-block; width: 40px; height: 3px; margin: 0 14px 5px 0; background: #57d3ff; }
-    .avc { width: 240px; height: auto; }
-    h1 { max-width: 760px; margin: 0 0 20px; font-family: "Iowan Old Style", Baskerville, Georgia, serif; font-size: 80px; font-weight: 600; line-height: .92; letter-spacing: 0; }
-    .thesis { margin: 0; color: #ff6f3c; font-size: 27px; font-weight: 800; line-height: 1.15; letter-spacing: 0; }
-    .footer { display: flex; align-items: flex-end; justify-content: space-between; gap: 34px; padding-top: 27px; border-top: 1px solid rgba(255,255,255,.25); }
-    .game strong { display: block; margin-bottom: 6px; font-size: 23px; line-height: 1; }
-    .game span { color: rgba(255,255,255,.58); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; }
+    .avc { width: 250px; height: auto; }
+    .result { display: grid; align-content: center; max-width: 730px; padding-top: 18px; }
+    .title { margin: 0 0 22px; color: rgba(255,255,255,.72); font-size: 16px; font-weight: 850; text-transform: uppercase; letter-spacing: .13em; }
+    .score { display: grid; grid-template-columns: auto 42px auto; gap: 24px; align-items: end; width: max-content; font-variant-numeric: tabular-nums; }
+    .side { display: grid; gap: 5px; }
+    .side:last-child { text-align: right; }
+    .side span { color: rgba(255,255,255,.6); font-size: 15px; font-weight: 850; text-transform: uppercase; letter-spacing: .12em; }
+    .side strong { font-family: "Iowan Old Style", Baskerville, Georgia, serif; font-size: 142px; font-weight: 600; line-height: .72; }
+    .dash { padding-bottom: 7px; color: #ff5a1f; font-family: Georgia, serif; font-size: 44px; text-align: center; }
+    .thesis { max-width: 720px; margin: 28px 0 0; color: #fff; font-family: "Iowan Old Style", Baskerville, Georgia, serif; font-size: 34px; font-weight: 600; line-height: 1.05; }
+    .footer { display: flex; align-items: flex-end; justify-content: space-between; gap: 36px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.24); }
+    .footer-copy strong { display: block; margin-bottom: 5px; color: #ff6f3c; font-size: 14px; font-weight: 850; text-transform: uppercase; letter-spacing: .1em; }
+    .footer-copy span { color: rgba(255,255,255,.58); font-size: 13px; font-weight: 700; }
     .seal { display: flex; align-items: center; gap: 16px; color: rgba(255,255,255,.64); font-size: 12px; font-weight: 800; text-align: right; text-transform: uppercase; letter-spacing: .1em; }
     .suns { width: 72px; height: 72px; object-fit: contain; }
   </style>
@@ -32,16 +39,21 @@
     <div class="rail"></div>
     <div class="content">
       <div class="top">
-        <div class="issue">Issue 01 / Owner Preview</div>
+        <div class="issue">Issue 02 / Game 01 Postgame</div>
         <img class="avc" src="/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="">
       </div>
-      <div>
-        <h1>Suns Summer<br>League Pulse</h1>
-        <p class="thesis">THE TEST IS CONTINUITY.</p>
+      <div class="result">
+        <p class="title">Suns Summer League Pulse / Final</p>
+        <div class="score" aria-label="Phoenix 81, Portland 79">
+          <div class="side"><span>Phoenix</span><strong>81</strong></div>
+          <div class="dash">-</div>
+          <div class="side"><span>Portland</span><strong>79</strong></div>
+        </div>
+        <p class="thesis">Asset evidence arrived before system evidence.</p>
       </div>
       <div class="footer">
-        <div class="game"><strong>Portland vs Phoenix</strong><span>Friday / 8:00 PM Phoenix Time</span></div>
-        <div class="seal"><span>Private Owner<br>Briefing</span><img class="suns" src="/suns-summer-league-pulse/assets/phoenix-suns-logo.png" alt=""></div>
+        <div class="footer-copy"><strong>Private Owner Briefing</strong><span>Verified public information / AVC interpretation</span></div>
+        <div class="seal"><span>Prepared for<br>Mat Ishbia</span><img class="suns" src="/suns-summer-league-pulse/assets/phoenix-suns-logo.png" alt=""></div>
       </div>
     </div>
   </main>

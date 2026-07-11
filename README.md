@@ -30,6 +30,12 @@ suns-summer-league-pulse/
     suns-summer-league-pulse-skill.md
   issues/
     issue-01-owner-preview.html
+    issue-02-game-01-postgame.html
+  dist/
+    issue-01-owner-preview/
+      index.html
+    issue-02-game-01-postgame/
+      index.html
   assets/
     README.md
     avc-logo-full-dark.svg
@@ -48,6 +54,8 @@ suns-summer-league-pulse/
    - `og:image` and `twitter:image` point to `https://meltckr.github.io/suns-summer-league-pulse/og-image.jpg`
    - title and OG title match the issue title
 5. Commit and push to `main`.
+
+The current live edition is `Issue 02 / Game 01 Postgame`. Delivered archive files are immutable except for disclosed factual corrections.
 
 ## Generate Future Issues
 
