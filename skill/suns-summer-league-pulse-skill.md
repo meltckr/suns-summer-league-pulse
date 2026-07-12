@@ -2,7 +2,7 @@
 
 Use this skill to create future issues of Suns Summer League Pulse.
 
-Last updated: July 10, 2026
+Last updated: July 11, 2026
 
 ## Product Identity
 
@@ -191,7 +191,7 @@ Before publishing, test at 320px, 393px, 430px, and a desktop viewport.
 - Confirm the hero and AVC assets load without layout shift.
 - Keep the pregame issue concise enough to scan in roughly one minute; add depth only where it changes the owner read.
 
-## Pregame-to-Postgame Continuity
+## Pregame-to-Postgame Development Thread
 
 The postgame issue should answer the pregame issue, not repeat it.
 
