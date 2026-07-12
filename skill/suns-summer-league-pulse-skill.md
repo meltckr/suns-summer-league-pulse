@@ -36,13 +36,13 @@ Use sources in this order:
 2. Official league or team documents and direct public statements.
 3. Reputable secondary reporting only when it adds a necessary fact that cannot be established through a primary source.
 
-Every issue should include a verification date. Separate verified facts from AVC interpretation through clear labels such as `Game Facts`, `Source Ledger`, and `AVC Interpretation`.
+Every issue should include a verification date. Separate verified facts from AVC analysis through clear labels such as `Game Facts`, `Sources`, and `AVC Interpretation`.
 
 Do not use uncertain language such as `if reporting holds`. Verify the claim or remove it.
 
 ## Quotes and Reaction Read
 
-Quotes and sentiment are optional context, never required inventory.
+Quotes and reaction are optional background, never required inventory.
 
 - Use a coach or player quote only from a direct recording, transcript, official team or league publication, or clearly attributable first-party post.
 - Preserve the speaker's meaning and link the exact source. Never convert a reporter's paraphrase into quotation marks.
@@ -51,7 +51,7 @@ Quotes and sentiment are optional context, never required inventory.
 - Describe fan reaction as a bounded sample tied to named threads or platforms and a verification cutoff. Never call it representative polling.
 - Do not label one outlet, one post, or one writer as `media sentiment` or `public sentiment`.
 - Omit a category when the available material is thin, repetitive, anonymous, or cannot be directly sourced.
-- Place a Reaction Read after Owner Radar and before Vegas Scoreboard. Keep it collapsed and limit it to three distinct signals.
+- Place `Reaction` after `The Big Questions` and before `Vegas Scoreboard`. Keep it collapsed and limit it to three distinct points.
 - Run the redundancy gate after adding reactions. A quote or sentiment item must contribute a new idea rather than restate the statistical read.
 
 ## Same-Day Update Scan
@@ -71,9 +71,9 @@ Record the verification date and cutoff. If no verified change is found, preserv
 When a verified update is found:
 
 - Change Game Facts first.
-- Change the 5-Second Read only when the update alters the owner-level conclusion.
-- Update Signals, Viewing Lens, or Owner Radar only when their evaluation logic changes.
-- Add the source to Source Ledger and remove any superseded claim.
+- Change `The Read` only when the update changes the main conclusion.
+- Update `Three to Watch`, `Player Watch`, or `The Big Questions` only when the new information changes what the reader should watch.
+- Add the source to Sources and remove any superseded claim.
 - Run the redundancy gate again after the update.
 
 ## Tone
@@ -87,13 +87,13 @@ Write like a concise owner intelligence product:
 - Public-source only
 - No claim of private team information
 
-Use owner-level language such as:
+Use direct language such as:
 
-- Signal to monitor
-- Public read
-- Roster-planning context
-- Development layer
-- Question to consider internally
+- Phoenix needs a better first half.
+- Can the Suns take care of the ball?
+- Both teams rallied to win.
+- Three players who can shape the game.
+- A better first half will tell us more than another late rally.
 
 Avoid regular-season dashboard language, coaching directives, scouting grades, and dense stats blocks.
 
@@ -133,16 +133,16 @@ Publish after the same-day schedule, broadcast, venue, and roster check. Use lan
 
 Recommended structure:
 
-1. Cover thesis: a short framing line, not a second summary.
-2. The 5-Second Read: the single owner-level conclusion.
+1. Cover lead: a short, direct line such as `Start fast.`
+2. The Read: the single main conclusion.
 3. Game Facts: opponent, date, Phoenix time, venue, and broadcast.
-4. Context: only transaction, development, or opponent context needed to understand the thesis.
-5. Three Signals: team-level patterns to monitor.
-6. Viewing Lens: concise player-specific evaluation criteria.
-7. Owner Radar: forward-looking questions or decisions, not a recap.
-8. Optional Reaction Read: verified quotes or bounded media and fan signals only when they add a distinct idea.
+4. Last Time Out: only the prior results needed to understand the game.
+5. Three to Watch: the three clearest team priorities.
+6. Player Watch: direct questions about the players who can shape the game.
+7. The Big Questions: what would count as progress.
+8. Optional Reaction: verified quotes or bounded media and fan comments only when they add a distinct idea.
 9. Vegas Scoreboard: recently completed league results, secondary and collapsed.
-10. Source Ledger: primary sources and verification date.
+10. Sources: primary sources and verification date.
 
 ### Postgame
 
@@ -150,16 +150,16 @@ Publish only after the official box score is available. Do not rush to fill sect
 
 Recommended structure:
 
-1. Cover conclusion: the result of the evaluation, not merely the game result.
-2. The 5-Second Read: what changed in the owner view.
-3. Verified Result: final score and only the statistics needed to support the conclusion.
-4. What Translated: two or three repeatable signals.
-5. What Remains Unresolved: questions the game could not answer.
-6. Context vs. Noise: distinguish structure from one-game shooting, highlights, opponent quality, and lineup effects.
-7. Next-Game Implication: what deserves deliberate follow-up.
-8. Owner Checkpoint: one or two questions with decision relevance.
+1. Cover conclusion: what the game showed, not just the final score.
+2. The Read: the most important change from the pregame view.
+3. Final Result: the score and only the statistics needed to support the conclusion.
+4. What Worked: two or three things Phoenix can build on.
+5. What Did Not: the clearest problems shown by the game.
+6. What the Numbers Show: separate useful evidence from one-game shooting or highlights.
+7. What Comes Next: what deserves follow-up in the next game.
+8. The Big Questions: one or two direct questions that remain unanswered.
 9. Vegas Scoreboard: non-Phoenix finals completed since the pregame issue.
-10. Source Ledger: official box score, official game material, direct public statements, and verification date.
+10. Sources: official box score, official game material, direct public statements, and verification date.
 
 The first accordion section should open by default. Keep one live issue at `index.html` and archive each edition under `issues/` using descriptive names such as `issue-02-game-01-pregame.html` and `issue-03-game-01-postgame.html`.
 
@@ -179,15 +179,15 @@ Every issue must pass a redundancy review before publication.
 ### One Claim, One Home
 
 - The cover previews the thesis in one short line; it does not explain it.
-- The 5-Second Read owns the conclusion.
-- Game Facts or Verified Result owns schedule, score, venue, broadcast, and statistical facts.
-- Context owns transaction lineage or opponent background.
-- Three Signals owns team-level evaluation patterns.
-- Viewing Lens owns player names and player-specific criteria.
-- Owner Radar owns decisions, implications, and next questions.
+- The Read owns the conclusion.
+- Game Facts or Final Result owns schedule, score, venue, broadcast, and statistical facts.
+- Last Time Out owns the prior results and opponent background.
+- Three to Watch owns the team priorities.
+- Player Watch owns player names and player-specific questions.
+- The Big Questions owns what would count as progress and what remains unanswered.
 - Vegas Scoreboard owns non-Phoenix results and does not interpret the Suns.
 - The closing line must add a new caution or implication; remove it if it only restates the thesis.
-- The source ledger cites evidence without repeating the narrative.
+- Sources cites evidence without repeating the narrative.
 
 ### Required Review
 
@@ -204,7 +204,7 @@ Repetition is acceptable only for navigation, accessibility, metadata, or a deli
 
 The scoreboard is a convenience layer, not the editorial center of the briefing.
 
-- Place it after Owner Radar and before Source Ledger.
+- Place it after The Big Questions and before Sources.
 - Keep it collapsed by default.
 - Include only finals completed since the prior issue; never publish a cumulative tournament dump.
 - For postgame issues, exclude the Phoenix result because Verified Result already owns it.
@@ -215,8 +215,8 @@ The scoreboard is a convenience layer, not the editorial center of the briefing.
 - Prefer neutral comparisons such as closest margin, widest margin, highest total, lowest total, or number of 100-point teams.
 - Avoid labels such as `marquee`, `statement win`, `surprise`, `dominant`, or `impressive` unless directly attributed to a cited source and editorially necessary.
 - Link each row to the official NBA game page.
-- Use a reputable scoreboard only as a cross-check when official live data is unavailable, and disclose it in Source Ledger.
-- Do not repeat scoreboard facts in The 5-Second Read, Three Signals, Owner Radar, or the closing line unless a result directly changes the Phoenix thesis.
+- Use a reputable scoreboard only as a cross-check when official live data is unavailable, and disclose it in Sources.
+- Do not repeat scoreboard facts in The Read, Three to Watch, The Big Questions, or the closing line unless a result directly changes the main conclusion.
 
 ## Mobile-First Gate
 
@@ -236,7 +236,7 @@ Before publishing, test at 320px, 393px, 430px, and a desktop viewport.
 
 The postgame issue should answer the pregame issue, not repeat it.
 
-- Carry forward the three pregame signals as questions.
+- Carry forward the three pregame priorities as questions.
 - Convert each into `confirmed`, `not confirmed`, or `unresolved` only when public evidence supports that label.
 - Do not repeat the pregame background unless it is necessary to explain the postgame conclusion.
 - Record what changed from the pregame owner view.
@@ -247,11 +247,11 @@ This creates a continuous intelligence record across the Summer League schedule 
 ## Build Workflow
 
 1. Choose `pregame` or `postgame` mode and identify the game number.
-2. For a postgame issue, import the unresolved questions and three signals from the prior pregame issue.
+2. For a postgame issue, import the unanswered questions and Three to Watch items from the prior pregame issue.
 3. Run the same-day update scan.
 4. Gather primary sources, verify the scoreboard cutoff, and record the verification time.
 5. Create the claim inventory with one section owner and one source per factual claim.
-6. Draft the 5-Second Read before drafting supporting sections.
+6. Draft The Read before drafting supporting sections.
 7. Add only the facts and evidence needed to support that read.
 8. Run the redundancy gate, accuracy review, and mobile-first gate.
 9. Archive the outgoing issue, update `index.html`, and synchronize any supported compatibility path.
@@ -281,10 +281,13 @@ Before publishing:
 - Confirm primary sources support schedule, roster, player, and transaction facts whenever available.
 - Confirm editorial inference is clearly identified as AVC interpretation.
 - Confirm the issue uses the correct pregame or postgame structure.
-- Confirm the postgame issue directly answers the prior pregame signals.
+- Confirm the postgame issue directly answers the prior pregame questions.
 - Confirm the same-day update scan was completed and its cutoff is visible.
 - Confirm the Vegas Scoreboard contains only new finals, excludes duplicated Phoenix results, and links to official game pages.
 - Confirm scoreboard one-liners are score- or box-score-derived and contain no unsupported narrative labels.
+- Confirm every headline states its point directly and every paragraph is clear on the first pass.
+- Confirm statistics support the main point instead of replacing it.
+- Remove abstract language, empty drama, and sentences that require the reader to infer the meaning.
 - Confirm every quote links to a direct source and every reaction label identifies its source universe.
 - Confirm no single post, writer, or outlet is presented as broad sentiment.
 - Complete the redundancy gate and remove claims that do not have a single section owner.
