@@ -40,6 +40,20 @@ Every issue should include a verification date. Separate verified facts from AVC
 
 Do not use uncertain language such as `if reporting holds`. Verify the claim or remove it.
 
+## Quotes and Reaction Read
+
+Quotes and sentiment are optional context, never required inventory.
+
+- Use a coach or player quote only from a direct recording, transcript, official team or league publication, or clearly attributable first-party post.
+- Preserve the speaker's meaning and link the exact source. Never convert a reporter's paraphrase into quotation marks.
+- Keep excerpts short and use only quotes that add a distinct decision-relevant idea.
+- Separate `Local media`, `National media`, `Beat reporting`, and `Fan conversation`; never blend them into a single claim of consensus.
+- Describe fan reaction as a bounded sample tied to named threads or platforms and a verification cutoff. Never call it representative polling.
+- Do not label one outlet, one post, or one writer as `media sentiment` or `public sentiment`.
+- Omit a category when the available material is thin, repetitive, anonymous, or cannot be directly sourced.
+- Place a Reaction Read after Owner Radar and before Vegas Scoreboard. Keep it collapsed and limit it to three distinct signals.
+- Run the redundancy gate after adding reactions. A quote or sentiment item must contribute a new idea rather than restate the statistical read.
+
 ## Same-Day Update Scan
 
 Run a focused update scan before every publication and again immediately before delivery when meaningful time has passed.
@@ -100,8 +114,9 @@ Recommended structure:
 5. Three Signals: team-level patterns to monitor.
 6. Viewing Lens: concise player-specific evaluation criteria.
 7. Owner Radar: forward-looking questions or decisions, not a recap.
-8. Vegas Scoreboard: recently completed league results, secondary and collapsed.
-9. Source Ledger: primary sources and verification date.
+8. Optional Reaction Read: verified quotes or bounded media and fan signals only when they add a distinct idea.
+9. Vegas Scoreboard: recently completed league results, secondary and collapsed.
+10. Source Ledger: primary sources and verification date.
 
 ### Postgame
 
@@ -244,6 +259,8 @@ Before publishing:
 - Confirm the same-day update scan was completed and its cutoff is visible.
 - Confirm the Vegas Scoreboard contains only new finals, excludes duplicated Phoenix results, and links to official game pages.
 - Confirm scoreboard one-liners are score- or box-score-derived and contain no unsupported narrative labels.
+- Confirm every quote links to a direct source and every reaction label identifies its source universe.
+- Confirm no single post, writer, or outlet is presented as broad sentiment.
 - Complete the redundancy gate and remove claims that do not have a single section owner.
 - Confirm no player or idea appears in three or more body sections without a distinct purpose.
 - Confirm the issue passes the mobile-first gate at 320px, 393px, 430px, and desktop.
