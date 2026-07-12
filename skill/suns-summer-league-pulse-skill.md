@@ -97,6 +97,32 @@ Use owner-level language such as:
 
 Avoid regular-season dashboard language, coaching directives, scouting grades, and dense stats blocks.
 
+## Plain-Language Gate
+
+The reader should understand every sentence on the first pass.
+
+- State the point directly before adding evidence.
+- Prefer common basketball words such as `start`, `passing`, `turnovers`, `rebounding`, `defense`, and `shots`.
+- Do not replace a clear basketball idea with abstract language such as `possession environment`, `translation`, `convergence`, `repair`, `legibility`, or `interior ownership`.
+- Use short headings that tell the reader exactly what the section contains.
+- Ask direct questions. Write `Can Phoenix take care of the ball?` instead of `Can decision quality reduce the possession burden?`
+- Keep one main idea per sentence and one clear purpose per paragraph.
+- Read every interpretation without its heading. If the meaning is not immediately clear, rewrite it.
+- Premium means precise and well edited, not complicated.
+
+## Sports Newsroom Voice
+
+Write with the authority and pace of a senior editor at a major sports publication.
+
+- Lead with what happened or what matters next.
+- Use strong verbs, specific basketball language, and short declarative headlines.
+- Put the main point in the first sentence. Use the statistic or example to prove it.
+- Make transitions quick. Each section should move the story forward.
+- Use familiar sports language such as `set the pace`, `value the ball`, `win the paint`, and `last time out` when it is accurate.
+- Avoid empty drama, forced cleverness, hot-take language, and broadcast cliches.
+- Sound informed and decisive without pretending public information is inside information.
+- Do not imitate any named writer or publication. Match the professional standard, not a person's phrasing.
+
 ## Publishing Cadence
 
 Create two distinct briefing modes around each Summer League game:
