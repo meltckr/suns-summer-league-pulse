@@ -32,12 +32,15 @@ suns-summer-league-pulse/
     issue-01-owner-preview.html
     issue-02-game-01-postgame.html
     issue-03-game-02-pregame.html
+    issue-04-game-02-postgame.html
   dist/
     issue-01-owner-preview/
       index.html
     issue-02-game-01-postgame/
       index.html
     issue-03-game-02-pregame/
+      index.html
+    issue-04-game-02-postgame/
       index.html
   assets/
     README.md
@@ -58,7 +61,7 @@ suns-summer-league-pulse/
    - title and OG title match the issue title
 5. Commit and push to `main`.
 
-The current live edition is `Issue 03 / Game 02 Pregame`. Delivered archive files are immutable except for disclosed factual corrections.
+The current live edition is `Issue 04 / Game 02 Postgame`. Delivered archive files are immutable except for disclosed factual corrections.
 
 ## Generate Future Issues
 
