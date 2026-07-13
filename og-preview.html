@@ -8,8 +8,8 @@
     html, body { width: 1200px; height: 630px; margin: 0; overflow: hidden; }
     body { background: #09090c; color: #fff; font-family: "Avenir Next", Avenir, Arial, sans-serif; }
     .canvas { position: relative; width: 1200px; height: 630px; overflow: hidden; isolation: isolate; }
-    .arena { position: absolute; z-index: -2; inset: 0 0 0 auto; width: 760px; height: 100%; object-fit: cover; object-position: 52% 8%; filter: saturate(.88) contrast(1.05); }
-    .shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, #050508 0%, rgba(5,5,8,.98) 36%, rgba(5,5,8,.82) 52%, rgba(5,5,8,.08) 82%, rgba(5,5,8,.16) 100%), linear-gradient(0deg, rgba(5,5,8,.96), transparent 48%); }
+    .arena { position: absolute; z-index: -2; inset: 0 0 0 auto; width: 500px; height: 100%; object-fit: contain; object-position: right center; filter: saturate(.96) contrast(1.03); }
+    .shade { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, #050508 0%, rgba(5,5,8,.98) 42%, rgba(5,5,8,.74) 58%, rgba(5,5,8,.08) 78%, rgba(5,5,8,.05) 100%), linear-gradient(0deg, rgba(5,5,8,.88) 0%, rgba(5,5,8,.58) 13%, transparent 38%); }
     .rail { position: absolute; inset: 0 auto 0 0; width: 10px; background: #ff5a1f; }
     .content { display: grid; height: 100%; grid-template-rows: auto 1fr auto; padding: 48px 58px 42px 74px; }
     .top { display: block; }
@@ -34,7 +34,7 @@
 </head>
 <body>
   <main class="canvas">
-    <img class="arena" src="assets/summer-league-courtside-bridges.jpg" alt="">
+    <img class="arena" src="assets/khaman-maluach-game-02.png" alt="">
     <div class="shade"></div>
     <div class="rail"></div>
     <div class="content">
