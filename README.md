@@ -61,7 +61,7 @@ suns-summer-league-pulse/
    - title and OG title match the issue title
 5. Commit and push to `main`.
 
-The current live edition is `Issue 05 / Game 03 Postgame`. Delivered archive files are immutable except for disclosed factual corrections.
+The current live edition is `Issue 06 / Game 04 Pregame`. Delivered archive files are immutable except for disclosed factual corrections.
 
 ## Generate Future Issues
 

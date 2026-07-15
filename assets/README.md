@@ -8,5 +8,6 @@ Supporting visual assets for Suns Summer League Pulse:
 - `summer-league-courtside-bridges.jpg`: User-supplied courtside photo used for the Issue 03 and Issue 04 OG previews. Reuse permission was confirmed by the user; the embedded PHNX Suns watermark must remain visible.
 - `khaman-maluach-game-02.png`: User-supplied game screenshot used for the Issue 04 OG preview. Reuse permission was confirmed by the user; the embedded caption and ESPN game context must remain visible.
 - `koa-peat-game-03.jpg`: User-supplied Game 03 photo used for the Issue 05 OG preview.
+- `khaman-maluach-three-double-doubles.jpg`: User-supplied Maluach graphic used for the Issue 06 OG preview.
 
 The live iMessage/Open Graph preview uses `../og-image.jpg` at the repository root. Visual source and usage notes should be checked before each issue is published.
