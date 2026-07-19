@@ -6,25 +6,25 @@
   <style>
     * { box-sizing: border-box; }
     html, body { width: 1200px; height: 630px; margin: 0; overflow: hidden; }
-    body { background: #060608; color: #fff; font-family: "Avenir Next", Avenir, Arial, sans-serif; }
+    body { background: #08080b; color: #fff; font-family: "Avenir Next", Avenir, Arial, sans-serif; }
     .canvas { position: relative; width: 1200px; height: 630px; overflow: hidden; isolation: isolate; }
-    .arena { position: absolute; z-index: -3; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-    .shade { position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg, rgba(5,5,8,.99) 0%, rgba(5,5,8,.96) 45%, rgba(5,5,8,.57) 68%, rgba(5,5,8,.13) 100%), linear-gradient(0deg, rgba(5,5,8,.78) 0%, transparent 33%); }
-    .grain { position: absolute; z-index: -1; inset: 0; opacity: .1; background-image: radial-gradient(rgba(255,255,255,.35) .55px, transparent .55px); background-size: 4px 4px; }
+    .game { position: absolute; z-index: -3; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(.92) contrast(1.05); }
+    .shade { position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg, rgba(5,5,8,.99) 0%, rgba(5,5,8,.96) 38%, rgba(5,5,8,.72) 57%, rgba(5,5,8,.18) 100%), linear-gradient(0deg, rgba(5,5,8,.92) 0%, rgba(5,5,8,.35) 32%, transparent 62%); }
     .rail { position: absolute; inset: 0 auto 0 0; width: 10px; background: #ff5a1f; }
-    .content { display: grid; height: 100%; grid-template-rows: auto 1fr auto; padding: 42px 56px 38px 74px; }
-    .top { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .content { display: grid; height: 100%; grid-template-rows: auto 1fr auto; padding: 44px 58px 38px 74px; }
     .issue { color: #57d3ff; font-size: 15px; font-weight: 850; line-height: 1.2; text-transform: uppercase; letter-spacing: .14em; }
     .issue::before { content: ""; display: inline-block; width: 40px; height: 3px; margin: 0 14px 5px 0; background: #57d3ff; }
-    .report { padding: 8px 12px; border: 1px solid rgba(255,90,31,.72); color: #ff7a48; font-size: 12px; font-weight: 850; text-transform: uppercase; letter-spacing: .11em; }
-    .main { display: grid; align-content: center; max-width: 705px; padding-top: 14px; }
-    .kicker { margin: 0 0 13px; color: #ff6f3c; font-size: 15px; font-weight: 850; text-transform: uppercase; letter-spacing: .12em; }
-    h1 { max-width: 700px; margin: 0; font-family: "Iowan Old Style", Baskerville, Georgia, serif; font-size: 62px; font-weight: 600; line-height: .96; }
-    .names { margin: 19px 0 0; color: rgba(255,255,255,.72); font-size: 15px; font-weight: 850; text-transform: uppercase; letter-spacing: .12em; }
-    .matchup { display: flex; align-items: center; gap: 14px; width: max-content; margin-top: 26px; padding-top: 17px; border-top: 1px solid rgba(255,255,255,.23); color: rgba(255,255,255,.68); font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
-    .matchup strong { color: #fff; font-size: 17px; letter-spacing: 0; }
-    .matchup b { color: #ff6f3c; }
-    .footer { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: end; gap: 28px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.23); }
+    .main { display: grid; align-content: center; max-width: 660px; padding-top: 10px; }
+    .title { margin: 0 0 18px; color: rgba(255,255,255,.7); font-size: 15px; font-weight: 850; text-transform: uppercase; letter-spacing: .13em; }
+    .score { display: grid; grid-template-columns: auto 34px auto; gap: 16px; align-items: end; width: max-content; font-variant-numeric: tabular-nums; }
+    .side { display: grid; gap: 5px; }
+    .side:last-child { text-align: right; }
+    .side span { color: rgba(255,255,255,.62); font-size: 14px; font-weight: 850; text-transform: uppercase; letter-spacing: .12em; }
+    .side strong { font-family: "Iowan Old Style", Baskerville, Georgia, serif; font-size: 106px; font-weight: 600; line-height: .74; }
+    .dash { padding-bottom: 4px; color: #ff5a1f; font-family: Georgia, serif; font-size: 30px; text-align: center; }
+    .thesis { max-width: 620px; margin: 28px 0 0; font-family: "Iowan Old Style", Baskerville, Georgia, serif; font-size: 42px; font-weight: 600; line-height: 1.03; }
+    .record { margin: 14px 0 0; color: #ff7b49; font-size: 14px; font-weight: 850; text-transform: uppercase; letter-spacing: .11em; }
+    .footer { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; align-items: end; gap: 30px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.24); }
     .footer-copy strong { display: block; margin-bottom: 5px; color: #ff6f3c; font-size: 13px; font-weight: 850; text-transform: uppercase; letter-spacing: .1em; }
     .footer-copy span { color: rgba(255,255,255,.58); font-size: 12px; font-weight: 700; }
     .avc { width: 182px; height: auto; }
@@ -34,23 +34,23 @@
 </head>
 <body>
   <main class="canvas">
-    <img class="arena" src="assets/og-game05-arena.png" alt="">
+    <img class="game" src="assets/suns-spurs-game05.jpg" alt="">
     <div class="shade"></div>
-    <div class="grain"></div>
     <div class="rail"></div>
     <div class="content">
-      <div class="top">
-        <div class="issue">Issue 08 / Game 05 Pregame</div>
-        <div class="report">Reported by Arizona Sports</div>
-      </div>
+      <div class="issue">Issue 09 / Game 05 Postgame</div>
       <div class="main">
-        <p class="kicker">Availability update</p>
-        <h1>The featured three are done in Vegas.</h1>
-        <p class="names">Maluach / Fleming / Peat</p>
-        <div class="matchup"><strong>Phoenix 3-1</strong><b>vs</b><strong>San Antonio 3-1</strong><span>Tonight / 7:30 PM Phoenix</span></div>
+        <p class="title">Suns Summer League Pulse / Final</p>
+        <div class="score" aria-label="Phoenix 81, San Antonio 86">
+          <div class="side"><span>Phoenix</span><strong>81</strong></div>
+          <div class="dash">-</div>
+          <div class="side"><span>San Antonio</span><strong>86</strong></div>
+        </div>
+        <p class="thesis">The next group made it competitive.</p>
+        <p class="record">Phoenix finishes Summer League 3-2</p>
       </div>
       <div class="footer">
-        <div class="footer-copy"><strong>Suns Summer League Pulse</strong><span>Private Owner Briefing / Accuracy over volume</span></div>
+        <div class="footer-copy"><strong>Private Owner Briefing</strong><span>Public information / AVC interpretation</span></div>
         <img class="avc" src="assets/avc-logo-full-dark.svg" alt="">
         <div class="seal"><span>Prepared for<br>Mat Ishbia</span><img class="suns" src="assets/phoenix-suns-logo.png" alt=""></div>
       </div>

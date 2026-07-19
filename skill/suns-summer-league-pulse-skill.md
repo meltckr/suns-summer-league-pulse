@@ -2,7 +2,7 @@
 
 Use this skill to create future issues of Suns Summer League Pulse.
 
-Last updated: July 11, 2026
+Last updated: July 19, 2026
 
 ## Product Identity
 
@@ -37,6 +37,8 @@ Use sources in this order:
 3. Reputable secondary reporting only when it adds a necessary fact that cannot be established through a primary source.
 
 Every issue should include a verification date. Separate verified facts from AVC analysis through clear labels such as `Game Facts`, `Sources`, and `AVC Interpretation`.
+
+For postgame statistics, the official NBA scorer's report controls any disagreement with a secondary recap or reconstructed total. Summer League free throws may carry different point values, so use the official `PTS` column rather than rebuilding points with conventional free-throw arithmetic. For team turnovers, use the scorer's report `TOT TO` value; it can include team turnovers that do not appear in individual player rows.
 
 Do not use uncertain language such as `if reporting holds`. Verify the claim or remove it.
 
