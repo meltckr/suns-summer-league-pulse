@@ -33,6 +33,9 @@ suns-summer-league-pulse/
     issue-02-game-01-postgame.html
     issue-03-game-02-pregame.html
     issue-04-game-02-postgame.html
+    ...
+    issue-09-game-05-postgame.html
+    issue-10-vegas-final-report.html
   dist/
     issue-01-owner-preview/
       index.html
@@ -41,6 +44,9 @@ suns-summer-league-pulse/
     issue-03-game-02-pregame/
       index.html
     issue-04-game-02-postgame/
+      index.html
+    ...
+    issue-10-vegas-final-report/
       index.html
   assets/
     README.md
@@ -61,7 +67,7 @@ suns-summer-league-pulse/
    - title and OG title match the issue title
 5. Commit and push to `main`.
 
-The current live edition is `Issue 07 / Game 04 Postgame`. Delivered archive files are immutable except for disclosed factual corrections.
+The current live edition is `Issue 09 / Game 05 Postgame`. `Issue 10 / Vegas Final Report` is staged at its own preview route until its final morning update. Delivered archive files are immutable except for disclosed factual corrections.
 
 ## Generate Future Issues
 
@@ -71,14 +77,17 @@ Recommended flow:
 
 1. Gather official NBA and team sources first.
 2. Verify schedule, roster, broadcast, transaction, injury, and quote claims before writing.
-3. Choose the pregame or postgame structure in the skill.
+3. Choose the pregame, postgame, or one-off Vegas Final Report structure in the skill.
 4. Draft a claim inventory so every idea has one section owner and one source.
 5. Draft the briefing around owner-level signals, not volume.
 6. Run the redundancy gate and cut repeated or unverified material.
 7. Add only new Summer League finals to the collapsed Vegas Scoreboard and record its cutoff.
-8. Create the new issue HTML from the existing accordion structure.
-9. Generate or update the OG image.
-10. Test the mobile-first gate and archive the issue under `issues/`.
+8. For a final report, add an attributed Media Read only when enough directly sourced local and national coverage exists.
+9. Create the new issue HTML from the existing accordion structure.
+10. Generate or update the OG image.
+11. Test the mobile-first gate and archive the issue under `issues/`.
+
+For a final report, keep the outgoing live postgame issue at the root while the wrap-up is reviewed at its own `dist/` route. Promote the final report to `index.html` only after the tournament close, official honors scan, accuracy check, and OG verification.
 
 For each game, the postgame issue should answer the prior pregame signals and carry unresolved questions into the next pregame brief.
 

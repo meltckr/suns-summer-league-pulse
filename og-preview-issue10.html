@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200, initial-scale=1">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 1200px; height: 630px; margin: 0; overflow: hidden; }
+    body { background: #08080b; color: #fff; font-family: "Avenir Next", Avenir, Arial, sans-serif; }
+    .canvas { position: relative; width: 1200px; height: 630px; overflow: hidden; background: #08080b; }
+    .rail { position: absolute; inset: 0 auto 0 0; width: 10px; background: #ff5a1f; }
+    .photos { position: absolute; inset: 0 0 0 650px; display: grid; grid-template-columns: 1.05fr .95fr; gap: 5px; background: #08080b; }
+    .photos::after { content: ""; position: absolute; inset: 0; border-left: 1px solid rgba(255,255,255,.22); pointer-events: none; }
+    .photo { width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) contrast(1.08); }
+    .photo-main { object-position: 48% 34%; }
+    .photo-stack { display: grid; grid-template-rows: 1fr 1fr; gap: 5px; min-width: 0; }
+    .photo-peat { object-position: 56% center; }
+    .photo-maluach { object-position: center 24%; }
+    .content { position: relative; z-index: 2; display: grid; width: 660px; height: 100%; grid-template-rows: auto 1fr auto; padding: 40px 42px 34px 70px; background: #08080b; }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .issue { color: #57d3ff; font-size: 14px; font-weight: 850; line-height: 1.2; text-transform: uppercase; letter-spacing: .14em; }
+    .avc { width: 158px; height: auto; }
+    .main { display: grid; align-content: center; padding: 8px 0 4px; }
+    .product { margin: 0 0 16px; color: rgba(255,255,255,.62); font-size: 14px; font-weight: 850; text-transform: uppercase; letter-spacing: .12em; }
+    h1 { max-width: 550px; margin: 0; font-family: "Iowan Old Style", Baskerville, Georgia, serif; font-size: 69px; font-weight: 600; line-height: .91; letter-spacing: 0; }
+    .dek { max-width: 500px; margin: 22px 0 0; color: rgba(255,255,255,.72); font-size: 20px; font-weight: 700; line-height: 1.28; }
+    .record { display: flex; align-items: center; gap: 14px; margin-top: 24px; color: #ff7848; font-size: 15px; font-weight: 850; text-transform: uppercase; letter-spacing: .1em; }
+    .record::before { content: ""; width: 36px; height: 3px; background: #ff5a1f; }
+    .bottom { display: flex; align-items: end; justify-content: space-between; gap: 24px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.22); }
+    .footer-copy strong { display: block; margin-bottom: 5px; color: #fff; font-size: 12px; font-weight: 850; text-transform: uppercase; letter-spacing: .1em; }
+    .footer-copy span { color: rgba(255,255,255,.5); font-size: 11px; font-weight: 700; }
+    .results { display: flex; gap: 9px; align-items: center; }
+    .results b { display: grid; width: 27px; height: 27px; place-items: center; border: 1px solid rgba(255,255,255,.3); color: #ff7848; font-size: 11px; }
+    .results b.loss { color: rgba(255,255,255,.48); }
+  </style>
+</head>
+<body>
+  <main class="canvas">
+    <div class="rail"></div>
+    <div class="photos" aria-hidden="true">
+      <img class="photo photo-main" src="assets/suns-team-game04.jpg" alt="">
+      <div class="photo-stack">
+        <img class="photo photo-peat" src="assets/koa-peat-game-03.jpg" alt="">
+        <img class="photo photo-maluach" src="assets/suns-spurs-game05.jpg" alt="">
+      </div>
+    </div>
+    <div class="content">
+      <div class="top">
+        <div class="issue">Vegas Final Report</div>
+        <img class="avc" src="assets/avc-logo-full-dark.svg" alt="">
+      </div>
+      <div class="main">
+        <p class="product">Suns Summer League Pulse</p>
+        <h1>What Phoenix learned in Vegas.</h1>
+        <p class="dek">Five games. A clearer view of the young group.</p>
+        <div class="record">Phoenix finishes 3-2</div>
+      </div>
+      <div class="bottom">
+        <div class="footer-copy"><strong>Private Owner Briefing</strong><span>Prepared for Mat Ishbia / AVC</span></div>
+        <div class="results" aria-label="Win, loss, win, win, loss"><b>W</b><b class="loss">L</b><b>W</b><b>W</b><b class="loss">L</b></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

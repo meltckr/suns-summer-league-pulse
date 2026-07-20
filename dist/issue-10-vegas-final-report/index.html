@@ -1,0 +1,2106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#09090c">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Suns Summer League Pulse | Vegas Final Report</title>
+  <meta name="description" content="Phoenix finished Summer League 3-2 and left Las Vegas with a clearer view of its young frontcourt and supporting group.">
+  <link rel="canonical" href="https://meltckr.github.io/suns-summer-league-pulse/dist/issue-10-vegas-final-report/">
+  <link rel="icon" href="/suns-summer-league-pulse/assets/phoenix-suns-logo.png" type="image/png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Suns Summer League Pulse">
+  <meta property="og:title" content="Suns Summer League Pulse | Vegas Final Report">
+  <meta property="og:description" content="Five games. A winning record. A clearer view of the young group.">
+  <meta property="og:url" content="https://meltckr.github.io/suns-summer-league-pulse/dist/issue-10-vegas-final-report/">
+  <meta property="og:image" content="https://meltckr.github.io/suns-summer-league-pulse/assets/issue-10-vegas-final-report-og.jpg?v=20260719">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Suns Summer League Pulse Vegas Final Report: What Phoenix learned in five games">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Suns Summer League Pulse | Vegas Final Report">
+  <meta name="twitter:description" content="Five games. A winning record. A clearer view of the young group.">
+  <meta name="twitter:image" content="https://meltckr.github.io/suns-summer-league-pulse/assets/issue-10-vegas-final-report-og.jpg?v=20260719">
+  <meta name="twitter:image:alt" content="Suns Summer League Pulse Vegas Final Report: What Phoenix learned in five games">
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --black: #09090c;
+      --black-soft: #111116;
+      --ink: #17171d;
+      --paper: #f5f5f2;
+      --white: #ffffff;
+      --smoke: #b9b8bf;
+      --orange: #ff5a1f;
+      --violet: #7d3cff;
+      --cyan: #57d3ff;
+      --line-dark: rgba(255, 255, 255, 0.16);
+      --line-light: rgba(23, 23, 29, 0.15);
+      --sans: "Avenir Next", Avenir, Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --serif: "Iowan Old Style", "Baskerville", "Times New Roman", serif;
+      --page: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--black);
+    }
+
+    body {
+      margin: 0;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      letter-spacing: 0;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 200;
+      top: 10px;
+      left: 10px;
+      padding: 10px 12px;
+      background: var(--white);
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-160%);
+      transition: opacity 160ms ease, transform 160ms ease;
+    }
+
+    .skip-link:focus {
+      opacity: 1;
+      pointer-events: auto;
+      transform: none;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 0.2em;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    ul {
+      margin-top: 0;
+    }
+
+    .progress {
+      position: fixed;
+      z-index: 100;
+      inset: 0 0 auto;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .progress span {
+      display: block;
+      width: 0;
+      height: 100%;
+      background: var(--orange);
+      transform-origin: left;
+    }
+
+    .page {
+      width: min(100%, var(--page));
+      margin: 0 auto;
+      overflow: hidden;
+      background: var(--paper);
+      box-shadow: 0 0 80px rgba(0, 0, 0, 0.42);
+    }
+
+    .cover {
+      position: relative;
+      min-height: min(840px, 91svh);
+      overflow: hidden;
+      background: #08080a;
+      isolation: isolate;
+    }
+
+    .cover-media,
+    .cover-shade {
+      position: absolute;
+      inset: 0;
+    }
+
+    .cover-media {
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 58% 72%;
+      filter: saturate(0.94) contrast(1.05);
+      transform: scale(1.015);
+      animation: settle 1400ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+    }
+
+    .cover-shade {
+      z-index: -1;
+      background:
+        linear-gradient(180deg, rgba(4, 4, 7, 0.76) 0%, rgba(4, 4, 7, 0.08) 35%, rgba(4, 4, 7, 0.38) 69%, rgba(4, 4, 7, 0.98) 100%),
+        linear-gradient(90deg, rgba(4, 4, 7, 0.72), transparent 72%);
+    }
+
+    .masthead {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: max(22px, env(safe-area-inset-top)) 20px 18px;
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .masthead-copy {
+      min-width: 0;
+    }
+
+    .eyebrow,
+    .meta,
+    .section-label,
+    .game-label,
+    .signal-number,
+    .footer-label {
+      margin-bottom: 0;
+      font-size: 10px;
+      font-weight: 800;
+      line-height: 1.25;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .masthead .eyebrow {
+      color: var(--white);
+    }
+
+    .masthead .meta {
+      margin-top: 5px;
+      color: rgba(255, 255, 255, 0.56);
+    }
+
+    .avc-logo {
+      width: 154px;
+      height: auto;
+      flex: 0 0 auto;
+    }
+
+    .cover-copy {
+      display: flex;
+      min-height: calc(min(840px, 91svh) - 154px);
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 42px 20px 30px;
+    }
+
+    .issue-stamp {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .issue-stamp::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--cyan);
+    }
+
+    h1 {
+      max-width: 690px;
+      margin-bottom: 22px;
+      font-family: var(--serif);
+      font-size: clamp(50px, 14vw, 96px);
+      font-weight: 600;
+      line-height: 0.88;
+    }
+
+    .cover-dek {
+      max-width: 540px;
+      margin-bottom: 30px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .cover-dek strong {
+      color: var(--white);
+      font-weight: 760;
+    }
+
+    .game-ledger {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+      background: rgba(9, 9, 12, 0.58);
+      backdrop-filter: blur(14px);
+    }
+
+    .team {
+      min-width: 0;
+      padding: 15px 12px;
+    }
+
+    .team:last-child {
+      text-align: right;
+    }
+
+    .team strong {
+      display: block;
+      overflow: hidden;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .team span {
+      display: block;
+      margin-top: 6px;
+      color: rgba(255, 255, 255, 0.55);
+      font-size: 9px;
+      font-weight: 750;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .versus {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 50%;
+      color: var(--orange);
+      font-size: 9px;
+      font-weight: 900;
+    }
+
+    .brief-nav {
+      position: sticky;
+      z-index: 20;
+      top: 3px;
+      display: flex;
+      gap: 22px;
+      overflow-x: auto;
+      padding: 0 20px;
+      border-bottom: 1px solid var(--line-light);
+      background: rgba(245, 245, 242, 0.94);
+      scrollbar-width: none;
+      backdrop-filter: blur(16px);
+    }
+
+    .brief-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .brief-nav button {
+      min-height: 50px;
+      padding: 2px 0 0;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      background: transparent;
+      color: #75747a;
+      font: 800 10px/1 var(--sans);
+      text-transform: uppercase;
+      white-space: nowrap;
+      letter-spacing: 0.11em;
+      cursor: pointer;
+    }
+
+    .brief-nav button[aria-current="true"] {
+      border-bottom-color: var(--orange);
+      color: var(--ink);
+    }
+
+    .thesis {
+      position: relative;
+      display: grid;
+      gap: 24px;
+      padding: 48px 20px 50px;
+      overflow: hidden;
+      background: var(--white);
+      color: var(--ink);
+    }
+
+    .thesis::after {
+      content: "01";
+      position: absolute;
+      right: -12px;
+      bottom: -30px;
+      color: rgba(23, 23, 29, 0.045);
+      font-family: var(--serif);
+      font-size: 210px;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .thesis .section-label {
+      color: var(--orange);
+    }
+
+    .thesis h2 {
+      position: relative;
+      z-index: 1;
+      max-width: 12ch;
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: clamp(42px, 11vw, 70px);
+      font-weight: 600;
+      line-height: 0.96;
+    }
+
+    .thesis-copy {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+      margin-bottom: 0;
+      color: #54535a;
+      font-size: 17px;
+      line-height: 1.62;
+    }
+
+    .thesis-copy strong {
+      color: var(--ink);
+    }
+
+    .briefing {
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    .brief-section {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .brief-section:last-child {
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .section-trigger {
+      display: grid;
+      grid-template-columns: 42px minmax(0, 1fr) 34px;
+      gap: 10px;
+      align-items: start;
+      width: 100%;
+      padding: 25px 20px 23px;
+      border: 0;
+      background: transparent;
+      color: var(--ink);
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .trigger-heading {
+      margin: 0;
+    }
+
+    .section-index {
+      padding-top: 4px;
+      color: var(--orange);
+      font: 800 11px/1 var(--sans);
+      letter-spacing: 0.12em;
+    }
+
+    .section-heading .section-label {
+      margin-bottom: 8px;
+      color: #77767c;
+    }
+
+    .section-heading .section-title {
+      display: block;
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: clamp(29px, 7.5vw, 42px);
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .toggle {
+      position: relative;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line-light);
+      border-radius: 50%;
+      transition: border-color 180ms ease, background 180ms ease;
+    }
+
+    .toggle::before,
+    .toggle::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 9px;
+      width: 14px;
+      height: 2px;
+      background: currentColor;
+      transition: transform 220ms ease;
+    }
+
+    .toggle::after {
+      transform: rotate(90deg);
+    }
+
+    .section-trigger[aria-expanded="true"] .toggle {
+      border-color: var(--orange);
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .section-trigger[aria-expanded="true"] .toggle::after {
+      transform: rotate(0deg);
+    }
+
+    .panel {
+      height: 0;
+      overflow: hidden;
+      transition: height 360ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .panel-inner {
+      padding: 0 20px 40px 72px;
+    }
+
+    .opening-grid {
+      display: grid;
+      border-top: 1px solid var(--line-light);
+      border-left: 1px solid var(--line-light);
+    }
+
+    .game-cell {
+      min-width: 0;
+      padding: 18px;
+      border-right: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .game-label {
+      margin-bottom: 7px;
+      color: #77767c;
+    }
+
+    .game-cell strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 23px;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .opening-note {
+      margin: 22px 0 0;
+      color: #55545a;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .capital-lineage {
+      margin-top: 22px;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .lineage-row {
+      display: grid;
+      grid-template-columns: 86px minmax(0, 1fr);
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .lineage-row span {
+      color: var(--violet);
+      font-size: 9px;
+      font-weight: 850;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .lineage-row p {
+      margin-bottom: 0;
+      color: #57565c;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .lineage-row strong {
+      color: var(--ink);
+    }
+
+    .opening-note strong {
+      color: var(--ink);
+    }
+
+    .signal-stack {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .signal {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 14px;
+      padding: 22px 0 24px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .signal-number {
+      padding-top: 4px;
+      color: var(--violet);
+    }
+
+    .signal h3 {
+      margin-bottom: 9px;
+      font-family: var(--serif);
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 1.05;
+    }
+
+    .signal p {
+      margin-bottom: 0;
+      color: #56555b;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .signal strong {
+      color: var(--ink);
+    }
+
+    .roster-lens {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .player-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .player-row strong {
+      display: block;
+      margin-bottom: 3px;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .player-row span {
+      color: #6d6c72;
+      font-size: 12px;
+      line-height: 1.35;
+    }
+
+    .player-row em {
+      color: var(--orange);
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 850;
+      text-align: right;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .owner-radar {
+      display: grid;
+      gap: 18px;
+    }
+
+    .owner-question {
+      padding-left: 18px;
+      border-left: 3px solid var(--orange);
+    }
+
+    .owner-question span {
+      display: block;
+      margin-bottom: 8px;
+      color: #77767c;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .owner-question p {
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .scoreboard-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 0 0 14px;
+      color: #747379;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+
+    .scoreboard-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .scoreboard-list li {
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .scoreboard-list a {
+      display: block;
+      padding: 15px 0 16px;
+      text-decoration: none;
+    }
+
+    .scoreline {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .scoreline strong {
+      min-width: 0;
+      overflow: hidden;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .scoreline b {
+      color: var(--orange);
+      font-family: var(--sans);
+      font-size: 18px;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.04em;
+    }
+
+    .scoreboard-list p {
+      margin: 7px 0 0;
+      color: #646369;
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .source-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .source-list li {
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .source-list a {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 14px;
+      padding: 16px 0;
+      text-decoration: none;
+    }
+
+    .source-list span {
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .source-list b {
+      color: var(--orange);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .source-rule {
+      margin: 20px 0 0;
+      color: #65646a;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    .closing-band {
+      padding: 54px 20px 58px;
+      background: var(--black-soft);
+      color: var(--white);
+    }
+
+    .closing-band .section-label {
+      margin-bottom: 15px;
+      color: var(--cyan);
+    }
+
+    .closing-band blockquote {
+      max-width: 690px;
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(34px, 9vw, 56px);
+      font-weight: 600;
+      line-height: 1.02;
+    }
+
+    .footer {
+      display: grid;
+      gap: 25px;
+      padding: 28px 20px max(34px, env(safe-area-inset-bottom));
+      border-top: 1px solid var(--line-dark);
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .footer-top .avc-logo {
+      width: 180px;
+    }
+
+    .footer-label {
+      color: rgba(255, 255, 255, 0.48);
+    }
+
+    .footer-copy {
+      display: grid;
+      gap: 8px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line-dark);
+    }
+
+    .footer-copy p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .footer-copy strong {
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 650ms ease, transform 650ms cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 4px;
+    }
+
+    @keyframes settle {
+      from { opacity: 0; transform: scale(1.06); }
+      to { opacity: 1; transform: scale(1.015); }
+    }
+
+    .postgame-cover {
+      min-height: min(720px, 78svh);
+    }
+
+    .postgame-cover .cover-media {
+      object-position: 64% 54%;
+      filter: saturate(0.78) contrast(1.12);
+    }
+
+    .postgame-cover .cover-shade {
+      background:
+        linear-gradient(180deg, rgba(4, 4, 7, 0.82) 0%, rgba(4, 4, 7, 0.2) 38%, rgba(4, 4, 7, 0.72) 72%, rgba(4, 4, 7, 0.99) 100%),
+        linear-gradient(90deg, rgba(4, 4, 7, 0.66), transparent 76%);
+    }
+
+    .postgame-cover .cover-copy {
+      min-height: calc(min(720px, 78svh) - 82px);
+      padding-top: 30px;
+      padding-bottom: 24px;
+    }
+
+    .postgame-cover h1 {
+      max-width: none;
+      margin-bottom: 18px;
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 850;
+      line-height: 1.2;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .result-lockup {
+      padding: 18px 0 20px;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .result-status {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 12px;
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .result-status::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: currentColor;
+    }
+
+    .result-score {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+      gap: 12px;
+      align-items: end;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .score-side {
+      display: grid;
+      gap: 4px;
+    }
+
+    .score-side:last-child {
+      text-align: right;
+    }
+
+    .score-side span {
+      color: rgba(255, 255, 255, 0.62);
+      font-size: 10px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .score-side strong {
+      font-family: var(--serif);
+      font-size: clamp(66px, 22vw, 118px);
+      font-weight: 600;
+      line-height: 0.72;
+    }
+
+    .score-separator {
+      padding-bottom: 5px;
+      color: rgba(255, 255, 255, 0.35);
+      font-family: var(--serif);
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .cover-conclusion {
+      max-width: 620px;
+      margin: 20px 0 0;
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 15px;
+      line-height: 1.52;
+    }
+
+    .cover-conclusion strong {
+      color: var(--white);
+    }
+
+    .postgame-thesis::after {
+      content: "02";
+    }
+
+    .postgame-thesis h2 {
+      max-width: 14ch;
+    }
+
+    .postgame .panel-inner {
+      padding-left: 20px;
+    }
+
+    .answer-stack {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .answer-row {
+      display: grid;
+      grid-template-columns: 118px minmax(0, 1fr);
+      gap: 18px;
+      padding: 22px 0 24px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .answer-status {
+      color: var(--orange);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.45;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+
+    .answer-status.is-open {
+      color: var(--violet);
+    }
+
+    .answer-status.is-mixed {
+      color: #297391;
+    }
+
+    .answer-row h3 {
+      margin-bottom: 9px;
+      font-family: var(--serif);
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 1.06;
+    }
+
+    .answer-row p {
+      margin-bottom: 0;
+      color: #57565c;
+      font-size: 15px;
+      line-height: 1.58;
+    }
+
+    .answer-row strong {
+      color: var(--ink);
+    }
+
+    .evidence-lead {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      padding: 0 0 22px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .evidence-lead p,
+    .evidence-lead strong {
+      margin: 0;
+    }
+
+    .evidence-lead p {
+      color: #727177;
+      font-size: 10px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+
+    .evidence-lead strong {
+      font-family: var(--serif);
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .second-half-mark {
+      color: var(--orange);
+      font-size: 11px;
+      font-weight: 850;
+      text-align: right;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .quarter-rail {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      min-height: 164px;
+      align-items: end;
+      padding: 24px 0 22px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .quarter {
+      display: grid;
+      grid-template-rows: 24px 104px 18px;
+      gap: 7px;
+      align-items: end;
+      text-align: center;
+    }
+
+    .quarter strong {
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .quarter span {
+      display: block;
+      width: 100%;
+      height: var(--bar);
+      min-height: 20px;
+      background: #cac9c5;
+    }
+
+    .quarter:nth-child(n+3) span {
+      background: var(--orange);
+    }
+
+    .quarter small {
+      color: #77767c;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      border-left: 1px solid var(--line-light);
+      margin-top: 22px;
+    }
+
+    .metric {
+      padding: 16px;
+      border-right: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .metric dt {
+      margin-bottom: 7px;
+      color: #77767c;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .metric dd {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .asset-lines {
+      margin-top: 24px;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .asset-line {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .asset-line strong {
+      display: block;
+      margin-bottom: 4px;
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .asset-line span {
+      color: #6a696f;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .asset-line b {
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+
+    .signal-noise {
+      display: grid;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .judgment-row {
+      display: grid;
+      grid-template-columns: 86px minmax(0, 1fr);
+      gap: 18px;
+      padding: 20px 0 22px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .judgment-row span {
+      color: var(--violet);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .judgment-row:last-child span {
+      color: var(--orange);
+    }
+
+    .judgment-row p {
+      margin: 0;
+      color: #55545a;
+      font-size: 15px;
+      line-height: 1.58;
+    }
+
+    .judgment-row strong {
+      color: var(--ink);
+    }
+
+    .next-game {
+      display: grid;
+      gap: 18px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .next-game-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      color: #77767c;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .next-game h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 31px;
+      font-weight: 600;
+      line-height: 1.02;
+    }
+
+    .next-game p {
+      margin: 0;
+      color: #55545a;
+      font-size: 15px;
+      line-height: 1.58;
+    }
+
+    .next-priority {
+      margin-top: 20px;
+      padding-left: 18px;
+      border-left: 3px solid var(--orange);
+    }
+
+    .next-priority span {
+      display: block;
+      margin-bottom: 8px;
+      color: #77767c;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .next-priority p {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: 24px;
+      line-height: 1.18;
+    }
+
+    .final-report-cover {
+      min-height: min(740px, 82svh);
+    }
+
+    .final-report-cover .cover-media {
+      object-position: center 34%;
+      filter: saturate(0.92) contrast(1.08);
+    }
+
+    .final-report-cover .cover-shade {
+      background:
+        linear-gradient(180deg, rgba(4, 4, 7, 0.84) 0%, rgba(4, 4, 7, 0.12) 38%, rgba(4, 4, 7, 0.74) 72%, rgba(4, 4, 7, 0.99) 100%),
+        linear-gradient(90deg, rgba(4, 4, 7, 0.64), transparent 78%);
+    }
+
+    .final-report-cover .cover-copy {
+      min-height: calc(min(740px, 82svh) - 82px);
+      padding-top: 36px;
+      padding-bottom: 26px;
+    }
+
+    .final-report-cover h1 {
+      max-width: 650px;
+      margin-bottom: 16px;
+      font-size: clamp(50px, 14vw, 88px);
+      line-height: 0.9;
+    }
+
+    .report-kicker {
+      margin-bottom: 12px;
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .report-ledger {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      margin-top: 24px;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .result-chip {
+      min-width: 0;
+      padding: 13px 7px 12px;
+      border-right: 1px solid var(--line-dark);
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .result-chip:last-child {
+      border-right: 0;
+    }
+
+    .result-chip span,
+    .result-chip small {
+      display: block;
+    }
+
+    .result-chip span {
+      margin-bottom: 5px;
+      color: var(--orange);
+      font-size: 9px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .result-chip.is-loss span {
+      color: rgba(255, 255, 255, 0.46);
+    }
+
+    .result-chip strong {
+      display: block;
+      overflow: hidden;
+      font-size: 13px;
+      line-height: 1.1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .result-chip small {
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 9px;
+      line-height: 1;
+    }
+
+    .final-report-thesis::after {
+      content: "FINAL";
+      font-size: clamp(54px, 15vw, 104px);
+    }
+
+    .report-statline {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--line-light);
+      border-left: 1px solid var(--line-light);
+    }
+
+    .report-stat {
+      padding: 18px 14px;
+      border-right: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .report-stat span {
+      display: block;
+      margin-bottom: 8px;
+      color: #77767c;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .report-stat strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: clamp(30px, 8vw, 42px);
+      font-weight: 600;
+      line-height: 0.95;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .report-stat small {
+      display: block;
+      margin-top: 8px;
+      color: #66656b;
+      font-size: 10px;
+      line-height: 1.35;
+    }
+
+    .five-game-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .five-game-list li {
+      display: grid;
+      grid-template-columns: 46px minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .five-game-list b {
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .five-game-list .loss {
+      color: #77767c;
+    }
+
+    .five-game-list strong {
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    .five-game-list span {
+      color: #66656b;
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .headline-stack {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .headline-row {
+      display: grid;
+      grid-template-columns: 94px minmax(0, 1fr);
+      gap: 18px;
+      padding: 20px 0 22px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .headline-row span {
+      color: var(--violet);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .headline-row h3 {
+      margin-bottom: 7px;
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .headline-row p {
+      margin: 0;
+      color: #5d5c62;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .media-grid {
+      display: grid;
+      border-top: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .media-lane {
+      min-width: 0;
+      padding: 22px 0 4px;
+    }
+
+    .media-lane + .media-lane {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .media-lane-title {
+      margin: 0 0 4px;
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .media-item {
+      padding: 18px 0 20px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .media-item:last-child {
+      border-bottom: 0;
+    }
+
+    .media-meta {
+      display: inline-flex;
+      gap: 7px;
+      align-items: center;
+      margin-bottom: 9px;
+      color: var(--violet);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.4;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .media-meta b {
+      color: #8b8a90;
+      font-weight: 800;
+    }
+
+    .media-item h3 {
+      margin: 0 0 7px;
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .media-item p {
+      margin: 0;
+      color: #5d5c62;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 579px) {
+      .postgame-cover .masthead {
+        padding-top: max(16px, env(safe-area-inset-top));
+        padding-bottom: 14px;
+      }
+
+      .postgame-cover .avc-logo {
+        width: 128px;
+      }
+
+      .postgame-cover .issue-stamp {
+        margin-bottom: 12px;
+      }
+
+      .answer-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .section-heading .section-title {
+        font-size: 26px;
+      }
+
+      .final-report-cover .avc-logo {
+        width: 128px;
+      }
+
+      .report-ledger {
+        margin-right: -6px;
+        margin-left: -6px;
+      }
+
+      .result-chip {
+        padding-right: 4px;
+        padding-left: 4px;
+      }
+
+      .result-chip strong {
+        font-size: 11px;
+      }
+
+      .headline-row {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 14px;
+      }
+    }
+
+    @media (min-width: 580px) {
+      .masthead,
+      .cover-copy,
+      .brief-nav,
+      .thesis,
+      .section-trigger,
+      .closing-band,
+      .footer {
+        padding-left: 34px;
+        padding-right: 34px;
+      }
+
+      .panel-inner {
+        padding-right: 34px;
+        padding-left: 86px;
+      }
+
+      .postgame .panel-inner {
+        padding-left: 86px;
+      }
+
+      .metric-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .opening-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .cover-media {
+        object-position: center 64%;
+      }
+
+      .media-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .media-lane {
+        padding: 25px 26px 6px 0;
+      }
+
+      .media-lane + .media-lane {
+        padding-right: 0;
+        padding-left: 26px;
+        border-top: 0;
+        border-left: 1px solid var(--line-light);
+      }
+    }
+
+    @media (min-width: 920px) {
+      .page {
+        margin: 26px auto;
+      }
+
+      .cover {
+        min-height: 820px;
+      }
+
+      .cover-copy {
+        min-height: 666px;
+      }
+
+      .postgame-cover {
+        min-height: 720px;
+      }
+
+      .postgame-cover .cover-copy {
+        min-height: 566px;
+      }
+
+      .thesis {
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.65fr);
+        align-items: end;
+        padding-top: 68px;
+        padding-bottom: 72px;
+      }
+
+      .thesis .section-label {
+        grid-column: 1 / -1;
+      }
+
+      .thesis-copy {
+        margin-bottom: 4px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#thesis">Skip to briefing</a>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <main class="page">
+    <header class="cover final-report-cover" id="top">
+      <img class="cover-media" src="/suns-summer-league-pulse/assets/suns-team-game04.jpg" alt="Phoenix Suns Summer League players on the court in Las Vegas">
+      <div class="cover-shade" aria-hidden="true"></div>
+
+      <div class="masthead">
+        <div class="masthead-copy">
+          <p class="eyebrow">Private Owner Briefing</p>
+          <p class="meta">Prepared for Mat Ishbia</p>
+        </div>
+        <img class="avc-logo" src="/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="Accelerated Velocity Consulting">
+      </div>
+
+      <div class="cover-copy">
+        <div class="issue-stamp">Issue 10 / Vegas Final Report / July 20, 2026</div>
+        <p class="report-kicker">Suns Summer League Pulse</p>
+        <h1>What Phoenix learned in Vegas.</h1>
+        <p class="cover-dek"><strong>Five games. A winning record. A clearer view of the young group.</strong></p>
+
+        <div class="report-ledger" aria-label="Phoenix Summer League results: three wins and two losses">
+          <div class="result-chip"><span>W</span><strong>POR</strong><small>81-79</small></div>
+          <div class="result-chip is-loss"><span>L</span><strong>NO</strong><small>75-81</small></div>
+          <div class="result-chip"><span>W</span><strong>MIL</strong><small>95-88</small></div>
+          <div class="result-chip"><span>W</span><strong>DET</strong><small>100-88</small></div>
+          <div class="result-chip is-loss"><span>L</span><strong>SA</strong><small>81-86</small></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="brief-nav" aria-label="Briefing sections">
+      <button type="button" data-scroll="thesis" aria-current="true">Read</button>
+      <button type="button" data-scroll="answers">Takeaways</button>
+      <button type="button" data-scroll="record">Record</button>
+      <button type="button" data-scroll="frontcourt">Frontcourt</button>
+      <button type="button" data-scroll="depth">Depth</button>
+      <button type="button" data-scroll="media">Media</button>
+      <button type="button" data-scroll="forward">Next</button>
+      <button type="button" data-scroll="vegas">Vegas</button>
+      <button type="button" data-scroll="sources">Sources</button>
+    </nav>
+
+    <section class="thesis final-report-thesis" id="thesis" data-nav-section>
+      <p class="section-label reveal">The Read / AVC Interpretation</p>
+      <h2 class="reveal">Phoenix leaves Vegas with more clarity than it had before the event.</h2>
+      <p class="thesis-copy reveal">The record was positive. The more important result was a four-game frontcourt sample led by Khaman Maluach, plus a final game that widened the evaluation. <strong>Phoenix found several reasons to keep watching this group.</strong></p>
+    </section>
+
+    <section class="briefing" aria-label="Issue 10 Vegas Final Report">
+      <section class="brief-section" id="answers" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="true" aria-controls="panel-answers" id="trigger-answers">
+            <span class="section-index">01</span>
+            <span class="section-heading">
+              <span class="section-label">Three Takeaways</span>
+              <span class="section-title">The summer produced useful answers.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-answers" role="region" aria-labelledby="trigger-answers">
+          <div class="panel-inner">
+            <div class="signal-stack">
+              <article class="signal"><span class="signal-number">01</span><div><h3>Maluach set the standard.</h3><p><strong>His impact held across every appearance.</strong> He changed games with his size while expanding the range of shots he could make.</p></div></article>
+              <article class="signal"><span class="signal-number">02</span><div><h3>The young frontcourt fit together.</h3><p><strong>Peat brought strength and creation; Fleming supplied shooting and role discipline.</strong> Their games complemented Maluach instead of asking each player to do the same work.</p></div></article>
+              <article class="signal"><span class="signal-number">03</span><div><h3>The final game added names to the file.</h3><p><strong>Askew, Cooke and Camper all responded to larger roles.</strong> The fifth game expanded the useful sample.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="record" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-record" id="trigger-record">
+            <span class="section-index">02</span>
+            <span class="section-heading">
+              <span class="section-label">Five-Game Record</span>
+              <span class="section-title">Three wins, two losses and a plus-10 point margin.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-record" role="region" aria-labelledby="trigger-record">
+          <div class="panel-inner">
+            <div class="report-statline" aria-label="Phoenix five-game summary">
+              <div class="report-stat"><span>Record</span><strong>3-2</strong><small>Five games</small></div>
+              <div class="report-stat"><span>Points</span><strong>432</strong><small>Phoenix total</small></div>
+              <div class="report-stat"><span>Margin</span><strong>+10</strong><small>Across five games</small></div>
+            </div>
+            <ul class="five-game-list">
+              <li><b>Win</b><strong>Portland</strong><span>81-79</span></li>
+              <li><b class="loss">Loss</b><strong>New Orleans</strong><span>75-81</span></li>
+              <li><b>Win</b><strong>Milwaukee</strong><span>95-88</span></li>
+              <li><b>Win</b><strong>Detroit</strong><span>100-88</span></li>
+              <li><b class="loss">Loss</b><strong>San Antonio</strong><span>81-86</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="frontcourt" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-frontcourt" id="trigger-frontcourt">
+            <span class="section-index">03</span>
+            <span class="section-heading">
+              <span class="section-label">Featured Frontcourt</span>
+              <span class="section-title">The strongest four-game returns.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-frontcourt" role="region" aria-labelledby="trigger-frontcourt">
+          <div class="panel-inner">
+            <p class="source-rule">Official NBA game books and box scores. Four games per player.</p>
+            <div class="asset-lines" aria-label="Four-game averages for Phoenix's featured frontcourt">
+              <div class="asset-line"><div><strong>Khaman Maluach</strong><span>19.5 points, 12.8 rebounds and 2.0 blocks per game. Four straight double-doubles.</span></div><b>19.5 / 12.8</b></div>
+              <div class="asset-line"><div><strong>Koa Peat</strong><span>16.8 points, 4.8 rebounds and 2.3 assists per game. Double figures every night.</span></div><b>16.8 PPG</b></div>
+              <div class="asset-line"><div><strong>Rasheer Fleming</strong><span>12.0 points and 6.5 rebounds per game. Eight made threes at 42.1%.</span></div><b>42.1% 3PT</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="depth" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-depth" id="trigger-depth">
+            <span class="section-index">04</span>
+            <span class="section-heading">
+              <span class="section-label">Supporting Group</span>
+              <span class="section-title">The fifth game widened the evaluation.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-depth" role="region" aria-labelledby="trigger-depth">
+          <div class="panel-inner">
+            <div class="signal-noise">
+              <div class="judgment-row"><span>Devin Askew</span><p><strong>20 points and four steals against San Antonio.</strong> He scored 13 points in the fourth quarter.</p></div>
+              <div class="judgment-row"><span>Javonte Cooke</span><p><strong>He bookended the summer with 21 points in the opener and 17 in the finale.</strong> Both came off larger offensive opportunities.</p></div>
+              <div class="judgment-row"><span>Corey Camper Jr.</span><p><strong>13 points, eight rebounds and four assists in the finale.</strong> He also had two steals and no turnovers.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="media" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-media" id="trigger-media">
+            <span class="section-index">05</span>
+            <span class="section-heading">
+              <span class="section-label">Media Read</span>
+              <span class="section-title">The coverage focused on development, not the record.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-media" role="region" aria-labelledby="trigger-media">
+          <div class="panel-inner">
+            <div class="media-grid">
+              <section class="media-lane" aria-labelledby="local-media-title">
+                <h3 class="media-lane-title" id="local-media-title">Phoenix-Area Coverage</h3>
+                <article class="media-item">
+                  <a class="media-meta" href="https://x.com/Gambo987/status/2077834576765092150"><span>Arizona Sports / John Gambadoro</span><b>Jul 16 ↗</b></a>
+                  <h3>Phoenix had seen enough from its leading trio.</h3>
+                  <p>Gambadoro called the four games with Maluach, Peat and Fleming “highly successful” when he reported that the Suns would shut them down.</p>
+                </article>
+                <article class="media-item">
+                  <a class="media-meta" href="https://www.brightsideofthesun.com/suns-analysis/107892/rasheer-fleming-summer-league-defense-three-point-development-rotation-role"><span>Bright Side / John Voita</span><b>Jul 16 ↗</b></a>
+                  <h3>Fleming's defense may have been his most useful progress.</h3>
+                  <p>Voita emphasized improved awareness, footwork and role discipline, arguing that those gains mattered more than one scoring night.</p>
+                </article>
+                <article class="media-item">
+                  <a class="media-meta" href="https://burncitysports.com/2026/07/15/khaman-maluach-dominates-summer-leag/"><span>Burn City / Wendy Lopez</span><b>Jul 15 ↗</b></a>
+                  <h3>Maluach's approach stood out as much as his production.</h3>
+                  <p>Lopez centered his focus on effort, energy, communication and leadership, rather than accepting the idea that he was too good for Summer League.</p>
+                </article>
+              </section>
+
+              <section class="media-lane" aria-labelledby="national-media-title">
+                <h3 class="media-lane-title" id="national-media-title">National Coverage</h3>
+                <article class="media-item">
+                  <a class="media-meta" href="https://www.theringer.com/2026/07/14/nba/nba-summer-league-2026-caleb-wilson-aj-dybantsa-darryn-peterson"><span>The Ringer / Danny Chau</span><b>Jul 14 ↗</b></a>
+                  <h3>The three-point shot changed the Maluach conversation.</h3>
+                  <p>Chau called the Vegas performance a “massive green flag” and focused on the value of a center who can roll, pop, rebound and protect the rim.</p>
+                </article>
+                <article class="media-item">
+                  <a class="media-meta" href="https://bleacherreport.com/articles/25455788-brs-2026-all-nba-summer-league-1st-and-2nd-teams"><span>Bleacher Report / Zach Buckley</span><b>Jul 18 ↗</b></a>
+                  <h3>Maluach made B/R's unofficial first team.</h3>
+                  <p>Buckley pointed to the size of his year-over-year growth and the combination of rebounding, shot-blocking and floor spacing.</p>
+                </article>
+                <article class="media-item">
+                  <a class="media-meta" href="https://www.nba.com/news/2026-nba-summer-league-standout-players-from-day-5"><span>NBA.com / Shaun Powell</span><b>Jul 14 ↗</b></a>
+                  <h3>Peat earned his own place in the national discussion.</h3>
+                  <p>Powell selected Peat as a Day 5 standout and framed his play as an answer to falling to the final pick of the first round.</p>
+                </article>
+              </section>
+            </div>
+            <p class="source-rule">Six attributed items from accessible Phoenix-area and national coverage through July 19. This is a selected coverage read, not a claim of full media consensus. No verified ESPN article or broadcast transcript was located.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="forward" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-forward" id="trigger-forward">
+            <span class="section-index">06</span>
+            <span class="section-heading">
+              <span class="section-label">What's Next</span>
+              <span class="section-title">Phoenix's next team date has not been announced.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-forward" role="region" aria-labelledby="trigger-forward">
+          <div class="panel-inner">
+            <div class="answer-stack">
+              <article class="answer-row"><span class="answer-status">Complete</span><div><h3>The Suns have no additional Summer League game scheduled.</h3><p>The official team schedule shows the five-game Vegas run as Phoenix's final listed basketball activity.</p></div></article>
+              <article class="answer-row"><span class="answer-status is-open">Next phase</span><div><h3>Training camp is the next major team evaluation.</h3><p>The NBA and Suns have not published a Phoenix training-camp date or a 2026-27 Suns preseason game at the verification cutoff.</p></div></article>
+              <article class="answer-row"><span class="answer-status is-mixed">Calendar</span><div><h3>The league calendar is still incomplete.</h3><p>The NBA has published selected 2026-27 dates, but Phoenix's next game has not been announced.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="vegas" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-vegas" id="trigger-vegas">
+            <span class="section-index">07</span>
+            <span class="section-heading">
+              <span class="section-label">Around Vegas</span>
+              <span class="section-title">The West supplied the entire semifinal field.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-vegas" role="region" aria-labelledby="trigger-vegas">
+          <div class="panel-inner">
+            <div class="headline-stack">
+              <article class="headline-row"><span>Pool standings</span><div><h3>Phoenix finished in the 3-1 pack.</h3><p>Nine teams went 3-1 in pool play. Average point differential determined three semifinal places behind the 4-0 Lakers.</p></div></article>
+              <article class="headline-row"><span>Western bracket</span><div><h3>Every semifinalist came from the Western Conference.</h3><p>Memphis beat Houston 101-90. Golden State beat the Lakers 92-88 to set the championship matchup.</p></div></article>
+              <article class="headline-row"><span>Darryn Peterson / UTA</span><div><h3>The No. 2 pick arrived as a lead guard.</h3><p>Peterson averaged 26.5 points and 7.0 assists in two Salt Lake City games, then scored 24 in his Vegas opener.</p></div></article>
+              <article class="headline-row"><span>Cam Boozer / MEM</span><div><h3>Memphis found production across the bracket.</h3><p>Boozer had 24 points, seven rebounds and three assists in the playoff-clinching win, then 12 points, 12 rebounds and five assists in the semifinal.</p></div></article>
+              <article class="headline-row"><span>Yaxel Lendeborg / GSW</span><div><h3>Golden State's lottery pick delivered in the semifinal.</h3><p>Lendeborg had 15 points, four rebounds, three assists and two blocks in the 92-88 win over the Lakers.</p></div></article>
+              <article class="headline-row"><span>Keaton Wagler / LAC</span><div><h3>The No. 5 pick finished with his best scoring game.</h3><p>Wagler scored 26 as the Clippers set a Summer League scoring record in a 128-120 overtime win.</p></div></article>
+              <article class="headline-row"><span>Darius Acuff Jr. / SAC</span><div><h3>The No. 7 pick created offense with the ball.</h3><p>Acuff had 19 points and seven assists in a Vegas win over the Clippers, then scored 26 against Brooklyn.</p></div></article>
+              <article class="headline-row"><span>Carter Bryant / SAS</span><div><h3>A second-year wing remains relevant inside the division.</h3><p>Bryant scored 19 points on 7-for-10 shooting in San Antonio's 70-49 win over New York.</p></div></article>
+              <article class="headline-row"><span>National note</span><div><h3>No. 1 pick AJ Dybantsa delivered immediately for Washington.</h3><p>Dybantsa averaged 25.0 points, 7.0 rebounds and 2.0 assists across two appearances.</p></div></article>
+            </div>
+            <p class="source-rule">Selected official performances, not a final awards ballot or full statistical leaderboard. At cutoff, the title game and official awards remained unresolved.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="sources" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-sources" id="trigger-sources">
+            <span class="section-index">08</span>
+            <span class="section-heading">
+              <span class="section-label">Sources</span>
+              <span class="section-title">The records and reporting behind the report.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-sources" role="region" aria-labelledby="trigger-sources">
+          <div class="panel-inner">
+            <ul class="source-list">
+              <li><a href="https://statsdmz.nba.com/pdfs/20260710/20260710_PORPHX_book.pdf"><span>NBA official scorer's report: Phoenix 81, Portland 79</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260712/20260712_PHXNOP_book.pdf"><span>NBA official scorer's report: New Orleans 81, Phoenix 75</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260713/20260713_PHXMIL_book.pdf"><span>NBA official scorer's report: Phoenix 95, Milwaukee 88</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260715/20260715_PHXDET_book.pdf"><span>NBA official scorer's report: Phoenix 100, Detroit 88</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260718/20260718_SASPHX_book.pdf"><span>NBA official scorer's report: San Antonio 86, Phoenix 81</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://x.com/Gambo987/status/2077834576765092150"><span>Arizona Sports' John Gambadoro: report that Phoenix would shut down its leading trio</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.brightsideofthesun.com/suns-analysis/107892/rasheer-fleming-summer-league-defense-three-point-development-rotation-role"><span>Bright Side of the Sun: Rasheer Fleming's defensive progression</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://burncitysports.com/2026/07/15/khaman-maluach-dominates-summer-leag/"><span>Burn City Sports: Khaman Maluach's approach and development</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.theringer.com/2026/07/14/nba/nba-summer-league-2026-caleb-wilson-aj-dybantsa-darryn-peterson"><span>The Ringer: Khaman Maluach among the event's biggest first impressions</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://bleacherreport.com/articles/25455788-brs-2026-all-nba-summer-league-1st-and-2nd-teams"><span>Bleacher Report: unofficial 2026 All-Summer League teams</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-standout-players-from-day-5"><span>NBA.com: Koa Peat selected among the Day 5 standouts</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/starting-5-july-9-2026"><span>NBA.com: Darryn Peterson's Salt Lake City averages and 2026 draft watch list</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-wizards-edge-jazz-aj-dybantsa-darryn-peterson"><span>NBA official recap: Peterson and Dybantsa in the Vegas opener</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-standout-players-from-day-8"><span>NBA.com: Cameron Boozer's playoff-clinching performance</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-timberwolves-clippers"><span>NBA official recap: Keaton Wagler and the Clippers' scoring record</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-kings-nets"><span>NBA official recap: Darius Acuff Jr. against Brooklyn</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-live-blog"><span>NBA official Day 5 recap: Acuff's seven-assist Vegas opener</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-knicks-spurs"><span>NBA official recap: Carter Bryant against New York</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/aj-dybantsa-shut-down-for-summer-league"><span>NBA.com: AJ Dybantsa's two-game Summer League averages</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/live-updates-2026-nba-summer-league-day-10"><span>NBA official Day 10 recap: semifinal results</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/starting-5-july-17-2026"><span>NBA official semifinal field report: pool records and tiebreak context</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-summer-league-format"><span>NBA official 2026 Summer League format</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/suns/schedule?EventSchedule=3"><span>Phoenix Suns official schedule: no post-Vegas team date listed at cutoff</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/key-dates"><span>NBA official 2026-27 key dates</span><b aria-hidden="true">↗</b></a></li>
+            </ul>
+            <p class="source-rule">Draft verified July 19, 2026, at 7:39 PM Phoenix time. Official NBA scorer reports and box scores control the Phoenix results and statistics. The championship was still in progress at the cutoff; no result or award has been claimed. AVC Interpretation is analysis based on public information.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="closing-band">
+      <p class="section-label">Bottom Line</p>
+      <blockquote>The next test is whether the same impact holds up with fewer touches and stronger competition.</blockquote>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <span class="footer-label">Produced by</span>
+        <img class="avc-logo" src="/suns-summer-league-pulse/assets/avc-logo-full-dark.svg" alt="Accelerated Velocity Consulting">
+      </div>
+      <div class="footer-copy">
+        <p><strong>Suns Summer League Pulse</strong> / Private Owner Briefing</p>
+        <p>Prepared exclusively for Mat Ishbia. Public information. Owner-level clarity.</p>
+        <p>Accuracy over volume. If a fact cannot be verified, omit it.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      const triggers = [...document.querySelectorAll(".section-trigger")];
+      const panels = [...document.querySelectorAll(".panel")];
+      const navButtons = [...document.querySelectorAll("[data-scroll]")];
+      const navSections = [...document.querySelectorAll("[data-nav-section]")];
+      const progress = document.querySelector(".progress span");
+      const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const setPanel = (trigger, open, animate = true) => {
+        const panel = document.getElementById(trigger.getAttribute("aria-controls"));
+        trigger.setAttribute("aria-expanded", String(open));
+        panel.toggleAttribute("inert", !open);
+
+        if (!animate || reducedMotion) {
+          panel.style.height = open ? "auto" : "0px";
+          return;
+        }
+
+        const start = panel.getBoundingClientRect().height;
+        panel.style.height = "auto";
+        const end = panel.getBoundingClientRect().height;
+        panel.style.height = `${start}px`;
+        panel.offsetHeight;
+        panel.style.height = `${open ? end : 0}px`;
+
+        panel.addEventListener("transitionend", () => {
+          if (trigger.getAttribute("aria-expanded") === "true") panel.style.height = "auto";
+        }, { once: true });
+      };
+
+      triggers.forEach((trigger) => {
+        setPanel(trigger, trigger.getAttribute("aria-expanded") === "true", false);
+        trigger.addEventListener("click", () => {
+          const willOpen = trigger.getAttribute("aria-expanded") !== "true";
+          triggers.forEach((item) => {
+            if (item !== trigger && item.getAttribute("aria-expanded") === "true") setPanel(item, false);
+          });
+          setPanel(trigger, willOpen);
+        });
+      });
+
+      navButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const section = document.getElementById(button.dataset.scroll);
+          const sectionTrigger = section?.querySelector(".section-trigger");
+          if (sectionTrigger?.getAttribute("aria-expanded") === "false") {
+            triggers.forEach((item) => {
+              if (item !== sectionTrigger && item.getAttribute("aria-expanded") === "true") setPanel(item, false);
+            });
+            setPanel(sectionTrigger, true);
+          }
+          section?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+        });
+      });
+
+      const updateScrollState = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.width = `${max > 0 ? (window.scrollY / max) * 100 : 0}%`;
+
+        let current = navSections[0]?.id;
+        navSections.forEach((section) => {
+          if (section.getBoundingClientRect().top <= 130) current = section.id;
+        });
+        navButtons.forEach((button) => button.setAttribute("aria-current", String(button.dataset.scroll === current)));
+      };
+
+      if (reducedMotion) {
+        document.querySelectorAll(".reveal").forEach((item) => item.classList.add("is-visible"));
+      } else {
+        const revealObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              revealObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+        document.querySelectorAll(".reveal").forEach((item) => revealObserver.observe(item));
+      }
+
+      window.addEventListener("scroll", updateScrollState, { passive: true });
+      window.addEventListener("resize", () => {
+        panels.forEach((panel) => {
+          const trigger = document.querySelector(`[aria-controls="${panel.id}"]`);
+          if (trigger?.getAttribute("aria-expanded") === "true") panel.style.height = "auto";
+        });
+        updateScrollState();
+      });
+      updateScrollState();
+    })();
+  </script>
+</body>
+</html>

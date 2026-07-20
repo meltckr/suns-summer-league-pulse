@@ -9,5 +9,7 @@ Supporting visual assets for Suns Summer League Pulse:
 - `khaman-maluach-game-02.png`: User-supplied game screenshot used for the Issue 04 OG preview. Reuse permission was confirmed by the user; the embedded caption and ESPN game context must remain visible.
 - `koa-peat-game-03.jpg`: User-supplied Game 03 photo used for the Issue 05 OG preview.
 - `khaman-maluach-three-double-doubles.jpg`: User-supplied Maluach graphic used for the Issue 06 OG preview.
+- `suns-team-game04.jpg`, `koa-peat-game-03.jpg`, and `suns-spurs-game05.jpg`: User-supplied game photos used in the Issue 10 editorial OG montage.
+- `issue-10-vegas-final-report-og.jpg`: 1200x630 edition-specific preview for the Vegas Final Report. Its editable source is `../og-preview-issue10.html`.
 
 The live iMessage/Open Graph preview uses `../og-image.jpg` at the repository root. Visual source and usage notes should be checked before each issue is published.

@@ -56,6 +56,16 @@ Quotes and reaction are optional background, never required inventory.
 - Place `Reaction` after `The Big Questions` and before `Vegas Scoreboard`. Keep it collapsed and limit it to three distinct points.
 - Run the redundancy gate after adding reactions. A quote or sentiment item must contribute a new idea rather than restate the statistical read.
 
+For a Vegas Final Report, use `Media Read` after the Phoenix player sections and before `What's Next` when enough directly sourced coverage exists.
+
+- Separate `Phoenix-area coverage` and `National coverage` into clearly labeled lanes.
+- Use up to three attributed items per lane. Identify the outlet, writer or speaker, publication date and direct source.
+- Summarize what each source emphasized; do not repeat the player stat line already owned by Development Returns.
+- Distinguish a writer's unofficial award list from an official NBA honor.
+- State when the sample is selected coverage rather than a comprehensive media consensus.
+- Omit unverifiable broadcast commentary, inaccessible reporting, anonymous claims and social-media recollections without a direct source.
+- Do not add fan reaction to a final report unless the user explicitly requests it and the sample can be bounded and labeled.
+
 ## Same-Day Update Scan
 
 Run a focused update scan before every publication and again immediately before delivery when meaningful time has passed.
@@ -88,6 +98,8 @@ Write like a concise owner intelligence product:
 - Clear enough to read quickly on an iPhone
 - Public-source only
 - No claim of private team information
+
+For wrap-up editions, use a positive but earned tone. Lead with progress, useful evidence, and what the organization can build on. State losses and unresolved questions plainly, but do not let them crowd out verified development gains. Never manufacture optimism or turn a Summer League result into a regular-season projection.
 
 Use direct language such as:
 
@@ -163,6 +175,42 @@ Recommended structure:
 9. Vegas Scoreboard: non-Phoenix finals completed since the pregame issue.
 10. Sources: official box score, official game material, direct public statements, and verification date.
 
+### Vegas Final Report
+
+Use this mode once at the end of the event. It is an editorial wrap-up, not another postgame recap.
+
+Recommended structure:
+
+1. Cover lead: `What Phoenix Learned in Vegas` or an equally direct summary.
+2. The Read: the single owner-level conclusion from the complete event.
+3. Three Takeaways: the clearest positive, verified development returns.
+4. Five-Game Record: every Phoenix result, the final record, total scoring and point differential. This is the only home for the complete score list.
+5. Featured Frontcourt or Development Returns: curated player totals or per-game averages from official scorer reports.
+6. Supporting Group: only players whose additional opportunity produced a distinct verified return.
+7. Media Read: up to three Phoenix-area and three national coverage items, each directly attributed and chosen for a distinct point.
+8. What's Next: the next confirmed Suns calendar milestone. If training camp, preseason or the next game date has not been officially published, say that directly and omit the date.
+9. Around Vegas: championship result, official honors and a Western Conference-first watch list of non-Phoenix standouts with selected verified statistics.
+10. Sources: all scorer reports, media links, official tournament close and official awards release when available.
+
+Keep the tone positive and forward-looking without making roster, contract or regular-season role claims. Do not use a large final-game score on the cover. The complete-event story should visually and editorially differ from a postgame issue.
+
+For player statistics:
+
+- Prefer complete-event totals or averages over isolated highlights.
+- Label the game count when a player did not appear in every team game.
+- Use one compact statistical line per featured player.
+- Give each number a clear editorial purpose; omit decorative leaderboard data.
+- For non-Phoenix standouts, use official NBA statistics or direct official recaps and limit each player to one useful line.
+- Do not call a player an MVP, All-Summer League selection or award winner before the official announcement.
+
+For the non-Phoenix watch list:
+
+- Prioritize Western Conference rookies, young players and emerging contributors because they are the most relevant repeat opponents for Phoenix.
+- Identify each player with his team and explain the basketball reason he belongs on the watch list in direct language.
+- Use one selected statistical line per player; do not turn the section into a leaderboard or a scouting report.
+- Include an Eastern Conference player only when his performance is important to the league-wide Summer League story.
+- Do not project trades, contracts, rotations, awards or future stardom from Summer League results.
+
 The first accordion section should open by default. Keep one live issue at `index.html` and archive each edition under `issues/` using descriptive names such as `issue-02-game-01-pregame.html` and `issue-03-game-01-postgame.html`.
 
 ## Issue Integrity
@@ -190,6 +238,7 @@ Every issue must pass a redundancy review before publication.
 - Vegas Scoreboard owns non-Phoenix results and does not interpret the Suns.
 - The closing line must add a new caution or implication; remove it if it only restates the thesis.
 - Sources cites evidence without repeating the narrative.
+- Media Read owns outside framing. It may identify what published coverage emphasized, but it must not repeat AVC's conclusion or imply a broad consensus from a small sample.
 
 ### Required Review
 
@@ -219,6 +268,8 @@ The scoreboard is a convenience layer, not the editorial center of the briefing.
 - Link each row to the official NBA game page.
 - Use a reputable scoreboard only as a cross-check when official live data is unavailable, and disclose it in Sources.
 - Do not repeat scoreboard facts in The Read, Three to Watch, The Big Questions, or the closing line unless a result directly changes the main conclusion.
+
+For a Vegas Final Report, replace the rolling scoreboard with `Around Vegas`. Do not publish a cumulative results dump. Prefer the championship result, the semifinal field or final tournament context, official honors, and three to five verified standout players. Build the player watch list from the Western Conference first, then add no more than one national note when warranted. Explain that the event does not produce a conventional final 1-through-30 ranking when that distinction matters.
 
 ## Mobile-First Gate
 
