@@ -2,7 +2,7 @@
 
 Use this skill to create future issues of Suns Summer League Pulse.
 
-Last updated: July 19, 2026
+Last updated: July 20, 2026
 
 ## Product Identity
 
@@ -189,7 +189,7 @@ Recommended structure:
 6. Supporting Group: only players whose additional opportunity produced a distinct verified return.
 7. Media Read: up to three Phoenix-area and three national coverage items, each directly attributed and chosen for a distinct point.
 8. What's Next: the next confirmed Suns calendar milestone. If training camp, preseason or the next game date has not been officially published, say that directly and omit the date.
-9. Around Vegas: championship result, official honors and a Western Conference-first watch list of non-Phoenix standouts with selected verified statistics.
+9. Around Vegas: championship result, official honors and separate Western Conference and Eastern Conference watch lists with selected verified statistics.
 10. Sources: all scorer reports, media links, official tournament close and official awards release when available.
 
 Keep the tone positive and forward-looking without making roster, contract or regular-season role claims. Do not use a large final-game score on the cover. The complete-event story should visually and editorially differ from a postgame issue.
@@ -205,10 +205,13 @@ For player statistics:
 
 For the non-Phoenix watch list:
 
-- Prioritize Western Conference rookies, young players and emerging contributors because they are the most relevant repeat opponents for Phoenix.
+- Give ownership a clear view of both conferences. Use separate `Western Conference Watch` and `Eastern Conference Watch` lanes.
+- Keep the selection balanced unless verified performance clearly supports a different count. Four to five players per conference is the normal range for a final report.
+- Within the West, prioritize division opponents, playoff-bracket teams, high draft picks and players whose roles are especially relevant to Phoenix.
+- Within the East, prioritize the strongest event-wide performances, top draft picks and young players who shaped the national Summer League story.
 - Identify each player with his team and explain the basketball reason he belongs on the watch list in direct language.
 - Use one selected statistical line per player; do not turn the section into a leaderboard or a scouting report.
-- Include an Eastern Conference player only when his performance is important to the league-wide Summer League story.
+- State that the list is selected awareness coverage, not an official ranking or complete awards ballot.
 - Do not project trades, contracts, rotations, awards or future stardom from Summer League results.
 
 The first accordion section should open by default. Keep one live issue at `index.html` and archive each edition under `issues/` using descriptive names such as `issue-02-game-01-pregame.html` and `issue-03-game-01-postgame.html`.
@@ -269,7 +272,7 @@ The scoreboard is a convenience layer, not the editorial center of the briefing.
 - Use a reputable scoreboard only as a cross-check when official live data is unavailable, and disclose it in Sources.
 - Do not repeat scoreboard facts in The Read, Three to Watch, The Big Questions, or the closing line unless a result directly changes the main conclusion.
 
-For a Vegas Final Report, replace the rolling scoreboard with `Around Vegas`. Do not publish a cumulative results dump. Prefer the championship result, the semifinal field or final tournament context, official honors, and three to five verified standout players. Build the player watch list from the Western Conference first, then add no more than one national note when warranted. Explain that the event does not produce a conventional final 1-through-30 ranking when that distinction matters.
+For a Vegas Final Report, replace the rolling scoreboard with `Around Vegas`. Do not publish a cumulative results dump. Prefer the championship result, the semifinal field or final tournament context, official honors, and balanced Western and Eastern Conference watch lists. Explain that the event does not produce a conventional final 1-through-30 ranking when that distinction matters.
 
 ## Mobile-First Gate
 

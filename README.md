@@ -63,11 +63,11 @@ suns-summer-league-pulse/
    - `og-preview.html` is the editable source layout for the current preview.
 4. Confirm these metadata values before publishing:
    - `og:url` points to `https://meltckr.github.io/suns-summer-league-pulse/`
-   - `og:image` and `twitter:image` point to `https://meltckr.github.io/suns-summer-league-pulse/og-image.jpg`
+   - `og:image` and `twitter:image` point to the absolute GitHub Pages URL for the matching edition image
    - title and OG title match the issue title
 5. Commit and push to `main`.
 
-The current live edition is `Issue 09 / Game 05 Postgame`. `Issue 10 / Vegas Final Report` is staged at its own preview route until its final morning update. Delivered archive files are immutable except for disclosed factual corrections.
+The current live edition is `Issue 10 / Vegas Final Report`. It is also preserved at `issues/issue-10-vegas-final-report.html` and `dist/issue-10-vegas-final-report/`. Delivered archive files are immutable except for disclosed factual corrections.
 
 ## Generate Future Issues
 

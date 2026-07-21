@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#09090c">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <title>Suns Summer League Pulse | Issue 09 Game 05 Postgame</title>
-  <meta name="description" content="Phoenix finished Summer League 3-2 after an 86-81 loss to San Antonio. The final game gave the Suns' next group a larger evaluation window.">
+  <title>Suns Summer League Pulse | Vegas Final Report</title>
+  <meta name="description" content="Phoenix finished Summer League 3-2 with a young frontcourt that moved forward and a supporting group that earned more evaluation.">
   <link rel="canonical" href="https://meltckr.github.io/suns-summer-league-pulse/">
   <link rel="icon" href="/suns-summer-league-pulse/assets/phoenix-suns-logo.png" type="image/png">
 
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Suns Summer League Pulse">
-  <meta property="og:title" content="Suns Summer League Pulse | Issue 09 Game 05 Postgame">
-  <meta property="og:description" content="The next group competed. Phoenix's featured frontcourt remains the main development result from Vegas.">
+  <meta property="og:title" content="Suns Summer League Pulse | Vegas Final Report">
+  <meta property="og:description" content="Five games. Three wins. A young frontcourt that moved forward.">
   <meta property="og:url" content="https://meltckr.github.io/suns-summer-league-pulse/">
-  <meta property="og:image" content="https://meltckr.github.io/suns-summer-league-pulse/og-image.jpg?v=20260719-game05-post">
+  <meta property="og:image" content="https://meltckr.github.io/suns-summer-league-pulse/assets/issue-10-vegas-final-report-og.jpg?v=20260720">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Suns Summer League Pulse final: San Antonio 86, Phoenix 81">
+  <meta property="og:image:alt" content="Suns Summer League Pulse Vegas Final Report: What Phoenix learned in five games">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Suns Summer League Pulse | Issue 09 Game 05 Postgame">
-  <meta name="twitter:description" content="The next group competed. Phoenix's featured frontcourt remains the main development result from Vegas.">
-  <meta name="twitter:image" content="https://meltckr.github.io/suns-summer-league-pulse/og-image.jpg?v=20260719-game05-post">
-  <meta name="twitter:image:alt" content="Suns Summer League Pulse final: San Antonio 86, Phoenix 81">
+  <meta name="twitter:title" content="Suns Summer League Pulse | Vegas Final Report">
+  <meta name="twitter:description" content="Five games. Three wins. A young frontcourt that moved forward.">
+  <meta name="twitter:image" content="https://meltckr.github.io/suns-summer-league-pulse/assets/issue-10-vegas-final-report-og.jpg?v=20260720">
+  <meta name="twitter:image:alt" content="Suns Summer League Pulse Vegas Final Report: What Phoenix learned in five games">
 
   <style>
     :root {
@@ -1258,6 +1258,496 @@
       line-height: 1.18;
     }
 
+    .final-report-cover {
+      min-height: min(740px, 82svh);
+    }
+
+    .final-report-cover .cover-media {
+      object-position: center 34%;
+      filter: saturate(0.92) contrast(1.08);
+    }
+
+    .final-report-cover .cover-shade {
+      background:
+        linear-gradient(180deg, rgba(4, 4, 7, 0.84) 0%, rgba(4, 4, 7, 0.12) 38%, rgba(4, 4, 7, 0.74) 72%, rgba(4, 4, 7, 0.99) 100%),
+        linear-gradient(90deg, rgba(4, 4, 7, 0.64), transparent 78%);
+    }
+
+    .final-report-cover .cover-copy {
+      min-height: calc(min(740px, 82svh) - 82px);
+      padding-top: 36px;
+      padding-bottom: 26px;
+    }
+
+    .final-report-cover h1 {
+      max-width: 650px;
+      margin-bottom: 16px;
+      font-size: clamp(50px, 14vw, 88px);
+      line-height: 0.9;
+    }
+
+    .report-kicker {
+      margin-bottom: 12px;
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .report-ledger {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      margin-top: 24px;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+    }
+
+    .final-file {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 24px;
+      border-top: 1px solid var(--line-dark);
+      border-bottom: 1px solid var(--line-dark);
+      background: rgba(9, 9, 12, 0.42);
+      backdrop-filter: blur(12px);
+    }
+
+    .final-file div {
+      min-width: 0;
+      padding: 14px 12px 15px;
+      border-right: 1px solid var(--line-dark);
+    }
+
+    .final-file div:last-child {
+      border-right: 0;
+    }
+
+    .final-file span,
+    .final-file strong {
+      display: block;
+    }
+
+    .final-file span {
+      margin-bottom: 7px;
+      color: rgba(255, 255, 255, 0.48);
+      font-size: 8px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+    }
+
+    .final-file strong {
+      overflow: hidden;
+      font-size: 12px;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .result-chip {
+      min-width: 0;
+      padding: 13px 7px 12px;
+      border-right: 1px solid var(--line-dark);
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .result-chip:last-child {
+      border-right: 0;
+    }
+
+    .result-chip span,
+    .result-chip small {
+      display: block;
+    }
+
+    .result-chip span {
+      margin-bottom: 5px;
+      color: var(--orange);
+      font-size: 9px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .result-chip.is-loss span {
+      color: rgba(255, 255, 255, 0.46);
+    }
+
+    .result-chip strong {
+      display: block;
+      overflow: hidden;
+      font-size: 13px;
+      line-height: 1.1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .result-chip small {
+      margin-top: 4px;
+      color: rgba(255, 255, 255, 0.56);
+      font-size: 9px;
+      line-height: 1;
+    }
+
+    .final-report-thesis::after {
+      content: "FINAL";
+      font-size: clamp(54px, 15vw, 104px);
+    }
+
+    .signal-verdict {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: var(--orange);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .signal-verdict.is-fit {
+      color: var(--violet);
+    }
+
+    .signal-verdict.is-follow-up {
+      color: #297391;
+    }
+
+    .report-statline {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid var(--line-light);
+      border-left: 1px solid var(--line-light);
+    }
+
+    .report-stat {
+      padding: 18px 14px;
+      border-right: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .report-stat span {
+      display: block;
+      margin-bottom: 8px;
+      color: #77767c;
+      font-size: 9px;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .report-stat strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: clamp(30px, 8vw, 42px);
+      font-weight: 600;
+      line-height: 0.95;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .report-stat small {
+      display: block;
+      margin-top: 8px;
+      color: #66656b;
+      font-size: 10px;
+      line-height: 1.35;
+    }
+
+    .five-game-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line-light);
+    }
+
+    .five-game-list li {
+      display: grid;
+      grid-template-columns: 46px minmax(0, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .five-game-list b {
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .five-game-list .loss {
+      color: #77767c;
+    }
+
+    .five-game-list strong {
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 600;
+    }
+
+    .five-game-list span {
+      color: #66656b;
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .headline-stack {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .headline-row {
+      display: grid;
+      grid-template-columns: 94px minmax(0, 1fr);
+      gap: 18px;
+      padding: 20px 0 22px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .headline-row span {
+      color: var(--violet);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.4;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .headline-row h3 {
+      margin-bottom: 7px;
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .headline-row p {
+      margin: 0;
+      color: #5d5c62;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .media-grid {
+      display: grid;
+      border-top: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .media-lane {
+      min-width: 0;
+      padding: 22px 0 4px;
+    }
+
+    .media-lane + .media-lane {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .media-lane-title {
+      margin: 0 0 4px;
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .media-item {
+      padding: 18px 0 20px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .media-item:last-child {
+      border-bottom: 0;
+    }
+
+    .media-meta {
+      display: inline-flex;
+      gap: 7px;
+      align-items: center;
+      margin-bottom: 9px;
+      color: var(--violet);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.4;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .media-meta b {
+      color: #8b8a90;
+      font-weight: 800;
+    }
+
+    .media-item h3 {
+      margin: 0 0 7px;
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .media-item p {
+      margin: 0;
+      color: #5d5c62;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .media-summary-grid {
+      display: grid;
+      border-top: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .media-summary {
+      min-width: 0;
+      padding: 24px 0;
+    }
+
+    .media-summary + .media-summary {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .media-summary > span {
+      display: block;
+      margin-bottom: 11px;
+      color: var(--orange);
+      font-size: 9px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .media-summary h3 {
+      margin-bottom: 10px;
+      font-family: var(--serif);
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .media-summary p {
+      margin-bottom: 16px;
+      color: #5d5c62;
+      font-size: 14px;
+      line-height: 1.58;
+    }
+
+    .media-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+    }
+
+    .media-links a {
+      color: var(--violet);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.4;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .championship-note {
+      padding: 22px 20px 24px;
+      border-left: 3px solid var(--orange);
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .championship-note span {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--cyan);
+      font-size: 9px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .championship-note h3 {
+      margin-bottom: 8px;
+      font-family: var(--serif);
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .championship-note p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.68);
+      font-size: 13px;
+      line-height: 1.52;
+    }
+
+    .watch-grid {
+      display: grid;
+      margin-top: 24px;
+      border-top: 1px solid var(--line-light);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .watch-lane {
+      min-width: 0;
+      padding: 23px 0 2px;
+    }
+
+    .watch-lane + .watch-lane {
+      border-top: 1px solid var(--line-light);
+    }
+
+    .watch-lane > h3 {
+      margin-bottom: 4px;
+      color: var(--orange);
+      font-size: 10px;
+      font-weight: 900;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .watch-item {
+      padding: 17px 0 19px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .watch-item:last-child {
+      border-bottom: 0;
+    }
+
+    .watch-item span {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--violet);
+      font-size: 9px;
+      font-weight: 900;
+      line-height: 1.35;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+    }
+
+    .watch-item h4 {
+      margin: 0 0 6px;
+      font-family: var(--serif);
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.08;
+    }
+
+    .watch-item p {
+      margin: 0;
+      color: #5d5c62;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
     @media (max-width: 579px) {
       .postgame-cover .masthead {
         padding-top: max(16px, env(safe-area-inset-top));
@@ -1279,6 +1769,29 @@
 
       .section-heading .section-title {
         font-size: 26px;
+      }
+
+      .final-report-cover .avc-logo {
+        width: 128px;
+      }
+
+      .report-ledger {
+        margin-right: -6px;
+        margin-left: -6px;
+      }
+
+      .result-chip {
+        padding-right: 4px;
+        padding-left: 4px;
+      }
+
+      .result-chip strong {
+        font-size: 11px;
+      }
+
+      .headline-row {
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 14px;
       }
     }
 
@@ -1313,6 +1826,39 @@
 
       .cover-media {
         object-position: center 64%;
+      }
+
+      .media-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .media-summary-grid,
+      .watch-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .media-summary,
+      .watch-lane {
+        padding-right: 26px;
+      }
+
+      .media-summary + .media-summary,
+      .watch-lane + .watch-lane {
+        padding-right: 0;
+        padding-left: 26px;
+        border-top: 0;
+        border-left: 1px solid var(--line-light);
+      }
+
+      .media-lane {
+        padding: 25px 26px 6px 0;
+      }
+
+      .media-lane + .media-lane {
+        padding-right: 0;
+        padding-left: 26px;
+        border-top: 0;
+        border-left: 1px solid var(--line-light);
       }
     }
 
@@ -1378,8 +1924,8 @@
   <div class="progress" aria-hidden="true"><span></span></div>
 
   <main class="page">
-    <header class="cover" id="top">
-      <img class="cover-media" src="/suns-summer-league-pulse/assets/vegas-courtside-v2.jpg" alt="Empty basketball court under arena lights">
+    <header class="cover final-report-cover" id="top">
+      <img class="cover-media" src="/suns-summer-league-pulse/assets/suns-team-game04.jpg" alt="Phoenix Suns Summer League players on the court in Las Vegas">
       <div class="cover-shade" aria-hidden="true"></div>
 
       <div class="masthead">
@@ -1391,269 +1937,231 @@
       </div>
 
       <div class="cover-copy">
-        <div class="issue-stamp">Issue 09 / Game 05 Postgame / July 19, 2026</div>
-        <h1>Suns Summer League Pulse</h1>
+        <div class="issue-stamp">Issue 10 / Vegas Final Report / July 20, 2026</div>
+        <p class="report-kicker">Suns Summer League Pulse</p>
+        <h1>What Phoenix learned in Vegas.</h1>
+        <p class="cover-dek"><strong>Five games. Three wins. A young frontcourt that moved forward.</strong></p>
 
-        <div class="result-lockup" aria-label="San Antonio Spurs 86, Phoenix Suns 81, final">
-          <p class="result-status">Final / Game 05 / Phoenix finishes 3-2</p>
-          <div class="result-score">
-            <div class="score-side">
-              <span>Phoenix</span>
-              <strong>81</strong>
-            </div>
-            <div class="score-separator" aria-hidden="true">VS</div>
-            <div class="score-side">
-              <span>San Antonio</span>
-              <strong>86</strong>
-            </div>
-          </div>
+        <div class="final-file" aria-label="Final five-game Summer League report prepared by AVC">
+          <div><span>Edition</span><strong>Final report</strong></div>
+          <div><span>Scope</span><strong>Full event</strong></div>
+          <div><span>Prepared by</span><strong>AVC</strong></div>
         </div>
-
-        <p class="cover-conclusion"><strong>The next group made it competitive.</strong></p>
       </div>
     </header>
 
     <nav class="brief-nav" aria-label="Briefing sections">
       <button type="button" data-scroll="thesis" aria-current="true">Read</button>
-      <button type="button" data-scroll="evidence">Result</button>
-      <button type="button" data-scroll="answers">Answers</button>
-      <button type="button" data-scroll="worked">Numbers</button>
-      <button type="button" data-scroll="judgment">Players</button>
-      <button type="button" data-scroll="next">Close</button>
-      <button type="button" data-scroll="radar">Today</button>
-      <button type="button" data-scroll="scoreboard">Scores</button>
+      <button type="button" data-scroll="answers">Takeaways</button>
+      <button type="button" data-scroll="record">Record</button>
+      <button type="button" data-scroll="frontcourt">Frontcourt</button>
+      <button type="button" data-scroll="depth">Depth</button>
+      <button type="button" data-scroll="media">Media</button>
+      <button type="button" data-scroll="forward">Next</button>
+      <button type="button" data-scroll="vegas">Vegas</button>
       <button type="button" data-scroll="sources">Sources</button>
     </nav>
 
-    <section class="thesis" id="thesis" data-nav-section>
+    <section class="thesis final-report-thesis" id="thesis" data-nav-section>
       <p class="section-label reveal">The Read / AVC Interpretation</p>
-      <h2 class="reveal">The featured frontcourt remains the story of Phoenix's summer.</h2>
-      <p class="thesis-copy reveal">With the featured trio shut down, Phoenix gave the next group a larger role against San Antonio. That group made the game competitive and produced useful individual evidence, but it did not replace the first four games as the central development sample. <strong>The final loss changed the record, not the main conclusion.</strong></p>
+      <h2 class="reveal">Phoenix leaves Vegas with more clarity than it had before the event.</h2>
+      <p class="thesis-copy reveal">Phoenix finished 3-2. More important, Khaman Maluach advanced, Koa Peat and Rasheer Fleming showed complementary skills, and the finale produced three additional camp evaluations. <strong>The group earned a more demanding look in camp, but Summer League production is not NBA proof.</strong></p>
     </section>
 
-    <section class="briefing" aria-label="Issue 09 Game 05 postgame briefing">
-      <section class="brief-section" id="evidence" data-nav-section>
-        <h2 class="trigger-heading">
-          <button class="section-trigger" type="button" aria-expanded="true" aria-controls="panel-evidence" id="trigger-evidence">
-            <span class="section-index">01</span>
-            <span class="section-heading">
-              <span class="section-label">Final Result</span>
-              <span class="section-title">San Antonio 86, Phoenix 81.</span>
-            </span>
-            <span class="toggle" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div class="panel" id="panel-evidence" role="region" aria-labelledby="trigger-evidence">
-          <div class="panel-inner">
-            <dl class="metric-grid">
-              <div class="metric"><dt>Margin</dt><dd>5 points</dd></div>
-              <div class="metric"><dt>Phoenix</dt><dd>3-2</dd></div>
-              <div class="metric"><dt>Halftime</dt><dd>PHX 43-39</dd></div>
-              <div class="metric"><dt>After 3</dt><dd>SAS 61-53</dd></div>
-            </dl>
-            <div class="next-game">
-              <div class="next-game-meta"><span>Saturday, July 18</span><span>Thomas &amp; Mack Center</span></div>
-              <h3>The final margin came after a late tie.</h3>
-              <p>The Suns led by four at halftime, scored 10 points in the third quarter and tied the game at 74 with 2:42 left. San Antonio scored 12 of the final 19 points to close the game.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    <section class="briefing" aria-label="Issue 10 Vegas Final Report">
       <section class="brief-section" id="answers" data-nav-section>
         <h2 class="trigger-heading">
-          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-answers" id="trigger-answers">
-            <span class="section-index">02</span>
+          <button class="section-trigger" type="button" aria-expanded="true" aria-controls="panel-answers" id="trigger-answers">
+            <span class="section-index">01</span>
             <span class="section-heading">
-              <span class="section-label">Pregame Answers</span>
-              <span class="section-title">Two questions were answered. One remains open.</span>
+              <span class="section-label">Three Takeaways</span>
+              <span class="section-title">The summer produced useful answers.</span>
             </span>
             <span class="toggle" aria-hidden="true"></span>
           </button>
         </h2>
         <div class="panel" id="panel-answers" role="region" aria-labelledby="trigger-answers">
           <div class="panel-inner">
-            <div class="signal-noise">
-              <div class="judgment-row">
-                <span>Confirmed / Creation</span>
-                <p><strong>Phoenix found enough offense to erase a 10-point fourth-quarter deficit.</strong> The next group created a real closing-game evaluation.</p>
-              </div>
-              <div class="judgment-row">
-                <span>Confirmed / Ball security</span>
-                <p><strong>The Suns committed 10 team turnovers.</strong> Ball security was not the reason Phoenix lost.</p>
-              </div>
-              <div class="judgment-row">
-                <span>Unresolved / Defensive finish</span>
-                <p><strong>Phoenix reached a tie but never took the lead.</strong> San Antonio guard Miles Kelly scored the Spurs' final 12 points.</p>
-              </div>
+            <div class="signal-stack">
+              <article class="signal"><span class="signal-number">01</span><div><span class="signal-verdict">Clear signal</span><h3>Maluach set the standard.</h3><p><strong>His impact held across every appearance.</strong> He changed games with his size while expanding the range of shots he could make.</p></div></article>
+              <article class="signal"><span class="signal-number">02</span><div><span class="signal-verdict is-fit">Promising fit</span><h3>The young frontcourt worked together.</h3><p><strong>Peat brought strength and creation; Fleming supplied shooting and role discipline.</strong> Their games complemented Maluach instead of asking each player to do the same work.</p></div></article>
+              <article class="signal"><span class="signal-number">03</span><div><span class="signal-verdict is-follow-up">Follow-up earned</span><h3>Three more players earned a closer look.</h3><p><strong>Askew, Cooke and Camper responded to larger roles in the finale.</strong></p></div></article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="brief-section" id="worked" data-nav-section>
+      <section class="brief-section" id="record" data-nav-section>
         <h2 class="trigger-heading">
-          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-worked" id="trigger-worked">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-record" id="trigger-record">
+            <span class="section-index">02</span>
+            <span class="section-heading">
+              <span class="section-label">Five-Game Record</span>
+              <span class="section-title">Three wins, two losses and a plus-10 point margin.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-record" role="region" aria-labelledby="trigger-record">
+          <div class="panel-inner">
+            <div class="report-statline" aria-label="Phoenix five-game summary">
+              <div class="report-stat"><span>Record</span><strong>3-2</strong><small>Five games</small></div>
+              <div class="report-stat"><span>Points</span><strong>432</strong><small>Phoenix total</small></div>
+              <div class="report-stat"><span>Margin</span><strong>+10</strong><small>Across five games</small></div>
+            </div>
+            <ul class="five-game-list">
+              <li><b>Win</b><strong>Portland</strong><span>81-79</span></li>
+              <li><b class="loss">Loss</b><strong>New Orleans</strong><span>75-81</span></li>
+              <li><b>Win</b><strong>Milwaukee</strong><span>95-88</span></li>
+              <li><b>Win</b><strong>Detroit</strong><span>100-88</span></li>
+              <li><b class="loss">Loss</b><strong>San Antonio</strong><span>81-86</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="frontcourt" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-frontcourt" id="trigger-frontcourt">
             <span class="section-index">03</span>
             <span class="section-heading">
-              <span class="section-label">What The Numbers Show</span>
-              <span class="section-title">The third quarter and the paint decided the game.</span>
+              <span class="section-label">Featured Frontcourt</span>
+              <span class="section-title">The strongest four-game returns.</span>
             </span>
             <span class="toggle" aria-hidden="true"></span>
           </button>
         </h2>
-        <div class="panel" id="panel-worked" role="region" aria-labelledby="trigger-worked">
+        <div class="panel" id="panel-frontcourt" role="region" aria-labelledby="trigger-frontcourt">
           <div class="panel-inner">
-            <div class="signal-noise">
-              <div class="judgment-row">
-                <span>Third quarter</span>
-                <p><strong>Phoenix scored 10 points on 3-for-17 shooting.</strong> A four-point halftime lead became an eight-point deficit.</p>
-              </div>
-              <div class="judgment-row">
-                <span>Shot profile</span>
-                <p><strong>The Suns took 47 threes and made 13.</strong> San Antonio held a 42-28 advantage in paint points.</p>
-              </div>
-              <div class="judgment-row">
-                <span>Rim protection</span>
-                <p><strong>Phoenix did not record a block; San Antonio had six.</strong> The rim-protection gap was visible in the box score.</p>
-              </div>
+            <p class="source-rule">Official NBA game books and box scores. Four games per player.</p>
+            <div class="asset-lines" aria-label="Four-game averages for Phoenix's featured frontcourt">
+              <div class="asset-line"><div><strong>Khaman Maluach</strong><span>19.5 points, 12.8 rebounds and 2.0 blocks per game. Four straight double-doubles.</span></div><b>19.5 / 12.8</b></div>
+              <div class="asset-line"><div><strong>Koa Peat</strong><span>16.8 points, 4.8 rebounds and 2.3 assists per game. Double figures every night.</span></div><b>16.8 PPG</b></div>
+              <div class="asset-line"><div><strong>Rasheer Fleming</strong><span>12.0 points and 6.5 rebounds per game. Eight made threes at 42.1%.</span></div><b>42.1% 3PT</b></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="brief-section" id="judgment" data-nav-section>
+      <section class="brief-section" id="depth" data-nav-section>
         <h2 class="trigger-heading">
-          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-judgment" id="trigger-judgment">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-depth" id="trigger-depth">
             <span class="section-index">04</span>
             <span class="section-heading">
-              <span class="section-label">Player Returns</span>
-              <span class="section-title">Three players used the larger opportunity.</span>
+              <span class="section-label">Supporting Group</span>
+              <span class="section-title">Askew, Cooke and Camper made the most of added opportunity.</span>
             </span>
             <span class="toggle" aria-hidden="true"></span>
           </button>
         </h2>
-        <div class="panel" id="panel-judgment" role="region" aria-labelledby="trigger-judgment">
-          <div class="panel-inner">
-            <p class="source-rule">Official scorer's report. Game 5 only.</p>
-            <div class="asset-lines" aria-label="Phoenix Game 5 player returns">
-              <div class="asset-line"><div><strong>Devin Askew</strong><span>20 points and four steals, including 13 points in the fourth quarter.</span></div><b>20 PTS</b></div>
-              <div class="asset-line"><div><strong>Javonte Cooke</strong><span>17 points, six rebounds and four assists in 27 minutes.</span></div><b>17 PTS</b></div>
-              <div class="asset-line"><div><strong>Corey Camper Jr.</strong><span>13 points, eight rebounds, four assists, two steals and no turnovers.</span></div><b>13 PTS</b></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="brief-section" id="next" data-nav-section>
-        <h2 class="trigger-heading">
-          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-next" id="trigger-next">
-            <span class="section-index">05</span>
-            <span class="section-heading">
-              <span class="section-label">Summer Close</span>
-              <span class="section-title">The five-game sample is complete.</span>
-            </span>
-            <span class="toggle" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div class="panel" id="panel-next" role="region" aria-labelledby="trigger-next">
-          <div class="panel-inner">
-            <div class="answer-stack">
-              <article class="answer-row">
-                <span class="answer-status">Complete</span>
-                <div><h3>Phoenix has no additional Summer League game scheduled.</h3><p>The Suns completed the five-game format with three wins and two losses.</p></div>
-              </article>
-              <article class="answer-row">
-                <span class="answer-status is-mixed">Scope</span>
-                <div><h3>Public results cannot settle roster decisions.</h3><p>The final game added evidence. Contract and role decisions remain outside the public record.</p></div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="brief-section" id="radar" data-nav-section>
-        <h2 class="trigger-heading">
-          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-radar" id="trigger-radar">
-            <span class="section-index">06</span>
-            <span class="section-heading">
-              <span class="section-label">League Today</span>
-              <span class="section-title">Memphis and Golden State play for the championship.</span>
-            </span>
-            <span class="toggle" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div class="panel" id="panel-radar" role="region" aria-labelledby="trigger-radar">
+        <div class="panel" id="panel-depth" role="region" aria-labelledby="trigger-depth">
           <div class="panel-inner">
             <div class="signal-noise">
-              <div class="judgment-row">
-                <span>Championship</span>
-                <p><strong>Memphis Grizzlies vs. Golden State Warriors.</strong> Today at 6:00 PM Phoenix time on ESPN.</p>
-              </div>
-              <div class="judgment-row">
-                <span>How they advanced</span>
-                <p><strong>Memphis beat Houston 101-90; Golden State beat the Lakers 92-88.</strong> Both semifinals were played Saturday.</p>
-              </div>
+              <div class="judgment-row"><span>Devin Askew</span><p><strong>20 points and four steals against San Antonio.</strong> He scored 13 points in the fourth quarter.</p></div>
+              <div class="judgment-row"><span>Javonte Cooke</span><p><strong>He bookended the summer with 21 points in the opener and 17 in the finale.</strong> Both came off larger offensive opportunities.</p></div>
+              <div class="judgment-row"><span>Corey Camper Jr.</span><p><strong>13 points, eight rebounds and four assists in the finale.</strong> He also had two steals and no turnovers.</p></div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="brief-section" id="scoreboard" data-nav-section>
+      <section class="brief-section" id="media" data-nav-section>
         <h2 class="trigger-heading">
-          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-scoreboard" id="trigger-scoreboard">
-            <span class="section-index">07</span>
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-media" id="trigger-media">
+            <span class="section-index">05</span>
             <span class="section-heading">
-              <span class="section-label">Vegas Scoreboard</span>
-              <span class="section-title">Saturday's non-Phoenix finals.</span>
+              <span class="section-label">Media Read</span>
+              <span class="section-title">The coverage focused on development, not the record.</span>
             </span>
             <span class="toggle" aria-hidden="true"></span>
           </button>
         </h2>
-        <div class="panel" id="panel-scoreboard" role="region" aria-labelledby="trigger-scoreboard">
+        <div class="panel" id="panel-media" role="region" aria-labelledby="trigger-media">
           <div class="panel-inner">
-            <div class="scoreboard-meta">
-              <span>Finals through July 18</span>
-              <span>6 games</span>
+            <div class="media-summary-grid">
+              <article class="media-summary">
+                <span>Phoenix-area emphasis</span>
+                <h3>Development was the story, with the right caution attached.</h3>
+                <p>Local coverage treated the leading trio's four games as productive work, then focused on Maluach's energy and leadership. The final wrap-up also made the key distinction: his NBA role will be smaller and the competition stronger.</p>
+                <div class="media-links" aria-label="Phoenix-area coverage links">
+                  <a href="https://x.com/Gambo987/status/2077834576765092150">Gambadoro ↗</a>
+                  <a href="https://www.brightsideofthesun.com/suns-summer-league/108031/khaman-maluach-summer-league-all-team-breakout-second-year-development">Voita ↗</a>
+                  <a href="https://burncitysports.com/2026/07/15/khaman-maluach-dominates-summer-leag/">Lopez ↗</a>
+                </div>
+              </article>
+              <article class="media-summary">
+                <span>National emphasis</span>
+                <h3>Maluach's two-way growth traveled beyond the local market.</h3>
+                <p>National writers focused on his expanded shooting range and rim protection. CBS Sports placed him on its unofficial first team, while NBA.com also gave Peat separate recognition during the event.</p>
+                <div class="media-links" aria-label="National coverage links">
+                  <a href="https://www.theringer.com/2026/07/14/nba/nba-summer-league-2026-caleb-wilson-aj-dybantsa-darryn-peterson">The Ringer ↗</a>
+                  <a href="https://www.cbssports.com/nba/news/all-nba-summer-league-teams-2026/">CBS Sports ↗</a>
+                  <a href="https://www.nba.com/news/2026-nba-summer-league-standout-players-from-day-5">NBA.com ↗</a>
+                </div>
+              </article>
             </div>
-            <ul class="scoreboard-list">
-              <li>
-                <a href="https://www.nba.com/game/bos-vs-orl-1522600067" aria-label="Orlando 103, Boston 99. Official NBA game page.">
-                  <div class="scoreline"><strong>ORL 103 — BOS 99</strong><b aria-hidden="true">↗</b></div>
-                  <p>Orlando finished four points ahead of Boston.</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nba.com/game/phi-vs-mil-1522600068" aria-label="Milwaukee 96, Philadelphia 94. Official NBA game page.">
-                  <div class="scoreline"><strong>MIL 96 — PHI 94</strong><b aria-hidden="true">↗</b></div>
-                  <p>Milwaukee won Saturday's closest finish by two.</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nba.com/game/hou-vs-mem-1522600069" aria-label="Memphis 101, Houston 90. Official NBA game page.">
-                  <div class="scoreline"><strong>MEM 101 — HOU 90</strong><b aria-hidden="true">↗</b></div>
-                  <p>Memphis advanced to the championship game.</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nba.com/game/atl-vs-was-1522600070" aria-label="Washington 91, Atlanta 83. Official NBA game page.">
-                  <div class="scoreline"><strong>WAS 91 — ATL 83</strong><b aria-hidden="true">↗</b></div>
-                  <p>Washington closed its summer with an eight-point win.</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nba.com/game/gsw-vs-lal-1522600071" aria-label="Golden State 92, Los Angeles Lakers 88. Official NBA game page.">
-                  <div class="scoreline"><strong>GSW 92 — LAL 88</strong><b aria-hidden="true">↗</b></div>
-                  <p>Golden State secured the second championship berth.</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.nba.com/game/ind-vs-nop-1522600072" aria-label="Indiana 91, New Orleans 73. Official NBA game page.">
-                  <div class="scoreline"><strong>IND 91 — NOP 73</strong><b aria-hidden="true">↗</b></div>
-                  <p>Indiana posted Saturday's widest margin.</p>
-                </a>
-              </li>
-            </ul>
+            <p class="source-rule">Methodology and full attribution are listed in Sources. Unofficial outlet teams are labeled and are not NBA awards.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="forward" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-forward" id="trigger-forward">
+            <span class="section-index">06</span>
+            <span class="section-heading">
+              <span class="section-label">What's Next</span>
+              <span class="section-title">Phoenix's next team event is still unannounced.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-forward" role="region" aria-labelledby="trigger-forward">
+          <div class="panel-inner">
+            <div class="answer-stack">
+              <article class="answer-row"><span class="answer-status">Summer complete</span><div><h3>Training camp is the next major evaluation.</h3><p>Phoenix has no additional Summer League game. The Suns and NBA had not published a Phoenix training-camp date, preseason game or next team event at cutoff.</p></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-section" id="vegas" data-nav-section>
+        <h2 class="trigger-heading">
+          <button class="section-trigger" type="button" aria-expanded="false" aria-controls="panel-vegas" id="trigger-vegas">
+            <span class="section-index">07</span>
+            <span class="section-heading">
+              <span class="section-label">Around Vegas</span>
+              <span class="section-title">The event produced standouts in both conferences.</span>
+            </span>
+            <span class="toggle" aria-hidden="true"></span>
+          </button>
+        </h2>
+        <div class="panel" id="panel-vegas" role="region" aria-labelledby="trigger-vegas">
+          <div class="panel-inner">
+            <article class="championship-note">
+              <span>League close</span>
+              <h3>Golden State beat Memphis 94-90 for the championship.</h3>
+              <p>Yaxel Lendeborg had 21 points and 10 rebounds and was named Championship Game MVP. All four semifinalists came from the Western Conference.</p>
+            </article>
+            <div class="watch-grid">
+              <section class="watch-lane" aria-labelledby="west-watch-title">
+                <h3 id="west-watch-title">Western Conference Watch</h3>
+                <article class="watch-item"><span>Darryn Peterson / Utah</span><h4>Lead-guard creation arrived immediately.</h4><p>He averaged 26.5 points and 7.0 assists in two Salt Lake City games, then scored 24 in his Vegas opener.</p></article>
+                <article class="watch-item"><span>Cam Boozer / Memphis</span><h4>Production carried into the bracket.</h4><p>He posted 24 points, seven rebounds and three assists to clinch a playoff place, then a semifinal double-double.</p></article>
+                <article class="watch-item"><span>Keaton Wagler / LA Clippers</span><h4>His best scoring game came at the finish.</h4><p>He scored 26 as the Clippers set a Summer League scoring record in a 128-120 overtime win.</p></article>
+                <article class="watch-item"><span>Darius Acuff Jr. / Sacramento</span><h4>He created offense with the ball.</h4><p>He had 19 points and seven assists against the Clippers, then scored 26 against Brooklyn.</p></article>
+                <article class="watch-item"><span>Carter Bryant / San Antonio</span><h4>A second-year division wing remains on the radar.</h4><p>He scored 19 points on 7-for-10 shooting in San Antonio's 70-49 win over New York.</p></article>
+              </section>
+              <section class="watch-lane" aria-labelledby="east-watch-title">
+                <h3 id="east-watch-title">Eastern Conference Watch</h3>
+                <article class="watch-item"><span>AJ Dybantsa / Washington</span><h4>The No. 1 pick delivered in two appearances.</h4><p>He averaged 25.0 points, 7.0 rebounds and 2.0 assists before Washington shut him down.</p></article>
+                <article class="watch-item"><span>Caleb Wilson / Chicago</span><h4>His debut reset the event's opening standard.</h4><p>He scored a Las Vegas debut-record 35 points and made seven threes against Memphis.</p></article>
+                <article class="watch-item"><span>Meleek Thomas / Cleveland</span><h4>The second-round guard scored at every stop.</h4><p>He recorded at least 20 points in all four appearances, including 35 against Miami.</p></article>
+                <article class="watch-item"><span>Brayden Burries / Milwaukee</span><h4>His two-way line held up against Phoenix.</h4><p>He had 23 points, eight rebounds, six assists and four steals in the Suns' 95-88 win.</p></article>
+                <article class="watch-item"><span>Labaron Philon / Philadelphia</span><h4>He controlled an overtime win.</h4><p>He finished with 24 points and six assists as Philadelphia beat Indiana 100-93.</p></article>
+              </section>
+            </div>
+            <p class="source-rule">Selected official performances from both conferences, not a full leaderboard. The championship and its game MVP are official; broader event honors were still pending at cutoff.</p>
           </div>
         </div>
       </section>
@@ -1664,7 +2172,7 @@
             <span class="section-index">08</span>
             <span class="section-heading">
               <span class="section-label">Sources</span>
-              <span class="section-title">Where the information came from.</span>
+              <span class="section-title">The records and reporting behind the report.</span>
             </span>
             <span class="toggle" aria-hidden="true"></span>
           </button>
@@ -1672,21 +2180,46 @@
         <div class="panel" id="panel-sources" role="region" aria-labelledby="trigger-sources">
           <div class="panel-inner">
             <ul class="source-list">
-              <li><a href="https://www.nba.com/game/sas-vs-phx-1522600073"><span>NBA official game page: San Antonio vs. Phoenix</span><b aria-hidden="true">↗</b></a></li>
-              <li><a href="https://statsdmz.nba.com/pdfs/20260718/20260718_SASPHX_book.pdf"><span>NBA official scorer's report: San Antonio at Phoenix</span><b aria-hidden="true">↗</b></a></li>
-              <li><a href="https://www.nba.com/news/live-updates-2026-nba-summer-league-day-10"><span>NBA official Day 10 recap: Saturday's results and championship matchup</span><b aria-hidden="true">↗</b></a></li>
-              <li><a href="https://www.brightsideofthesun.com/suns-news/107910/khaman-maluach-rasheer-fleming-and-koa-peat-to-sit-out-rest-of-summer-league"><span>Bright Side of the Sun: John Gambadoro's shutdown report</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260710/20260710_PORPHX_book.pdf"><span>NBA official scorer's report: Phoenix 81, Portland 79</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260712/20260712_PHXNOP_book.pdf"><span>NBA official scorer's report: New Orleans 81, Phoenix 75</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260713/20260713_PHXMIL_book.pdf"><span>NBA official scorer's report: Phoenix 95, Milwaukee 88</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260715/20260715_PHXDET_book.pdf"><span>NBA official scorer's report: Phoenix 100, Detroit 88</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://statsdmz.nba.com/pdfs/20260718/20260718_SASPHX_book.pdf"><span>NBA official scorer's report: San Antonio 86, Phoenix 81</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://x.com/Gambo987/status/2077834576765092150"><span>Arizona Sports' John Gambadoro: report that Phoenix would shut down its leading trio</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.brightsideofthesun.com/suns-summer-league/108031/khaman-maluach-summer-league-all-team-breakout-second-year-development"><span>Bright Side of the Sun: final Khaman Maluach development read</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://burncitysports.com/2026/07/15/khaman-maluach-dominates-summer-leag/"><span>Burn City Sports: Khaman Maluach's approach and development</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.theringer.com/2026/07/14/nba/nba-summer-league-2026-caleb-wilson-aj-dybantsa-darryn-peterson"><span>The Ringer: Khaman Maluach among the event's biggest first impressions</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.cbssports.com/nba/news/all-nba-summer-league-teams-2026/"><span>CBS Sports: unofficial 2026 All-Las Vegas Summer League teams</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-standout-players-from-day-5"><span>NBA.com: Koa Peat selected among the Day 5 standouts</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/starting-5-july-9-2026"><span>NBA.com: Darryn Peterson's Salt Lake City averages and 2026 draft watch list</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-wizards-edge-jazz-aj-dybantsa-darryn-peterson"><span>NBA official recap: Peterson and Dybantsa in the Vegas opener</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-standout-players-from-day-8"><span>NBA.com: Cameron Boozer's playoff-clinching performance</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-bulls-grizzlies"><span>NBA official recap: Caleb Wilson's 35-point Las Vegas debut</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-day-9-standouts"><span>NBA.com: Meleek Thomas records a fourth 20-point game</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-suns-bucks"><span>NBA official recap: Brayden Burries against Phoenix</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-day-3-standouts"><span>NBA.com: Labaron Philon leads Philadelphia's overtime win</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-timberwolves-clippers"><span>NBA official recap: Keaton Wagler and the Clippers' scoring record</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-kings-nets"><span>NBA official recap: Darius Acuff Jr. against Brooklyn</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-live-blog"><span>NBA official Day 5 recap: Acuff's seven-assist Vegas opener</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-knicks-spurs"><span>NBA official recap: Carter Bryant against New York</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/aj-dybantsa-shut-down-for-summer-league"><span>NBA.com: AJ Dybantsa's two-game Summer League averages</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/live-updates-2026-nba-summer-league-day-10"><span>NBA official Day 10 recap: semifinal results</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/2026-nba-summer-league-championship-warriors-grizzlies"><span>NBA official championship recap: Golden State 94, Memphis 90</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/live-updates-2026-nba-summer-league-day-11"><span>NBA official Day 11 recap: Yaxel Lendeborg named Championship Game MVP</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/starting-5-july-17-2026"><span>NBA official semifinal field report: pool records and tiebreak context</span><b aria-hidden="true">↗</b></a></li>
               <li><a href="https://www.nba.com/news/2026-summer-league-format"><span>NBA official 2026 Summer League format</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/suns/schedule?EventSchedule=3"><span>Phoenix Suns official schedule: no post-Vegas team date listed at cutoff</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.nba.com/news/key-dates"><span>NBA official 2026-27 key dates</span><b aria-hidden="true">↗</b></a></li>
             </ul>
-            <p class="source-rule">Verified July 19, 2026, at 7:36 AM Phoenix time. The NBA official scorer's report controls the final score, game flow and player and team statistics. The NBA Day 10 recap controls Saturday's non-Phoenix finals and today's championship matchup. Arizona Sports' John Gambadoro, as reported by Bright Side of the Sun, controls the earlier shutdown report; no direct Suns release was located. No verified postgame coach or player comments were located by the cutoff, so none are included. AVC Interpretation is analysis based on public information.</p>
+            <p class="source-rule">Draft verified July 20, 2026, at 8:15 PM Phoenix time. Official NBA scorer reports and box scores control the Phoenix results and statistics. The separate league MVP and All-Summer League teams had not been announced at cutoff; no claim has been made about them. AVC Interpretation is analysis based on public information.</p>
           </div>
         </div>
       </section>
     </section>
 
     <section class="closing-band">
-      <p class="section-label">Bottom Line</p>
-      <blockquote>Vegas ends with a strong frontcourt sample and a shorter list of questions for the next layer.</blockquote>
+      <p class="section-label">Final Word</p>
+      <blockquote>The next test is whether the same impact holds up with fewer touches and stronger competition.</blockquote>
     </section>
 
     <footer class="footer">
@@ -1750,11 +2283,15 @@
           const sectionTrigger = section?.querySelector(".section-trigger");
           if (sectionTrigger?.getAttribute("aria-expanded") === "false") {
             triggers.forEach((item) => {
-              if (item !== sectionTrigger && item.getAttribute("aria-expanded") === "true") setPanel(item, false);
+              if (item !== sectionTrigger && item.getAttribute("aria-expanded") === "true") setPanel(item, false, false);
             });
-            setPanel(sectionTrigger, true);
+            setPanel(sectionTrigger, true, false);
           }
-          section?.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
+          requestAnimationFrame(() => {
+            if (!section) return;
+            const top = section.getBoundingClientRect().top + window.scrollY - 53;
+            window.scrollTo({ top, behavior: reducedMotion ? "auto" : "smooth" });
+          });
         });
       });
 

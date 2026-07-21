@@ -12,4 +12,4 @@ Supporting visual assets for Suns Summer League Pulse:
 - `suns-team-game04.jpg`, `koa-peat-game-03.jpg`, and `suns-spurs-game05.jpg`: User-supplied game photos used in the Issue 10 editorial OG montage.
 - `issue-10-vegas-final-report-og.jpg`: 1200x630 edition-specific preview for the Vegas Final Report. Its editable source is `../og-preview-issue10.html`.
 
-The live iMessage/Open Graph preview uses `../og-image.jpg` at the repository root. Visual source and usage notes should be checked before each issue is published.
+The root `../og-image.jpg` is synchronized to the current edition. Live metadata may point to that file or to an edition-specific image such as `issue-10-vegas-final-report-og.jpg`; either URL must be absolute. Visual source and usage notes should be checked before each issue is published.
