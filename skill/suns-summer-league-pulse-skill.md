@@ -56,7 +56,7 @@ Quotes and reaction are optional background, never required inventory.
 - Place `Reaction` after `The Big Questions` and before `Vegas Scoreboard`. Keep it collapsed and limit it to three distinct points.
 - Run the redundancy gate after adding reactions. A quote or sentiment item must contribute a new idea rather than restate the statistical read.
 
-For a Vegas Final Report, use `Media Read` after the Phoenix player sections and before `What's Next` when enough directly sourced coverage exists.
+For a Vegas Final Report, use `Media Read` after the Phoenix player sections and before `Around Vegas` when enough directly sourced coverage exists.
 
 - Separate `Phoenix-area coverage` and `National coverage` into clearly labeled lanes.
 - Use up to three attributed items per lane. Identify the outlet, writer or speaker, publication date and direct source.
@@ -188,9 +188,10 @@ Recommended structure:
 5. Featured Frontcourt or Development Returns: curated player totals or per-game averages from official scorer reports.
 6. Supporting Group: only players whose additional opportunity produced a distinct verified return.
 7. Media Read: up to three Phoenix-area and three national coverage items, each directly attributed and chosen for a distinct point.
-8. What's Next: the next confirmed Suns calendar milestone. If training camp, preseason or the next game date has not been officially published, say that directly and omit the date.
-9. Around Vegas: championship result, official honors and separate Western Conference and Eastern Conference watch lists with selected verified statistics.
-10. Sources: all scorer reports, media links, official tournament close and official awards release when available.
+8. Around Vegas: championship result, official honors and separate Western Conference and Eastern Conference watch lists with selected verified statistics.
+9. Sources: all scorer reports, media links, official tournament close and official awards release when available.
+
+Insert an optional `What's Next` section between `Media Read` and `Around Vegas` only when an official Suns calendar milestone, training-camp date, preseason game or other decision-relevant event has been confirmed. Omit the entire section when no material information is available.
 
 Keep the tone positive and forward-looking without making roster, contract or regular-season role claims. Do not use a large final-game score on the cover. The complete-event story should visually and editorially differ from a postgame issue.
 
