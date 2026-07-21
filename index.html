@@ -1567,11 +1567,14 @@
 
     .media-meta {
       display: inline-flex;
-      gap: 7px;
+      flex-wrap: wrap;
+      gap: 4px 7px;
       align-items: center;
-      margin-bottom: 9px;
+      min-height: 44px;
+      margin-bottom: 6px;
+      padding: 6px 0;
       color: var(--violet);
-      font-size: 9px;
+      font-size: 11px;
       font-weight: 900;
       line-height: 1.4;
       text-decoration: none;
@@ -1579,7 +1582,7 @@
       letter-spacing: 0.08em;
     }
 
-    .media-meta b {
+    .media-meta span:last-child {
       color: #8b8a90;
       font-weight: 800;
     }
@@ -1599,60 +1602,20 @@
       line-height: 1.55;
     }
 
-    .media-summary-grid {
-      display: grid;
-      border-top: 1px solid var(--line-light);
-      border-bottom: 1px solid var(--line-light);
-    }
-
-    .media-summary {
-      min-width: 0;
-      padding: 24px 0;
-    }
-
-    .media-summary + .media-summary {
-      border-top: 1px solid var(--line-light);
-    }
-
-    .media-summary > span {
-      display: block;
-      margin-bottom: 11px;
-      color: var(--orange);
-      font-size: 9px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-    }
-
-    .media-summary h3 {
-      margin-bottom: 10px;
+    .media-quote {
+      position: relative;
+      margin: 0 0 12px;
+      padding-left: 18px;
+      border-left: 3px solid var(--orange);
+      color: var(--black-soft);
       font-family: var(--serif);
-      font-size: 27px;
+      font-size: 23px;
       font-weight: 600;
-      line-height: 1.08;
+      line-height: 1.13;
     }
 
-    .media-summary p {
-      margin-bottom: 16px;
-      color: #5d5c62;
-      font-size: 14px;
-      line-height: 1.58;
-    }
-
-    .media-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 12px;
-    }
-
-    .media-links a {
-      color: var(--violet);
-      font-size: 9px;
-      font-weight: 900;
-      line-height: 1.4;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+    .media-context {
+      max-width: 44ch;
     }
 
     .championship-note {
@@ -1749,6 +1712,10 @@
     }
 
     @media (max-width: 579px) {
+      #panel-media .panel-inner {
+        padding-left: 20px;
+      }
+
       .postgame-cover .masthead {
         padding-top: max(16px, env(safe-area-inset-top));
         padding-bottom: 14px;
@@ -1828,26 +1795,25 @@
         object-position: center 64%;
       }
 
-      .media-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .media-summary-grid,
       .watch-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .media-summary,
       .watch-lane {
         padding-right: 26px;
       }
 
-      .media-summary + .media-summary,
       .watch-lane + .watch-lane {
         padding-right: 0;
         padding-left: 26px;
         border-top: 0;
         border-left: 1px solid var(--line-light);
+      }
+    }
+
+    @media (min-width: 760px) {
+      .media-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .media-lane {
@@ -2070,36 +2036,52 @@
             <span class="section-index">05</span>
             <span class="section-heading">
               <span class="section-label">Media Read</span>
-              <span class="section-title">The coverage focused on development, not the record.</span>
+              <span class="section-title">What local and national voices said about Phoenix.</span>
             </span>
             <span class="toggle" aria-hidden="true"></span>
           </button>
         </h2>
         <div class="panel" id="panel-media" role="region" aria-labelledby="trigger-media">
           <div class="panel-inner">
-            <div class="media-summary-grid">
-              <article class="media-summary">
-                <span>Phoenix-area emphasis</span>
-                <h3>Development was the story, with the right caution attached.</h3>
-                <p>Local coverage treated the leading trio's four games as productive work, then focused on Maluach's energy and leadership. The final wrap-up also made the key distinction: his NBA role will be smaller and the competition stronger.</p>
-                <div class="media-links" aria-label="Phoenix-area coverage links">
-                  <a href="https://x.com/Gambo987/status/2077834576765092150">Gambadoro ↗</a>
-                  <a href="https://www.brightsideofthesun.com/suns-summer-league/108031/khaman-maluach-summer-league-all-team-breakout-second-year-development">Voita ↗</a>
-                  <a href="https://burncitysports.com/2026/07/15/khaman-maluach-dominates-summer-leag/">Lopez ↗</a>
-                </div>
-              </article>
-              <article class="media-summary">
-                <span>National emphasis</span>
-                <h3>Maluach's two-way growth traveled beyond the local market.</h3>
-                <p>National writers focused on his expanded shooting range and rim protection. CBS Sports placed him on its unofficial first team, while NBA.com also gave Peat separate recognition during the event.</p>
-                <div class="media-links" aria-label="National coverage links">
-                  <a href="https://www.theringer.com/2026/07/14/nba/nba-summer-league-2026-caleb-wilson-aj-dybantsa-darryn-peterson">The Ringer ↗</a>
-                  <a href="https://www.cbssports.com/nba/news/all-nba-summer-league-teams-2026/">CBS Sports ↗</a>
-                  <a href="https://www.nba.com/news/2026-nba-summer-league-standout-players-from-day-5">NBA.com ↗</a>
-                </div>
-              </article>
+            <div class="media-grid">
+              <section class="media-lane" aria-labelledby="local-media-title">
+                <h3 class="media-lane-title" id="local-media-title">Phoenix-Area Voices</h3>
+                <article class="media-item" aria-label="John Gambadoro, Arizona Sports">
+                  <a class="media-meta" href="https://x.com/Gambo987/status/2077834576765092150"><span>John Gambadoro</span><span>Arizona Sports · <time datetime="2026-07-16">Jul 16</time> ↗</span></a>
+                  <blockquote class="media-quote">“After a highly successful four games in the Summer League the Suns will shut down Khaman Maluach, Rasheer Fleming and Koa Peat.”</blockquote>
+                  <p class="media-context">His conclusion after the leading trio's four-game evaluation window.</p>
+                </article>
+                <article class="media-item" aria-label="John Voita, Bright Side of the Sun">
+                  <a class="media-meta" href="https://www.brightsideofthesun.com/suns-analysis/107892/rasheer-fleming-summer-league-defense-three-point-development-rotation-role"><span>John Voita</span><span>Bright Side of the Sun · <time datetime="2026-07-16">Jul 16</time> ↗</span></a>
+                  <blockquote class="media-quote">“Fleming has quietly put together an outstanding Summer League.”</blockquote>
+                  <p class="media-context">Voita focused on Fleming's defensive awareness and how closely his Vegas role matched his likely NBA assignment.</p>
+                </article>
+                <article class="media-item" aria-label="Wendy Lopez, Burn City Sports">
+                  <a class="media-meta" href="https://burncitysports.com/2026/07/15/khaman-maluach-dominates-summer-leag/"><span>Wendy Lopez</span><span>Burn City Sports · <time datetime="2026-07-15">Jul 15</time> ↗</span></a>
+                  <blockquote class="media-quote">“That mindset should give the organization confidence …”</blockquote>
+                  <p class="media-context">Lopez pointed to Maluach's emphasis on effort, communication and improvement.</p>
+                </article>
+              </section>
+              <section class="media-lane" aria-labelledby="national-media-title">
+                <h3 class="media-lane-title" id="national-media-title">National Voices</h3>
+                <article class="media-item" aria-label="Danny Chau, The Ringer">
+                  <a class="media-meta" href="https://www.theringer.com/2026/07/14/nba/nba-summer-league-2026-caleb-wilson-aj-dybantsa-darryn-peterson"><span>Danny Chau</span><span>The Ringer · <time datetime="2026-07-14">Jul 14</time> ↗</span></a>
+                  <blockquote class="media-quote">“Maluach’s performance in Vegas has been a massive green flag.”</blockquote>
+                  <p class="media-context">Chau's conclusion after reviewing the center's expanded shooting and defensive range.</p>
+                </article>
+                <article class="media-item" aria-label="Cameron Salerno, CBS Sports">
+                  <a class="media-meta" href="https://www.cbssports.com/nba/news/all-nba-summer-league-teams-2026/"><span>Cameron Salerno</span><span>CBS Sports · <time datetime="2026-07-20">Jul 20</time> ↗</span></a>
+                  <blockquote class="media-quote">“Maluach was one of the best sophomores at the event.”</blockquote>
+                  <p class="media-context">Salerno placed him on CBS Sports' unofficial All-Vegas first team.</p>
+                </article>
+                <article class="media-item" aria-label="Shaun Powell, NBA.com">
+                  <a class="media-meta" href="https://www.nba.com/news/2026-nba-summer-league-standout-players-from-day-5"><span>Shaun Powell</span><span>NBA.com · <time datetime="2026-07-14">Jul 14</time> ↗</span></a>
+                  <blockquote class="media-quote">“He thought he should’ve been taken higher and is making a point to issue that statement in this tournament.”</blockquote>
+                  <p class="media-context">Powell on Peat turning his draft position into motivation in Vegas.</p>
+                </article>
+              </section>
             </div>
-            <p class="source-rule">Methodology and full attribution are listed in Sources. Unofficial outlet teams are labeled and are not NBA awards.</p>
+            <p class="source-rule">Selected coverage, not a claim of media consensus. Each excerpt links to its original source. CBS Sports' selection is unofficial and is not an NBA award.</p>
           </div>
         </div>
       </section>
@@ -2165,7 +2147,7 @@
               <li><a href="https://statsdmz.nba.com/pdfs/20260715/20260715_PHXDET_book.pdf"><span>NBA official scorer's report: Phoenix 100, Detroit 88</span><b aria-hidden="true">↗</b></a></li>
               <li><a href="https://statsdmz.nba.com/pdfs/20260718/20260718_SASPHX_book.pdf"><span>NBA official scorer's report: San Antonio 86, Phoenix 81</span><b aria-hidden="true">↗</b></a></li>
               <li><a href="https://x.com/Gambo987/status/2077834576765092150"><span>Arizona Sports' John Gambadoro: report that Phoenix would shut down its leading trio</span><b aria-hidden="true">↗</b></a></li>
-              <li><a href="https://www.brightsideofthesun.com/suns-summer-league/108031/khaman-maluach-summer-league-all-team-breakout-second-year-development"><span>Bright Side of the Sun: final Khaman Maluach development read</span><b aria-hidden="true">↗</b></a></li>
+              <li><a href="https://www.brightsideofthesun.com/suns-analysis/107892/rasheer-fleming-summer-league-defense-three-point-development-rotation-role"><span>Bright Side of the Sun: Rasheer Fleming's defensive progression and role translation</span><b aria-hidden="true">↗</b></a></li>
               <li><a href="https://burncitysports.com/2026/07/15/khaman-maluach-dominates-summer-leag/"><span>Burn City Sports: Khaman Maluach's approach and development</span><b aria-hidden="true">↗</b></a></li>
               <li><a href="https://www.theringer.com/2026/07/14/nba/nba-summer-league-2026-caleb-wilson-aj-dybantsa-darryn-peterson"><span>The Ringer: Khaman Maluach among the event's biggest first impressions</span><b aria-hidden="true">↗</b></a></li>
               <li><a href="https://www.cbssports.com/nba/news/all-nba-summer-league-teams-2026/"><span>CBS Sports: unofficial 2026 All-Las Vegas Summer League teams</span><b aria-hidden="true">↗</b></a></li>

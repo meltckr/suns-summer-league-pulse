@@ -60,9 +60,14 @@ For a Vegas Final Report, use `Media Read` after the Phoenix player sections and
 
 - Separate `Phoenix-area coverage` and `National coverage` into clearly labeled lanes.
 - Use up to three attributed items per lane. Identify the outlet, writer or speaker, publication date and direct source.
+- Prefer one short exact excerpt per source when the writer's language adds useful evaluation. Keep excerpts generally between 6 and 20 words and never use more than 25 quoted words from one source.
+- Preserve exact wording and punctuation. Use an ellipsis only when the shortened excerpt keeps the source's meaning intact.
+- Put AVC's context outside quotation marks in one direct sentence. Do not convert a writer's paraphrase into a quote.
 - Summarize what each source emphasized; do not repeat the player stat line already owned by Development Returns.
+- Choose each item for a distinct idea, player or evaluation. Six versions of the same Maluach praise do not make the section more useful.
+- When coverage supports it, distribute the excerpts across the core development group rather than allowing one player to dominate both lanes.
 - Distinguish a writer's unofficial award list from an official NBA honor.
-- State when the sample is selected coverage rather than a comprehensive media consensus.
+- State that the section is selected coverage rather than a comprehensive media consensus. Never manufacture consensus from a small sample.
 - Omit unverifiable broadcast commentary, inaccessible reporting, anonymous claims and social-media recollections without a direct source.
 - Do not add fan reaction to a final report unless the user explicitly requests it and the sample can be bounded and labeled.
 
@@ -187,7 +192,7 @@ Recommended structure:
 4. Five-Game Record: every Phoenix result, the final record, total scoring and point differential. This is the only home for the complete score list.
 5. Featured Frontcourt or Development Returns: curated player totals or per-game averages from official scorer reports.
 6. Supporting Group: only players whose additional opportunity produced a distinct verified return.
-7. Media Read: up to three Phoenix-area and three national coverage items, each directly attributed and chosen for a distinct point.
+7. Media Read: up to three Phoenix-area and three national coverage items, preferably presented as short exact excerpts with individual attribution, direct links and one sentence of AVC context. Choose each for a distinct point.
 8. Around Vegas: championship result, official honors and separate Western Conference and Eastern Conference watch lists with selected verified statistics.
 9. Sources: all scorer reports, media links, official tournament close and official awards release when available.
 
